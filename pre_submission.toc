@@ -1,0 +1,25 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Overview}{1}{section.0.1}%
+\contentsline {section}{\numberline {2}Thesis Structure}{2}{section.0.2}%
+\contentsline {chapter}{\numberline {2}Non-stationary Parametric Single-Index Predictive Models}{9}{chapter.2}%
+\contentsline {section}{\numberline {1}Introduction}{9}{section.2.1}%
+\contentsline {section}{\numberline {2}Parametric Single-Index Predictive Model}{11}{section.2.2}%
+\contentsline {section}{\numberline {3}Monte Carlo Simulation }{14}{section.2.3}%
+\contentsline {subsection}{\numberline {3.1}Data Generation Process}{14}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {3.2}Computational Details}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {3.3}Simulation Results}{16}{subsection.2.3.3}%
+\contentsline {section}{\numberline {4}Empirical illustration: Stock market return predictability}{17}{section.2.4}%
+\contentsline {section}{\numberline {5}Conclusion}{25}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Partially Nonlinear Single-Index Predictive Models}{26}{chapter.3}%
+\contentsline {section}{\numberline {1}Introduction}{26}{section.3.1}%
+\contentsline {section}{\numberline {2}Model and Methodology}{27}{section.3.2}%
+\contentsline {section}{\numberline {3}Monte Carlo Simulation}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.1}Data Generation Process}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2}Initial Values}{31}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3}Simulation Results for Co-integrated $x_t$}{32}{subsection.3.3.3}%
+\contentsline {section}{\numberline {4}Empirical Study}{37}{section.3.4}%
+\contentsline {subsection}{\numberline {4.1}In-sample Results}{40}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {4.2}OOS Results}{42}{subsection.3.4.2}%
+\contentsline {section}{\numberline {5}conclusion}{48}{section.3.5}%
+\contentsline {chapter}{Timetable}{50}{chapter*.31}%
+\contentsfinish 

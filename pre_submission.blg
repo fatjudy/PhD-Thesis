@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: pre_submission.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: agsm.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: reference.bib
+Repeated entry---line 348 of file reference.bib
+ : @article{li2016estimation
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 608 of file reference.bib
+ : @article{li2016estimation
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 634 of file reference.bib
+ : @article{kostakis2015robust
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1143 of file reference.bib
+ : @article{dong2016estimation
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1198 of file reference.bib
+ : @article{cheng2019nonparametric
+ :                                ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in campbell2004caught
+You've used 47 entries,
+            2909 wiz_defined-function locations,
+            911 strings with 11615 characters,
+and the built_in function-call counts, 171068 in all, are:
+= -- 27482
+> -- 2431
+< -- 1
++ -- 12829
+- -- 728
+* -- 14799
+:= -- 34714
+add.period$ -- 47
+call.type$ -- 47
+change.case$ -- 656
+chr.to.int$ -- 47
+cite$ -- 48
+duplicate$ -- 751
+empty$ -- 1622
+format.name$ -- 929
+if$ -- 30664
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 49
+newline$ -- 144
+num.names$ -- 485
+pop$ -- 156
+preamble$ -- 1
+purify$ -- 705
+quote$ -- 0
+skip$ -- 628
+stack$ -- 0
+substring$ -- 38461
+swap$ -- 135
+text.length$ -- 659
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 184
+warning$ -- 1
+while$ -- 1064
+width$ -- 0
+write$ -- 596
+(There were 5 error messages)

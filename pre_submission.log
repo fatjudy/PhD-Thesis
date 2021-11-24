@@ -1,0 +1,1267 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  24 NOV 2021 19:49
+entering extended mode
+**./pre_submission.tex
+(pre_submission.tex
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01>
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/02/12 v1.4n Standard LaTeX document class
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count182
+\c@chapter=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/06/02 3.60 The Babel package
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/06/02 3.60 Babel common definitions
+\babel@savecnt=\count191
+\U@D=\dimen139
+\l@unhyphenated=\language79
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
+)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count192
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\englis
+h.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen140
+\ar@mcellbox=\box50
+\extrarowheight=\dimen141
+\NC@list=\toks18
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box51
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen142
+)) (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+) (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count193
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count194
+\leftroot@=\count195
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count196
+\DOTSCASE@=\count197
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
+\dotsspace@=\muskip16
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks20
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks21
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.st
+y
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.st
+y
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+ (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count271
+\calc@Bcount=\count272
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip54
+\calc@Bskip=\skip55
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count273
+\calc@Cskip=\skip56
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen155
+\ESO@tempdimb=\dimen156
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen157
+\AM@pageheight=\dimen158
+\AM@fboxrule=\dimen159
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.de
+f
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count274
+\AM@pagebox=\box54
+\AM@global@opts=\toks25
+\AM@pagecnt=\count275
+\AM@toc@title=\toks26
+\c@AM@survey=\count276
+\AM@templatesizebox=\box55
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/preprint\fullpage.st
+y
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip57
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen160
+\captionmargin@=\dimen161
+\captionwidth=\dimen162
+\caption@tempdima=\dimen163
+\caption@indent=\dimen164
+\caption@parindent=\dimen165
+\caption@hangindent=\dimen166
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count277
+\c@continuedfloat=\count278
+) (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks27
+\float@box=\box56
+\@float@everytoks=\toks28
+\@floatcapt=\box57
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
+y
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip58
+\f@nch@O@elh=\skip59
+\f@nch@O@erh=\skip60
+\f@nch@O@olh=\skip61
+\f@nch@O@orh=\skip62
+\f@nch@O@elf=\skip63
+\f@nch@O@erf=\skip64
+\f@nch@O@olf=\skip65
+\f@nch@O@orf=\skip66
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.st
+y
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip67
+\multirow@cntb=\count280
+\multirow@dima=\skip68
+\bigstrutjot=\dimen167
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/commath\commath.sty)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip69
+\bibsep=\skip70
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count281
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.
+sty
+Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.st
+y
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count282
+\l_MT_multwidth_dim=\dimen168
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen169
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen170
+\l_MT_above_intertext_sep=\dimen171
+\l_MT_below_intertext_sep=\dimen172
+\l_MT_above_shortintertext_sep=\dimen173
+\l_MT_below_shortintertext_sep=\dimen174
+\xmathstrut@box=\box58
+\xmathstrut@dim=\dimen175
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.s
+ty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count283
+\c@subtable=\count284
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.st
+y
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip72
+\thm@postskip=\skip73
+\thm@headsep=\skip74
+\dth@everypar=\toks34
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
+y
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip75
+\enit@outerparindent=\dimen176
+\enit@toks=\toks35
+\enit@inbox=\box59
+\enit@count@id=\count285
+\enitdp@description=\count286
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.st
+y
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count287
+\@cmidlb=\count288
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count289
+\@lastruleclass=\count290
+\@thisrulewidth=\dimen189
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks36
+\verbatim@line=\toks37
+\verbatim@in@stream=\read3
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/kantlipsum\kantlipsu
+m.sty
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-06-01 L3 programming layer (loader) 
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count291
+\l__pdf_internal_box=\box60
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xp
+arse.sty
+Package: xparse 2021-06-01 L3 Experimental document command parser
+)
+Package: kantlipsum 2019/07/23 v0.8 Generate text in Kantian style
+\l__kgl_start_int=\count292
+\l__kgl_end_int=\count293
+
+Package kantlipsum Info: The package provides paragraphs 1 to 164. Values
+(kantlipsum)             outside this range will be ignored.
+
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/chngcntr\chngcntr.st
+y
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/apptools\apptools.st
+y
+Package: apptools 2012/11/28 v1.0 Tools for customizing appendices
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.
+sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.te
+x
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.t
+ex
+\XKV@toks=\toks38
+\XKV@tempa@toks=\toks39
+)
+\XKV@depth=\count294
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.st
+y
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.s
+ty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbo
+x.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box61
+)
+\tc@llx=\dimen190
+\tc@lly=\dimen191
+\tc@urx=\dimen192
+\tc@ury=\dimen193
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.
+def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen194
+\adjbox@Height=\dimen195
+\adjbox@Depth=\dimen196
+\adjbox@Totalheight=\dimen197
+\adjbox@pwidth=\dimen198
+\adjbox@pheight=\dimen199
+\adjbox@pdepth=\dimen256
+\adjbox@ptotalheight=\dimen257
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.
+sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count295
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.st
+y
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box62
+\sift@deathcycles=\count296
+\@vwid@loff=\dimen258
+\@vwid@roff=\dimen259
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
+r.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
+inekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
+sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
+y
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkey
+s.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
+mds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
+s.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.
+sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks40
+\AP@partial=\box63
+\AP@footins=\box64
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
+y
+Package: hyperref 2021-06-05 v7.00l Hypertext links for LaTeX
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescap
+e.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxma
+cro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen260
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-06-05 v7.00l Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-la
+ngpatches.def
+File: hyperref-langpatches.def 2021-06-05 v7.00l Hyperref: patches for babel la
+nguages
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.st
+y
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.
+sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count299
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-06-05 v7.00l Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count300
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen261
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintc
+alc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count301
+\Field@Width=\dimen262
+\Fld@charsize=\dimen263
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring ON on input line 6094.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.st
+y
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
+)
+Package hyperref Info: Driver: hpdftex.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-06-05 v7.00l Hyperref driver for pdfTeX
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.s
+ty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
+filecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniq
+uecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip76
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2021-08-27 v3.0.28 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen264
+\l__siunitx_angle_marker_box=\box65
+\l__siunitx_angle_unit_box=\box66
+\l__siunitx_compound_count_int=\count307
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/translations\transla
+tions.sty
+Package: translations 2021/01/17 v1.10a internationalization of LaTeX2e package
+s (CN)
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
+y
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count308
+))
+\l__siunitx_number_exponent_fixed_int=\count309
+\l__siunitx_number_min_decimal_int=\count310
+\l__siunitx_number_min_integer_int=\count311
+\l__siunitx_number_round_precision_int=\count312
+\l__siunitx_number_group_minimum_int=\count313
+\l__siunitx_table_tmp_box=\box67
+\l__siunitx_table_tmp_dim=\dimen265
+\l__siunitx_table_column_width_dim=\dimen266
+\l__siunitx_table_integer_box=\box68
+\l__siunitx_table_decimal_box=\box69
+\l__siunitx_table_before_box=\box70
+\l__siunitx_table_after_box=\box71
+\l__siunitx_table_before_dim=\dimen267
+\l__siunitx_table_carry_dim=\dimen268
+\l__siunitx_unit_tmp_int=\count314
+\l__siunitx_unit_position_int=\count315
+\l__siunitx_unit_total_int=\count316
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\
+l3keys2e.sty
+Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
+))
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/preprint\authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip77
+\@affilsep=\skip78
+\c@Maxaffil=\count317
+\c@authors=\count318
+\c@affil=\count319
+) (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks41
+\SOUL@lasttoken=\toks42
+\SOUL@cmds=\toks43
+\SOUL@buffer=\toks44
+\SOUL@token=\toks45
+\SOUL@spaceskip=\skip79
+\SOUL@ttwidth=\dimen269
+\SOUL@uldp=\dimen270
+\SOUL@ulht=\dimen271
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.st
+y
+Package: titletoc 2021/07/05 v2.14 TOC entries
+\ttl@leftsep=\dimen272
+)
+
+Package siunitx Info: Option "table-space-text-post" has been deprecated in
+(siunitx)             this release.
+(siunitx)             
+(siunitx)             Use "table-format" as a replacement.
+
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.st
+y
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2370.
+LaTeX Info: Redefining \cref on input line 2370.
+LaTeX Info: Redefining \Cref on input line 2370.
+LaTeX Info: Redefining \crefrange on input line 2370.
+LaTeX Info: Redefining \Crefrange on input line 2370.
+LaTeX Info: Redefining \cpageref on input line 2370.
+LaTeX Info: Redefining \Cpageref on input line 2370.
+LaTeX Info: Redefining \cpagerefrange on input line 2370.
+LaTeX Info: Redefining \Cpagerefrange on input line 2370.
+LaTeX Info: Redefining \labelcref on input line 2370.
+LaTeX Info: Redefining \labelcpageref on input line 2370.
+Package cleveref Info: `amsthm' support loaded on input line 3026.
+)
+\c@theorem=\count320
+\c@remark=\count321
+\c@assumption=\count322
+\c@lemma=\count323
+
+
+LaTeX Warning: Unused global option(s):
+    [times,numbered,print].
+
+(pre_submission.aux
+
+LaTeX Warning: Label `cointegrated' multiply defined.
+
+
+LaTeX Warning: Label `cointegrated@cref' multiply defined.
+
+
+LaTeX Warning: Label `std of theta' multiply defined.
+
+
+LaTeX Warning: Label `std of theta@cref' multiply defined.
+
+)
+\openout1 = `pre_submission.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count324
+\scratchdimen=\dimen273
+\scratchbox=\box72
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen274
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks47
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 137.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
+y
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
+titlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count330
+)
+LaTeX Info: Redefining \ref on input line 137.
+LaTeX Info: Redefining \pageref on input line 137.
+LaTeX Info: Redefining \nameref on input line 137.
+ (pre_submission.out) (pre_submission.out)
+\@outlinefile=\write3
+\openout3 = `pre_submission.out'.
+
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\t
+ranslations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 137.
+<monash-university-logo.png, id=95, 2921.91624pt x 1007.765pt>
+File: monash-university-logo.png Graphic file (type png)
+<use monash-university-logo.png>
+Package pdftex.def Info: monash-university-logo.png  used on input line 163.
+(pdftex.def)             Requested size: 181.18439pt x 62.4777pt.
+ [1
+
+{C:/Users/yzho0040/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./monash-uni
+versity-logo.png>]pdfTeX warning (ext4): destination with the same identifier (
+name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.220 	
+        [1]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 234
+.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 234
+.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
+4.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+[2] [3]
+<CI_n201.jpg, id=153, 878.28125pt x 658.46pt>
+File: CI_n201.jpg Graphic file (type jpg)
+<use CI_n201.jpg>
+Package pdftex.def Info: CI_n201.jpg  used on input line 295.
+(pdftex.def)             Requested size: 317.07614pt x 237.71858pt.
+ [4 <./CI_n201.jpg>] [5] [6] [7] (pre_submission.toc)
+\tf@toc=\write4
+\openout4 = `pre_submission.toc'.
+
+ [8
+
+]
+Chapter 2.
+[9
+
+] [10] [11] [12] [13] [14pdfTeX warning (ext4): destination with the same ident
+ifier (name{equation.2.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.637 	\end{equation}
+                     ] [15] [16]
+Overfull \hbox (45.29767pt too wide) in paragraph at lines 855--891
+ [] 
+ []
+
+[17] [18] [19] [20]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 9
+13.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 913.
+
+[21]
+<CV.png, id=499, 578.16pt x 578.16pt>
+File: CV.png Graphic file (type png)
+<use CV.png>
+Package pdftex.def Info: CV.png  used on input line 948.
+(pdftex.def)             Requested size: 195.67905pt x 195.67195pt.
+<L.png, id=501, 578.16pt x 578.16pt>
+File: L.png Graphic file (type png)
+<use L.png>
+Package pdftex.def Info: L.png  used on input line 956.
+(pdftex.def)             Requested size: 195.67905pt x 195.67195pt.
+<cwy(f4).png, id=505, 578.16pt x 578.16pt>
+File: cwy(f4).png Graphic file (type png)
+<use cwy(f4).png>
+Package pdftex.def Info: cwy(f4).png  used on input line 971.
+(pdftex.def)             Requested size: 226.48395pt x 226.47838pt.
+ [22]
+<co2f1.png, id=514, 578.16pt x 578.16pt>
+File: co2f1.png Graphic file (type png)
+<use co2f1.png>
+Package pdftex.def Info: co2f1.png  used on input line 980.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+<co2f4.png, id=515, 578.16pt x 578.16pt>
+File: co2f4.png Graphic file (type png)
+<use co2f4.png>
+Package pdftex.def Info: co2f4.png  used on input line 986.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+<co2f5.png, id=516, 578.16pt x 578.16pt>
+File: co2f5.png Graphic file (type png)
+<use co2f5.png>
+Package pdftex.def Info: co2f5.png  used on input line 993.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+<co1f3.png, id=517, 578.16pt x 578.16pt>
+File: co1f3.png Graphic file (type png)
+<use co1f3.png>
+Package pdftex.def Info: co1f3.png  used on input line 998.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+<co3f3.png, id=518, 578.16pt x 578.16pt>
+File: co3f3.png Graphic file (type png)
+<use co3f3.png>
+Package pdftex.def Info: co3f3.png  used on input line 1005.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+<co4f3.png, id=519, 578.16pt x 578.16pt>
+File: co4f3.png Graphic file (type png)
+<use co4f3.png>
+Package pdftex.def Info: co4f3.png  used on input line 1010.
+(pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
+ [23 <./CV.png> <./L.png> <./cwy(f4).png>] [24 <./co2f1.png> <./co2f4.png> <./c
+o2f5.png> <./co1f3.png> <./co3f3.png> <./co4f3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
+
+ []
+
+[25]
+Chapter 3.
+[26
+
+] [27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1176
+
+ []
+
+[29] [30] [31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1296.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1296.
+
+[32] [33] [34] [35] [36]
+<co1.png, id=639, 722.7pt x 578.16pt>
+File: co1.png Graphic file (type png)
+<use co1.png>
+Package pdftex.def Info: co1.png  used on input line 1493.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 1493--1494
+[][] 
+ []
+
+<co2.png, id=640, 722.7pt x 578.16pt>
+File: co2.png Graphic file (type png)
+<use co2.png>
+Package pdftex.def Info: co2.png  used on input line 1497.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 1497--1498
+[][] 
+ []
+
+<co3.png, id=641, 722.7pt x 578.16pt>
+File: co3.png Graphic file (type png)
+<use co3.png>
+Package pdftex.def Info: co3.png  used on input line 1501.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 1501--1502
+[][] 
+ []
+
+<co4.png, id=642, 722.7pt x 578.16pt>
+File: co4.png Graphic file (type png)
+<use co4.png>
+Package pdftex.def Info: co4.png  used on input line 1505.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 1505--1506
+[][] 
+ []
+
+[37] [38 <./co1.png> <./co2.png> <./co3.png> <./co4.png>] [39] [40]
+Overfull \hbox (35.17255pt too wide) in paragraph at lines 1625--1629
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 MSE[]$ \OT1/cmr/m/n/12 is the mean squa
+red er-ror of bench-mark model and $[][] = 1\OML/cmm/m/it/12 =n [][] [][]$
+ []
+
+[41] [42]
+<OOS_plots/sin_co1_SM.png, id=703, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co1_SM.png Graphic file (type png)
+<use OOS_plots/sin_co1_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co1_SM.png  used on input line 1706.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co2_SM.png, id=704, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co2_SM.png Graphic file (type png)
+<use OOS_plots/sin_co2_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co2_SM.png  used on input line 1710.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co3_SM.png, id=705, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co3_SM.png Graphic file (type png)
+<use OOS_plots/sin_co3_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co3_SM.png  used on input line 1714.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co4_SM.png, id=706, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co4_SM.png Graphic file (type png)
+<use OOS_plots/sin_co4_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co4_SM.png  used on input line 1718.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co1_SM.png, id=707, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co1_SM.png Graphic file (type png)
+<use OOS_plots/cos_co1_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co1_SM.png  used on input line 1728.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co2_SM.png, id=708, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co2_SM.png Graphic file (type png)
+<use OOS_plots/cos_co2_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co2_SM.png  used on input line 1732.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co3_SM.png, id=709, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co3_SM.png Graphic file (type png)
+<use OOS_plots/cos_co3_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co3_SM.png  used on input line 1736.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co4_SM.png, id=710, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co4_SM.png Graphic file (type png)
+<use OOS_plots/cos_co4_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co4_SM.png  used on input line 1740.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co1_SM.png, id=711, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co1_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co1_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co1_SM.png  used on input line 17
+50.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co2_SM.png, id=712, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co2_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co2_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co2_SM.png  used on input line 17
+54.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co3_SM.png, id=713, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co3_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co3_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co3_SM.png  used on input line 17
+58.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co4_SM.png, id=714, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co4_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co4_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co4_SM.png  used on input line 17
+62.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co1_SM.png, id=715, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co1_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co1_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co1_SM.png  used on input line 17
+72.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co2_SM.png, id=716, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co2_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co2_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co2_SM.png  used on input line 17
+76.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co3_SM.png, id=717, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co3_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co3_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co3_SM.png  used on input line 17
+80.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co4_SM.png, id=718, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co4_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co4_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co4_SM.png  used on input line 17
+84.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co1_SM.png, id=719, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co1_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co1_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co1_SM.png  used on input line 179
+5.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co2_SM.png, id=720, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co2_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co2_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co2_SM.png  used on input line 179
+9.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co3_SM.png, id=721, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co3_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co3_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co3_SM.png  used on input line 180
+3.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co4_SM.png, id=722, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co4_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co4_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co4_SM.png  used on input line 180
+7.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co1_SM.png, id=723, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co1_SM.png Graphic file (type png)
+<use OOS_plots/exp_co1_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co1_SM.png  used on input line 1817.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co2_SM.png, id=724, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co2_SM.png Graphic file (type png)
+<use OOS_plots/exp_co2_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co2_SM.png  used on input line 1821.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co3_SM.png, id=725, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co3_SM.png Graphic file (type png)
+<use OOS_plots/exp_co3_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co3_SM.png  used on input line 1825.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co4_SM.png, id=726, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co4_SM.png Graphic file (type png)
+<use OOS_plots/exp_co4_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co4_SM.png  used on input line 1829.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co1_SM.png, id=727, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co1_SM.png Graphic file (type png)
+<use OOS_plots/poly_co1_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co1_SM.png  used on input line 1840.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co2_SM.png, id=728, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co2_SM.png Graphic file (type png)
+<use OOS_plots/poly_co2_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co2_SM.png  used on input line 1844.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co3_SM.png, id=729, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co3_SM.png Graphic file (type png)
+<use OOS_plots/poly_co3_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co3_SM.png  used on input line 1848.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co4_SM.png, id=730, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co4_SM.png Graphic file (type png)
+<use OOS_plots/poly_co4_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co4_SM.png  used on input line 1852.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co1_SM.png, id=731, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co1_SM.png Graphic file (type png)
+<use OOS_plots/linear_co1_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co1_SM.png  used on input line 1862.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co2_SM.png, id=732, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co2_SM.png Graphic file (type png)
+<use OOS_plots/linear_co2_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co2_SM.png  used on input line 1866.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co3_SM.png, id=733, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co3_SM.png Graphic file (type png)
+<use OOS_plots/linear_co3_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co3_SM.png  used on input line 1870.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co4_SM.png, id=734, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co4_SM.png Graphic file (type png)
+<use OOS_plots/linear_co4_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co4_SM.png  used on input line 1874.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+ [43] [44 <./OOS_plots/sin_co1_SM.png> <./OOS_plots/sin_co2_SM.png> <./OOS_plot
+s/sin_co3_SM.png> <./OOS_plots/sin_co4_SM.png> <./OOS_plots/cos_co1_SM.png> <./
+OOS_plots/cos_co2_SM.png> <./OOS_plots/cos_co3_SM.png> <./OOS_plots/cos_co4_SM.
+png>] [45 <./OOS_plots/scaled_sin_co1_SM.png> <./OOS_plots/scaled_sin_co2_SM.pn
+g> <./OOS_plots/scaled_sin_co3_SM.png> <./OOS_plots/scaled_sin_co4_SM.png> <./O
+OS_plots/scaled_cos_co1_SM.png> <./OOS_plots/scaled_cos_co2_SM.png> <./OOS_plot
+s/scaled_cos_co3_SM.png> <./OOS_plots/scaled_cos_co4_SM.png>] [46 <./OOS_plots/
+exp_shift_co1_SM.png> <./OOS_plots/exp_shift_co2_SM.png> <./OOS_plots/exp_shift
+_co3_SM.png> <./OOS_plots/exp_shift_co4_SM.png> <./OOS_plots/exp_co1_SM.png> <.
+/OOS_plots/exp_co2_SM.png> <./OOS_plots/exp_co3_SM.png> <./OOS_plots/exp_co4_SM
+.png>] [47 <./OOS_plots/poly_co1_SM.png> <./OOS_plots/poly_co2_SM.png> <./OOS_p
+lots/poly_co3_SM.png> <./OOS_plots/poly_co4_SM.png> <./OOS_plots/linear_co1_SM.
+png> <./OOS_plots/linear_co2_SM.png> <./OOS_plots/linear_co3_SM.png> <./OOS_plo
+ts/linear_co4_SM.png>] [48] [49] [50
+
+] (pre_submission.bbl [51]
+[52
+
+]
+Underfull \hbox (badness 1210) in paragraph at lines 148--151
+[]\OT1/cmr/m/n/10 Lee, J. H., Shi, Z. and Gao, Z. (2018), `On lasso for pre-dic
+-tive re-gres-sion', \OT1/cmr/m/it/10 arXiv preprint
+ []
+
+[53] [54]) [55] (pre_submission.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `pre_submission.out' has not changed.
+(rerunfilecheck)             Checksum: 82B509D6A9913B822198702EB91B1112;4017.
+ ) 
+Here is how much of TeX's memory you used:
+ 21901 strings out of 478864
+ 406970 string characters out of 2847239
+ 966434 words of memory out of 3000000
+ 39239 multiletter control sequences out of 15000+600000
+ 417490 words of font info for 82 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,13n,75p,1526b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\yzho0040\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
+crm1200.pk><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yzho0040/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/yzho0040/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/yzho0040/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
+/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/yzho0040/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yzho0040/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yzho0040/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/y
+zho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/yzho0040/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/yzho0040/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/yzh
+o0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on pre_submission.pdf (56 pages, 1873849 bytes).
+PDF statistics:
+ 970 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+
