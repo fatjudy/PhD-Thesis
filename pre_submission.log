@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  24 NOV 2021 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  24 NOV 2021 20:07
 entering extended mode
 **./pre_submission.tex
 (pre_submission.tex
@@ -831,16 +831,17 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 137.
-<monash-university-logo.png, id=95, 2921.91624pt x 1007.765pt>
-File: monash-university-logo.png Graphic file (type png)
-<use monash-university-logo.png>
-Package pdftex.def Info: monash-university-logo.png  used on input line 163.
+<plots/monash-university-logo.png, id=95, 2921.91624pt x 1007.765pt>
+File: plots/monash-university-logo.png Graphic file (type png)
+<use plots/monash-university-logo.png>
+Package pdftex.def Info: plots/monash-university-logo.png  used on input line 1
+63.
 (pdftex.def)             Requested size: 181.18439pt x 62.4777pt.
  [1
 
-{C:/Users/yzho0040/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./monash-uni
-versity-logo.png>]pdfTeX warning (ext4): destination with the same identifier (
-name{page.1}) has been already used, duplicate ignored
+{C:/Users/yzho0040/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./plots/mona
+sh-university-logo.png>]pdfTeX warning (ext4): destination with the same identi
+fier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.220 	
@@ -864,12 +865,12 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 [2] [3]
-<CI_n201.jpg, id=153, 878.28125pt x 658.46pt>
-File: CI_n201.jpg Graphic file (type jpg)
-<use CI_n201.jpg>
-Package pdftex.def Info: CI_n201.jpg  used on input line 295.
+<plots/CI_n201.jpg, id=153, 878.28125pt x 658.46pt>
+File: plots/CI_n201.jpg Graphic file (type jpg)
+<use plots/CI_n201.jpg>
+Package pdftex.def Info: plots/CI_n201.jpg  used on input line 295.
 (pdftex.def)             Requested size: 317.07614pt x 237.71858pt.
- [4 <./CI_n201.jpg>] [5] [6] [7] (pre_submission.toc)
+ [4 <./plots/CI_n201.jpg>] [5] [6] [7] (pre_submission.toc)
 \tf@toc=\write4
 \openout4 = `pre_submission.toc'.
 
@@ -900,54 +901,55 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 913.
 
 [21]
-<CV.png, id=499, 578.16pt x 578.16pt>
-File: CV.png Graphic file (type png)
-<use CV.png>
-Package pdftex.def Info: CV.png  used on input line 948.
+<plots/CV.png, id=499, 578.16pt x 578.16pt>
+File: plots/CV.png Graphic file (type png)
+<use plots/CV.png>
+Package pdftex.def Info: plots/CV.png  used on input line 948.
 (pdftex.def)             Requested size: 195.67905pt x 195.67195pt.
-<L.png, id=501, 578.16pt x 578.16pt>
-File: L.png Graphic file (type png)
-<use L.png>
-Package pdftex.def Info: L.png  used on input line 956.
+<plots/L.png, id=501, 578.16pt x 578.16pt>
+File: plots/L.png Graphic file (type png)
+<use plots/L.png>
+Package pdftex.def Info: plots/L.png  used on input line 956.
 (pdftex.def)             Requested size: 195.67905pt x 195.67195pt.
-<cwy(f4).png, id=505, 578.16pt x 578.16pt>
-File: cwy(f4).png Graphic file (type png)
-<use cwy(f4).png>
-Package pdftex.def Info: cwy(f4).png  used on input line 971.
+<plots/cwy(f4).png, id=505, 578.16pt x 578.16pt>
+File: plots/cwy(f4).png Graphic file (type png)
+<use plots/cwy(f4).png>
+Package pdftex.def Info: plots/cwy(f4).png  used on input line 971.
 (pdftex.def)             Requested size: 226.48395pt x 226.47838pt.
  [22]
-<co2f1.png, id=514, 578.16pt x 578.16pt>
-File: co2f1.png Graphic file (type png)
-<use co2f1.png>
-Package pdftex.def Info: co2f1.png  used on input line 980.
+<plots/co2f1.png, id=514, 578.16pt x 578.16pt>
+File: plots/co2f1.png Graphic file (type png)
+<use plots/co2f1.png>
+Package pdftex.def Info: plots/co2f1.png  used on input line 980.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
-<co2f4.png, id=515, 578.16pt x 578.16pt>
-File: co2f4.png Graphic file (type png)
-<use co2f4.png>
-Package pdftex.def Info: co2f4.png  used on input line 986.
+<plots/co2f4.png, id=515, 578.16pt x 578.16pt>
+File: plots/co2f4.png Graphic file (type png)
+<use plots/co2f4.png>
+Package pdftex.def Info: plots/co2f4.png  used on input line 986.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
-<co2f5.png, id=516, 578.16pt x 578.16pt>
-File: co2f5.png Graphic file (type png)
-<use co2f5.png>
-Package pdftex.def Info: co2f5.png  used on input line 993.
+<plots/co2f5.png, id=516, 578.16pt x 578.16pt>
+File: plots/co2f5.png Graphic file (type png)
+<use plots/co2f5.png>
+Package pdftex.def Info: plots/co2f5.png  used on input line 993.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
-<co1f3.png, id=517, 578.16pt x 578.16pt>
-File: co1f3.png Graphic file (type png)
-<use co1f3.png>
-Package pdftex.def Info: co1f3.png  used on input line 998.
+<plots/co1f3.png, id=517, 578.16pt x 578.16pt>
+File: plots/co1f3.png Graphic file (type png)
+<use plots/co1f3.png>
+Package pdftex.def Info: plots/co1f3.png  used on input line 998.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
-<co3f3.png, id=518, 578.16pt x 578.16pt>
-File: co3f3.png Graphic file (type png)
-<use co3f3.png>
-Package pdftex.def Info: co3f3.png  used on input line 1005.
+<plots/co3f3.png, id=518, 578.16pt x 578.16pt>
+File: plots/co3f3.png Graphic file (type png)
+<use plots/co3f3.png>
+Package pdftex.def Info: plots/co3f3.png  used on input line 1005.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
-<co4f3.png, id=519, 578.16pt x 578.16pt>
-File: co4f3.png Graphic file (type png)
-<use co4f3.png>
-Package pdftex.def Info: co4f3.png  used on input line 1010.
+<plots/co4f3.png, id=519, 578.16pt x 578.16pt>
+File: plots/co4f3.png Graphic file (type png)
+<use plots/co4f3.png>
+Package pdftex.def Info: plots/co4f3.png  used on input line 1010.
 (pdftex.def)             Requested size: 173.93878pt x 173.93454pt.
- [23 <./CV.png> <./L.png> <./cwy(f4).png>] [24 <./co2f1.png> <./co2f4.png> <./c
-o2f5.png> <./co1f3.png> <./co3f3.png> <./co4f3.png>]
+ [23 <./plots/CV.png> <./plots/L.png> <./plots/cwy(f4).png>] [24 <./plots/co2f1
+.png> <./plots/co2f4.png> <./plots/co2f5.png> <./plots/co1f3.png> <./plots/co3f
+3.png> <./plots/co4f3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
 
  []
@@ -975,47 +977,48 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1296.
 
 [32] [33] [34] [35] [36]
-<co1.png, id=639, 722.7pt x 578.16pt>
-File: co1.png Graphic file (type png)
-<use co1.png>
-Package pdftex.def Info: co1.png  used on input line 1493.
+<plots/co1.png, id=639, 722.7pt x 578.16pt>
+File: plots/co1.png Graphic file (type png)
+<use plots/co1.png>
+Package pdftex.def Info: plots/co1.png  used on input line 1493.
 (pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
 
 Overfull \hbox (43.48386pt too wide) in paragraph at lines 1493--1494
 [][] 
  []
 
-<co2.png, id=640, 722.7pt x 578.16pt>
-File: co2.png Graphic file (type png)
-<use co2.png>
-Package pdftex.def Info: co2.png  used on input line 1497.
+<plots/co2.png, id=640, 722.7pt x 578.16pt>
+File: plots/co2.png Graphic file (type png)
+<use plots/co2.png>
+Package pdftex.def Info: plots/co2.png  used on input line 1497.
 (pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
 
 Overfull \hbox (43.48386pt too wide) in paragraph at lines 1497--1498
 [][] 
  []
 
-<co3.png, id=641, 722.7pt x 578.16pt>
-File: co3.png Graphic file (type png)
-<use co3.png>
-Package pdftex.def Info: co3.png  used on input line 1501.
+<plots/co3.png, id=641, 722.7pt x 578.16pt>
+File: plots/co3.png Graphic file (type png)
+<use plots/co3.png>
+Package pdftex.def Info: plots/co3.png  used on input line 1501.
 (pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
 
 Overfull \hbox (43.48386pt too wide) in paragraph at lines 1501--1502
 [][] 
  []
 
-<co4.png, id=642, 722.7pt x 578.16pt>
-File: co4.png Graphic file (type png)
-<use co4.png>
-Package pdftex.def Info: co4.png  used on input line 1505.
+<plots/co4.png, id=642, 722.7pt x 578.16pt>
+File: plots/co4.png Graphic file (type png)
+<use plots/co4.png>
+Package pdftex.def Info: plots/co4.png  used on input line 1505.
 (pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
 
 Overfull \hbox (43.48386pt too wide) in paragraph at lines 1505--1506
 [][] 
  []
 
-[37] [38 <./co1.png> <./co2.png> <./co3.png> <./co4.png>] [39] [40]
+[37] [38 <./plots/co1.png> <./plots/co2.png> <./plots/co3.png> <./plots/co4.png
+>] [39] [40]
 Overfull \hbox (35.17255pt too wide) in paragraph at lines 1625--1629
 \OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 MSE[]$ \OT1/cmr/m/n/12 is the mean squa
 red er-ror of bench-mark model and $[][] = 1\OML/cmm/m/it/12 =n [][] [][]$
@@ -1226,8 +1229,8 @@ Package rerunfilecheck Info: File `pre_submission.out' has not changed.
 (rerunfilecheck)             Checksum: 82B509D6A9913B822198702EB91B1112;4017.
  ) 
 Here is how much of TeX's memory you used:
- 21901 strings out of 478864
- 406970 string characters out of 2847239
+ 21902 strings out of 478864
+ 407484 string characters out of 2847239
  966434 words of memory out of 3000000
  39239 multiletter control sequences out of 15000+600000
  417490 words of font info for 82 fonts, out of 8000000 for 9000
