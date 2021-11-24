@@ -160,7 +160,7 @@
 			
 			\vspace{0.8cm}
 			
-			\includegraphics[width=0.4\textwidth]{plots/monash-university-logo.png}
+			\includegraphics[width=0.4\textwidth]{monash-university-logo.png}
 			
 			Department of Econometrics and Business Statistics \\
 			%		Monash University\\
@@ -292,7 +292,7 @@
 		\caption{Time-varying Coefficient for Subsidy}
 		\centering
 		\begin{subfigure}[b]{0.7\linewidth}
-			\includegraphics[width=\linewidth]{plots/CI_n201.jpg}
+			\includegraphics[width=\linewidth]{CI_n201.jpg}
 		\end{subfigure}
 		\label{chapter 1_1}
 	\end{figure}
@@ -853,6 +853,7 @@
 		\caption{Finite sample properties of CLS estimator: Cointegrated predictors}
 		\label{Table 3}
 		\begin{adjustbox}{max width=1.1\textwidth}
+		
 			\begin{tabular}{cc|rrccrrrrcc}
 				\toprule
 				&       & \multicolumn{3}{c|}{$f_1(u,\gamma_{0})$} & \multicolumn{3}{c|}{$f_2(u,\gamma_{0})$} & \multicolumn{4}{c}{$f_3(u,\gamma_{0})$}   \\
@@ -945,7 +946,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
 			\caption{Predictors: earning-price ratio, book-to-market ratio, term spread and $f_{3}( u,\gamma)$ }
-			\includegraphics[width=0.9\linewidth]{plots/CV.png}
+			\includegraphics[width=0.9\linewidth]{CV.png}
 			
 			\label{CV vs SM}%
 		\end{minipage}\hfill
@@ -953,7 +954,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
 			\caption{Predictors: dividend price, dividend-payout and $f_{3}( u,\gamma )$ }
-			\includegraphics[width=0.9\linewidth]{plots/L.png}
+			\includegraphics[width=0.9\linewidth]{L.png}
 			
 			\label{L vs SM}%
 		\end{minipage}
@@ -968,55 +969,59 @@
 		\captionsetup{justification=centering}
 		\caption{Predictors: log consumption, log asset wealth and log labor income and  $f_{3}( u,\gamma)$ }
 		\label{cwyf4}%
-		\includegraphics[width=0.5\linewidth]{plots/cwy(f4).png}
+		\includegraphics[width=0.5\linewidth]{cwy(f4).png}
 	\end{figure}
 	
 	
 	
 	\begin{figure}[H] % "[t!]" placement specifier just for this example
 		\caption{Forecasting results using cointegrated predictors} 
-		\label{cointegrated}
+		\label{cointegrated_fore}
 		\begin{subfigure}{0.48\textwidth}
-			\includegraphics[width=0.8\linewidth]{plots/co2f1.png}
+			\includegraphics[width=0.8\linewidth]{co2f1.png}
 			\captionsetup{justification=centering}
 			\caption{Predictors: long-term yield and T-bill rate and $f_{1}( u,\gamma)$ } \label{co2f1}
 		\end{subfigure}\hspace*{\fill}
 		\begin{subfigure}{0.48\textwidth}
 			\captionsetup{justification=centering}
-			\includegraphics[width=0.8\linewidth]{plots/co2f4.png}
+			\includegraphics[width=0.8\linewidth]{co2f4.png}
 			\caption{Predictors: long-term yield and T-bill rate and $f_{4}( u,\gamma)$ } \label{co2f4}
 		\end{subfigure}
 		
 		\medskip
 		\begin{subfigure}{0.48\textwidth}
 			\captionsetup{justification=centering}
-			\includegraphics[width=0.8\linewidth]{plots/co2f5.png}
+			\includegraphics[width=0.8\linewidth]{co2f5.png}
 			\caption{Predictors: long-term yield and T-bill rate and $f_{5}( u,\gamma)$ } \label{co2f5}
 		\end{subfigure}\hspace*{\fill}
 		\begin{subfigure}{0.48\textwidth}
 			\captionsetup{justification=centering}
-			\includegraphics[width=0.8\linewidth]{plots/co1f3.png}
+			\includegraphics[width=0.8\linewidth]{co1f3.png}
 			\caption{Predictors: dividend-price and earning-price and $f_{3}( u,\gamma)$ } \label{co1f3}
 		\end{subfigure}
 		
 		\medskip
 		\begin{subfigure}{0.48\textwidth}
 			\captionsetup{justification=centering}
-			\includegraphics[width=0.8\linewidth]{plots/co3f3.png}
+			\includegraphics[width=0.8\linewidth]{co3f3.png}
 			\caption{Predictors: dividend-price and dividend yield and $f_{3}( u,\gamma)$ } \label{co3f3}
 		\end{subfigure}\hspace*{\fill}
 		\begin{subfigure}{0.48\textwidth}
 			\captionsetup{justification=centering}
-			\includegraphics[width=0.8\linewidth]{plots/co4f3.png}
+			\includegraphics[width=0.8\linewidth]{co4f3.png}
 			\caption{Predictors: BAA and AAA and $f_{3}( u,\gamma)$ } \label{co4f3}
 		\end{subfigure}
 	\end{figure}
 	
-	Figure \ref{cointegrated} displays the results when we use pairs of cointegrated predictors considered in \cite{zhou2018semiparametric}. As shown in Figure \ref{cointegrated} (a), (b) and (c), the pair of long-term yield and 3-month T-bill rate produces $ R^2_{OOS}>0 $ when using  $f_1\left( u,\gamma\right)$, $f_4\left( u,\gamma\right)$ and $f_5\left( u,\gamma\right)$ as nonlinear functions. The function $f_1\left( u,\gamma\right)$ produces positive $ R^2_{OOS}>0 $ after 2013, while the function  $f_4\left( u,\gamma\right)$ gives consecutive positive results after 2009. We also find that when using $f_3\left( u,\gamma\right)$ as a nonlinear function, the following three pairs of predictors generate positive $R_{OOS}^{2}$ values: (a) dividend-price ratio and earning-price ratio; (b) dividend-price ratio and dividend yield; and (c) baa- and aaa- rated corporate bond yields (see Figures \ref{cointegrated} (c), (d) and (e)). From Figure \ref{cointegrated} (d), we can see that the dividend-price ratio and earning-price ratio not only produce positive $ R^2_{OOS}>0 $ at the end of the forecasting period, but generates consecutive better forecasts from around 1995 to 2008. In Figure \ref{cointegrated} (e), the combination of aaa- and baa- rated corporate bond rates produces long and continuous positive $ R^2_{OOS}>0 $ over the out-of-sample forecasting period.
+	Figure \ref{cointegrated_fore} displays the results when we use pairs of cointegrated predictors considered in \cite{zhou2018semiparametric}. As shown in Figure \ref{cointegrated_fore} (a), (b) and (c), the pair of long-term yield and 3-month T-bill rate produces $ R^2_{OOS}>0 $ when using  $f_1\left( u,\gamma\right)$, $f_4\left( u,\gamma\right)$ and $f_5\left( u,\gamma\right)$ as nonlinear functions. The function $f_1\left( u,\gamma\right)$ produces positive $ R^2_{OOS}>0 $ after 2013, while the function  $f_4\left( u,\gamma\right)$ gives consecutive positive results after 2009. We also find that when using $f_3\left( u,\gamma\right)$ as a nonlinear function, the following three pairs of predictors generate positive $R_{OOS}^{2}$ values: (a) dividend-price ratio and earning-price ratio; (b) dividend-price ratio and dividend yield; and (c) baa- and aaa- rated corporate bond yields (see Figures \ref{cointegrated_fore} (c), (d) and (e)). From Figure \ref{cointegrated_fore} (d), we can see that the dividend-price ratio and earning-price ratio not only produce positive $ R^2_{OOS}>0 $ at the end of the forecasting period, but generates consecutive better forecasts from around 1995 to 2008. In Figure \ref{cointegrated_fore} (e), the combination of aaa- and baa- rated corporate bond rates produces long and continuous positive $ R^2_{OOS}>0 $ over the out-of-sample forecasting period.
 	
 	%Figure \ref{dcwy_f4} and Figure \ref{dcwy4_f2} show us the results from demeaned  $\tilde{c}_{t-1, }\tilde{a}_{t-1}, \tilde{y}_{t-1}$ with cointegrated variable pairs studied in \cite{zhou2018semiparametric}. We demean the $c_{t-1}$, $a_{t-1}$ and $y_{t-1}$ series because it has a dominant deterministic trend. In Figure \ref{dcwy_f4}, we can see that under $f_{4}( u,\gamma)$, the 5-variable combination: the demeaned dividend price ratio, earnings price ratio and demeaned $c_{t-1}$, $a_{t-1}$ and $y_{t-1}$ produces positive $ R^2_{OOS}>0 $ consecutively after 2009. Figure \ref{dcwy4_f2} displays that when baa- and aaa- rated corporate bond yields are combined with the demeaned $c_{t-1}$, $a_{t-1}$ and $y_{t-1}$, they achieve a large OOS gain between 2009 and 2015 using $f_{2}( u,\gamma)$.
 	
-	These findings indicate that exploiting nonlinearities in the data can lead to improved forecast accuracy relative to the historical average benchmark. Overall, the single-index predictive model shows that the largest out-of-sample forecast gains in all the figures come from using the combination of aaa- and baa- rated corporate bond rates, and using the nonlinear function $f_3\left( u,\gamma\right)$. \\
+	These findings indicate that exploiting nonlinearities in the data can lead to improved forecast
+	accuracy relative to the historical average benchmark. Overall, the single-index predictive model
+	shows that the largest out-of-sample forecast gains in all the figures come from using the
+	combination of aaa- and baa- rated corporate bond rates, and using the nonlinear function
+	$f_3\left( u,\gamma\right)$. \\
 	
 	\section{Conclusion}
 	This chapter considers a parametric single-index predictive model with integrated predictors. We propose a new constrained estimation procedure to estimate this model and show that it has better finite sample properties than the usual NLS estimator. We apply the model to examine the predictability of stock returns using cointegrated and non-cointegrated predictors. We find that several combinations of the predictors used in prior studies deliver out-of-sample forecasting gains relative to the standard historical average benchmark over a large number of evaluation periods when using the single-index predictive model that accounts for the nonlinearities in the time-series data. 
@@ -1166,7 +1171,9 @@
 	In the data generation process, we consider $\hat{\theta}_0 = (0.8, -0.6)^{\prime}$, $\hat{\gamma}_0 = (0.2, 0.3, 0.3)^{\prime}$ $\beta_{1,0} = 0.5$ and $\beta_{2,0} = 1.0$.
 	
 	To generate co-integrated $x_t$, we follow a vector integrated process driven by an MA(1) innovations and construct $v_t$ as:
-	$$v_t = \epsilon_t + C\epsilon_{t-1},$$
+	$$
+	v_t = \epsilon_t + C\epsilon_{t-1},
+	$$
 	where $\epsilon_{t} \sim i.i.d. N\left(\left(\begin{array}{c}
 		0 \\
 		0
@@ -1197,7 +1204,7 @@
 	\]%
 	Since $\widehat{\theta}_1$ and $\widehat{\theta}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
 	\begin{equation*}
-		\label{std of theta}
+		\label{std of theta_1}
 		\sigma_{\theta}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right)\left(\widehat{\theta}_{j}^{(r)}-\overline{\widehat{\theta}}_{j}\right), \quad \text { std}_{\theta} = \sqrt{\sum_{i, j} \sigma_{i j}^{2}}.
 	\end{equation*}
 	where 
@@ -1490,19 +1497,19 @@
 		\centering
 		\caption{Time Series Plots of Co-integrated Variables}
 		\begin{subfigure}[b]{0.48\linewidth}
-			\includegraphics[width=1.2\linewidth]{plots/co1.png}
+			\includegraphics[width=1.2\linewidth]{co1.png}
 			\caption{co1}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.48\linewidth}
-			\includegraphics[width=1.2\linewidth]{plots/co2.png}
+			\includegraphics[width=1.2\linewidth]{co2.png}
 			\caption{co2}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.48\linewidth}
-			\includegraphics[width=1.2\linewidth]{plots/co3.png}
+			\includegraphics[width=1.2\linewidth]{co3.png}
 			\caption{co3}
 		\end{subfigure}
 		\begin{subfigure}[b]{0.48\linewidth}
-			\includegraphics[width=1.2\linewidth]{plots/co4.png}
+			\includegraphics[width=1.2\linewidth]{co4.png}
 			\caption{co4}
 		\end{subfigure}
 		\label{variables}
