@@ -1,0 +1,47 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Campbell \harvardand\ Thompson}{2008}{campbell2008predicting}
+Campbell, J.~Y. \harvardand\ Thompson, S.~B.  \harvardyearleft
+  2008\harvardyearright , `Predicting excess stock returns out of sample: Can
+  anything beat the historical average?', {\em The Review of Financial Studies}
+  {\bf 21}(4),~1509--1531.
+
+\harvarditem{Chang \harvardand\ Park}{2003}{chang2003index}
+Chang, Y. \harvardand\ Park, J.~Y.  \harvardyearleft 2003\harvardyearright ,
+  `Index models with integrated time series', {\em Journal of Econometrics}
+  {\bf 114}(1),~73--106.
+
+\harvarditem[Cheng et~al.]{Cheng, Gao \harvardand\
+  Linton}{2019}{cheng2019nonparametric}
+Cheng, T., Gao, J. \harvardand\ Linton, O.  \harvardyearleft
+  2019\harvardyearright , `Nonparametric predictive regressions for stock
+  return prediction'.
+
+\harvarditem[Dong et~al.]{Dong, Gao, Tj{\o}stheim
+  et~al.}{2016}{dong2016estimation}
+Dong, C., Gao, J., Tj{\o}stheim, D. et~al.  \harvardyearleft
+  2016\harvardyearright , `Estimation for single-index and partially linear
+  single-index integrated models', {\em The Annals of Statistics} {\bf
+  44}(1),~425--453.
+
+\harvarditem{Gao}{2007}{gao2007nonlinear}
+Gao, J.  \harvardyearleft 2007\harvardyearright , {\em Nonlinear time series:
+  semiparametric and nonparametric methods}, CRC Press.
+
+\harvarditem{Lettau \harvardand\ Ludvigson}{2001}{lettau2001consumption}
+Lettau, M. \harvardand\ Ludvigson, S.  \harvardyearleft 2001\harvardyearright ,
+  `Consumption, aggregate wealth, and expected stock returns', {\em the Journal
+  of Finance} {\bf 56}(3),~815--849.
+
+\harvarditem{Welch \harvardand\ Goyal}{2008}{welch2008comprehensive}
+Welch, I. \harvardand\ Goyal, A.  \harvardyearleft 2008\harvardyearright , `A
+  comprehensive look at the empirical performance of equity premium
+  prediction', {\em The Review of Financial Studies} {\bf 21}(4),~1455--1508.
+
+\harvarditem[Zhou et~al.]{Zhou, Gao, Kew \harvardand\
+  Harris}{2018}{zhou2018semiparametric}
+Zhou, W., Gao, J., Kew, H. \harvardand\ Harris, D.  \harvardyearleft
+  2018\harvardyearright , `Semiparametric single-index predictive regression',
+  {\em Available at SSRN 3214042} .
+
+\end{thebibliography}
