@@ -191,21 +191,20 @@ This study aims to use the Monte Carlo simulation method to investigate the fini
 %Model \ref{PL model} considered both stationary and nonstationary time series, especially that the lagged dependent variables have been included in the linear component. In this chapter, we will extend 
 \section{Model and Methodology}
 
-Since in our case, $g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known, model (\ref{PL model}) can be estimated by using a nonlinear least square method. Let $L(\beta, \theta, \gamma) = \sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) ^2$, and hence we have the following score functions:
+Since in our case, $g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known, model (\ref{PL model}) can be estimated by using a nonlinear least square method. Let $L(\beta, \theta, \gamma) = \sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) ^2$, and hence we have the following gradient functions:
 
-$$
-\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = -2\sum_{t=1}^{T} z_t^{\prime} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right)
-$$
 
-$$
-\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta} = -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right)\frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \theta}
-$$
+\begin{align}
+	\begin{split}
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} &= -2\sum_{t=1}^{T} z_t^{\prime} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \\
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right)\frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \theta} \\
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \gamma}
+	\end{split}
+	\label{gradient}
+\end{align}
 
-$$
-\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma} = -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \gamma}
-$$
 
-The minimum value of $L(\beta, \theta, \gamma)$ occurs when the above score functions equals to 0. Notice that these score functions $\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta}$ and $\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma}$ are nonlinear functions of both the variables and the parameters, and so they do not have closed form solutions. To estimate the parameters, we need to include an iterative procedure and obtain optimal values by using gradient descent algorithms. However, recognising that this score function $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta}$ is linear in the parameter $\beta$, we introduce a novel two-step approach for estimation in order to reduce the computational burden. 
+The minimum value of $L(\beta, \theta, \gamma)$ occurs when the above gradient functions equals to 0. Notice that these score functions $\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta}$ and $\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma}$ are nonlinear functions of both the variables and the parameters, and so they do not have closed form solutions. To estimate the parameters, we need to include an iterative procedure and obtain optimal values by using gradient descent algorithms. However, recognising that this score function $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta}$ is linear in the parameter $\beta$, we introduce a novel two-step approach for estimation in order to reduce the computational burden. 
 
 In step 1, we set $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = 0$. Solve the equation and we have:
 \begin{equation}
@@ -316,6 +315,27 @@ $$
 	
 	In the data generation process, we consider true parameter values $\hat{\theta}_0 = (0.8, -0.6)^{\prime}$, $\beta_{1,0} = 0.5$ and $\beta_{2,0} = 1.0$. And $\gamma_0$ will vary depending on the nonlinear form $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ we select. 
 	
+	In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and the following statistics. Take $\theta$ as an example:
+	
+	\[
+	\text{bias}({\hat\theta_i})=\overline{\widehat{\theta}}_{i}-\theta _{i,0}, 
+	\]%
+	where $\overline{\widehat{\theta}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\theta}_{i}^{(r)} $; and the standard deviation: 
+	\[
+	\text{std}({\hat\theta_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right) ^{2}}. 
+	\]%
+	Since $\widehat{\theta}_1$ and $\widehat{\theta}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
+	\begin{equation*}
+		\label{std of theta}
+		\sigma_{\theta}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right)\left(\widehat{\theta}_{j}^{(r)}-\overline{\widehat{\theta}}_{j}\right), \quad \text { std}_{\theta} = \sqrt{\sum_{i, j} \sigma_{i j}^{2}}.
+	\end{equation*}
+	where 
+	$\widehat{\theta}^{(r)}$ denote the $r$-th replication of the estimate.
+	
+	Following the above definitions, we then calculate biases, standard deviations for $\beta_i$ and $\gamma_i$, and also $\sigma_{\beta}$ and $\sigma_{\gamma}$.
+	
+	
+\subsection{Choice of Nonlinear Form: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
 	In the partially nonlinear model \ref{PL model}, we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies type of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
 	\begin{eqnarray*}
 		\text{sin}: f_{1}\left( u_{t-1},\gamma _{1}\right) &=&\sin \left( u_{t-1}+\gamma_{1}\right),  \\
@@ -351,59 +371,61 @@ $$
 	\begin{eqnarray*}
 		\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
 		\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2},
-%		\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) &=&\gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
 	\end{eqnarray*} 
 	where $\gamma_{7}, \gamma_{10}$ $\in(0, \infty)$. 
+	The two exponential functions are bounded: $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ lies in (0,1) and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ lies in (0, $\gamma_{9}$). 
 	
-		\begin{figure}[!htbp]
-		\centering
-		\caption{Plots for Exponential Functions}
-		\begin{subfigure}[b]{0.44\linewidth}
-			\includegraphics[width=\linewidth]{plots/scale_expshift_g7.png}
-			\caption{$f_{4}$ with different location parameter}
-			\label{param_g7}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.44\linewidth}
-			\includegraphics[width=\linewidth]{plots/scale_exp_g10.png}
-			\caption{$f_{4}$ with different shape parameter}
-			\label{param_g10}
-		\end{subfigure}
-		\label{expfunc}
+	Figure \ref{exp1} and \ref{exp2} present the plots of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$. Even though both $f_5$ and $f_6$ are exponential functions, they have very different shapes. $f_5$ is an increasing function while $f_6$ is a decreasing function. We can see that $\gamma_{7}$ changes the steepness of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ (figure \ref{param_g7}) and $\gamma_{8}$ changes its position (figure \ref{param_g8}). And for $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$, $\gamma_{9}$ acts as the upper bound for the function and changes its position (figure \ref{param_g9}), while $\gamma_{10}$ changes its steepness (figure \ref{param_g10}).
+	
+	\begin{figure}[!htbp]
+	\centering
+	\caption{$f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_expshift_g7.png}
+		\caption{$f_{5}$ with different $\gamma_{7}$}
+		\label{param_g7}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_expshift_g8.png}
+		\caption{$f_{5}$ with different $\gamma_{8}$}
+		\label{param_g8}
+	\end{subfigure}
+	\label{exp1}
 	\end{figure}
-	
-	In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and the following statistics. Take $\theta$ as an example:
-	
-	\[
-	\text{bias}({\hat\theta_i})=\overline{\widehat{\theta}}_{i}-\theta _{i,0}, 
-	\]%
-	where $\overline{\widehat{\theta}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\theta}_{i}^{(r)} $; and the standard deviation: 
-	\[
-	\text{std}({\hat\theta_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right) ^{2}}. 
-	\]%
-	Since $\widehat{\theta}_1$ and $\widehat{\theta}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
-	\begin{equation*}
-	\label{std of theta}
-	\sigma_{\theta}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right)\left(\widehat{\theta}_{j}^{(r)}-\overline{\widehat{\theta}}_{j}\right), \quad \text { std}_{\theta} = \sqrt{\sum_{i, j} \sigma_{i j}^{2}}.
-	\end{equation*}
-	where 
-	$\widehat{\theta}^{(r)}$ denote the $r$-th replication of the estimate.
-	
-	Following the above definitions, we then calculate biases, standard deviations for $\beta_i$ and $\gamma_i$, and also $\sigma_{\beta}$ and $\sigma_{\gamma}$.
-	
-\subsection{Initial Values}
 
-As our model is partially nonlinear, the gradient functions do not have a closed solution. Therefore, we use an iterative procedure to estimate the model. To start the iterative procedure, initial values are necessary. We can assign random values as the initial values, however, finding initial values that are close to the optimal values is crucial.
+	\begin{figure}[!htbp]
+	\centering
+	\caption{$f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_exp_g9.png}
+		\caption{$f_{6}$ with different $\gamma_{7}$}
+		\label{param_g9}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_exp_g10.png}
+		\caption{$f_{6}$ with different $\gamma_{8}$}
+		\label{param_g10}
+	\end{subfigure}
+	\label{exp2}
+	\end{figure}
 
-To find better initial values, we follow a 2-step procedure and consider Taylor expansions to approximate the partially nonlinear models. In the first step, we calculate initial values for $\theta$ by using the following two steps.
+In addition, we also consider a quadratic polynomial function:
+$$
+	\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) = \gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
+$$
+It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ changes the parabola's wideness.
 
-\textbf{Step 1}: 
+The nonlinear functional forms we consider have included the bounded functions (the exponential functions), bounded periodic functions (trigonometric functions), and the unbounded function (polynomial function). 
+
+\subsection{Choice of Initial Values}
+
+As mentioned in section 2, the gradient functions in \ref{gradient} are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. To start the iterative procedure, initial values are necessary and essential. We can assign random values as the initial values, however, using initial values that are close to the optimal values is crucial.
+
+To find better initial values, we first calculate initial values for $\theta$ ($\theta_{0}$) and consider Taylor expansions to approximate the nonlinear part of the model. To calculate $\theta_{0}$, we estimate the following regression:
 $$
 x_1 = \alpha x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
 $$
-$\hat{\alpha}$ can be obtained by linear regression. 
-
-\textbf{Step 2}: 
-Then the initial values of $\theta$ is given by:
+$\hat{\alpha}$ can be obtained by linear regression. Then $\theta_0$ is given by:
 $$
 \theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\alpha}^2}}, -\dfrac{\hat{\alpha}}{\sqrt{1+\hat{\alpha}^2}})
 $$
