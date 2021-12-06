@@ -419,9 +419,11 @@ The nonlinear functional forms we consider have included the bounded functions (
 
 \subsection{Choice of Initial Values}
 
-As mentioned in section 2, the gradient functions in \ref{gradient} are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. To start the iterative procedure, initial values are necessary and essential. We can assign random values as the initial values, however, using initial values that are close to the optimal values is crucial.
+As mentioned in section 2, to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
 
-To find better initial values, we first calculate initial values for $\theta$ ($\theta_{0}$) and consider Taylor expansions to approximate the nonlinear part of the model. To calculate $\theta_{0}$, we estimate the following regression:
+To start the iterative procedure, initial values are necessary and essential. Even though we can apply random values, values that are close to the optimal values will always improve the convergence. To find the better initial values, we can linearize the nonlinear part of our model using Taylor expansion and estimate the linear model to obtain initial values. 
+
+we first calculate initial values for $\theta$ (denoted by $\theta_{0}$) and consider Taylor expansions to approximate the nonlinear part of the model. To calculate $\theta_{0}$, we estimate the following regression:
 $$
 x_1 = \alpha x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
 $$
