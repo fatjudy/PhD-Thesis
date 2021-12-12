@@ -170,7 +170,7 @@
 
 Conventional partially linear models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years, see for example \cite{dong2016estimation}. We are now interested in a new class of nonlinear time series models - partially nonlinear single-index models of the form:
 \begin{equation}
-y_{t} = \beta_0^{\prime} z_t + g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
+y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
 t=2,...,T,  \label{PL model}
 \end{equation}%
 where $z_t = (y_{t-1}, \cdots, y_{t-p}, w_{t-1}^{\prime})^{\prime}$, in which $w_{t-1}$ is a vector of stationary predictors, 
@@ -178,7 +178,7 @@ where $z_t = (y_{t-1}, \cdots, y_{t-p}, w_{t-1}^{\prime})^{\prime}$, in which $w
 $g\left( .,.\right) $ is a known univariate nonlinear function, $x_{t-1}$ is a $d$-dimensional integrated process of order one, $\theta _{0}$ is a $d$-dimensional unknown true parameter vector that lies in the parameter set $\Theta $, $\gamma _{0}$ is a $m$-dimensional unknown true parameter vector that lies in the parameter set $\Gamma $ and $e_{t}$ is a martingale
 difference process. The parameter sets $\Theta $ and $\Gamma $ are assumed to be compact and convex subsets of $\mathbb{R}^{d}$ and $\mathbb{R}^{m}$ respectively. In order to ensure that $\theta_0$ is uniquely identifiable, we will need to impose $\theta_{0}^{\prime}\theta_{0} = 1$.
 
-Our model allows for lagged dependent variables because key macroeconomic/financial variables, such as the growth rate of GDP, the rate of unemployment and interest rates are typically autocorrelated. Failing to account for this autocorrelation will lead to serially correlated residuals. We are thus interested in using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only the nonlinear single-index component, $g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$, containing either the cointegrated predictors or non-cointegrated predictors. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
+Our model allows for lagged dependent variables because key macroeconomic/financial variables, such as the growth rate of GDP, the rate of unemployment and interest rates are typically autocorrelated. Failing to account for this autocorrelation will lead to serially correlated residuals. We are thus interested in using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only the nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$, containing either the cointegrated predictors or non-cointegrated predictors. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
 
 There is a considerable theoretical effort being put into developing new estimation method of the partial linear model (see for example, \cite{dong2016estimation}) and nonlinear models with single-index (see for example \cite{chang2003index}). In our study, we propose a novel 2-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares.
 
@@ -190,15 +190,15 @@ This study aims to use the Monte Carlo simulation method to investigate the fini
 %
 %Model \ref{PL model} considered both stationary and nonstationary time series, especially that the lagged dependent variables have been included in the linear component. In this chapter, we will extend 
 \section{Model and Methodology}
-
-Since in our case, $g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known, model (\ref{PL model}) can be estimated by using a nonlinear least square method. Let $L(\beta, \theta, \gamma) = \sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) ^2$, and hence we have the following gradient functions:
+\subsection{Estimation Method}
+Since in our case, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known, model (\ref{PL model}) can be estimated by using a nonlinear least square method. Let $L(\beta, \theta, \gamma) = \sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) ^2$, and hence we have the following gradient functions:
 
 
 \begin{align}
 	\begin{split}
-	\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} &= -2\sum_{t=1}^{T} z_t^{\prime} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \\
-	\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right)\frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \theta} \\
-	\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \gamma}
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} &= -2\sum_{t=1}^{T} z_t^{\prime} \left( y_t - \beta^{\prime} z_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \\
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right)\frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \theta} \\
+	\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma} &= -2\sum_{t=1}^{T} \left( y_t - \beta^{\prime} z_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) \frac{\partial g(x_{t-1}^{\prime }\theta; \gamma)}{\partial \gamma}
 	\end{split}
 	\label{gradient}
 \end{align}
@@ -206,44 +206,47 @@ Since in our case, $g\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known
 
 The minimum value of $L(\beta, \theta, \gamma)$ occurs when the above gradient functions equals to 0. Notice that these score functions $\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta}$ and $\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma}$ are nonlinear functions of both the variables and the parameters, and so they do not have closed form solutions. To estimate the parameters, we need to include an iterative procedure and obtain optimal values by using gradient descent algorithms. However, recognising that this score function $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta}$ is linear in the parameter $\beta$, we introduce a novel two-step approach for estimation in order to reduce the computational burden. 
 
-In step 1, we set $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = 0$. Solve the equation and we have:
+\textbf{Step 1:} set $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = 0$ and solve the first equation in \ref{gradient} to obtain $\tilde{\beta}$:
 \begin{equation}
-\hat{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t - g\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) z_t
+\tilde{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) z_t
 \label{beta}
 \end{equation}
 
-In other words, $\hat{\beta}$ is of a linear from by OLS expression. Thus model (\ref{PL model}) can be approximated by:
-
+In other words, $\tilde{\beta}$ is of a linear from by OLS expression. Thus model (\ref{PL model}) can be approximated by:
 $$
-y_t = \hat{\beta}^{\prime} z_t + g\left( x_{t-1}^{\prime }\theta; \gamma\right) +e_{t},
+y_t = \tilde{\beta}^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta; \gamma\right) +e_{t},
 $$
-which is equivalent to:
-
+Substitute $\bar{\beta}$ in (\ref{beta}) and rearrange the equation above, we can get:
 $$
-y_t - \left( \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T}y_t z_t \right) ^{\prime} z_t = g\left( x_{t-1}^{\prime }\theta; \gamma\right) - z_t^{\prime} \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T} g\left( x_{t-1}^{\prime }\theta; \gamma\right) z_t + e_t.
+y_t - \left( \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T}y_t z_t \right) ^{\prime} z_t = f\left( x_{t-1}^{\prime }\theta; \gamma\right) - z_t^{\prime} \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T} f\left( x_{t-1}^{\prime }\theta; \gamma\right) z_t + e_t.
 $$
 
 Let  
-
 $$\tilde{y} = y_t -  z_t^{\prime}  \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T}y_t z_t, $$ 
 
-$$\tilde{g} ( x_{t-1}^{\prime }\theta; \gamma) = g\left( x_{t-1}^{\prime }\theta; \gamma\right) - z_t^{\prime} \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T} g\left( x_{t-1}^{\prime }\theta; \gamma\right) z_t$$ 
+$$\tilde{g} ( x_{t-1}^{\prime }\theta; \gamma) = f\left( x_{t-1}^{\prime }\theta; \gamma\right) - z_t^{\prime} \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1} \sum_{t=1}^{T} f\left( x_{t-1}^{\prime }\theta; \gamma\right) z_t$$ 
 Then we have an approximate model of the form:
 \begin{equation}
 \tilde{y} = \tilde{g}\left( x_{t-1}^{\prime }\theta; \gamma\right) + e_t.
 \label{trans_model}
 \end{equation}
-We can estimate $(\theta, \gamma)$ by minimizing:
+
+\textbf{Step 2: } estimate $(\theta, \gamma)$ using nonlinear least square(NLS) method:
 $$
 Q_{T}(\theta, \gamma)=\sum_{t=1}^{T}\left(\tilde{y_{t}}-\tilde{g}\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2}
 $$
 over $(\theta, \gamma) \in (\Theta, \Gamma)$.
-The NLS estimator $(\hat{\theta}, \hat{\gamma})$ is given by:
+The $(\hat{\theta}, \hat{\gamma})$ is given by:
 \begin{equation*}
 \left( \widehat{\theta},\widehat{\gamma}\right) =\arg \min_{\theta \in \Theta
 	,\gamma \in \Gamma }Q_{T}\left( \theta ,\gamma \right),  \label{nls_c3}
 \end{equation*}%
-which can be solved using an iterative procedure since there is no closed form solution. In order to improve finite sample properties of the estimators, we impose a truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_T\right)$ on $x_{t-1}$ and an identification condition on coefficient vector $\theta$. We then define the modified sum-of-squared errors by:
+which can be solved using an iterative procedure since there is no closed form solution. As $\hat{\theta}$ and $\hat{\gamma}$ have been estimated, we can substitute them back to (\ref{beta}) and get the estimate of $\beta$:
+$$
+ \hat{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t- f\left( x_{t-1}^{\prime }\hat{\theta}; \hat{\gamma}\right)\right) z_t.
+$$.
+
+In the 2-step procedure above, we have obtained the NLS estimators ($\widehat{\theta}, \widehat{\gamma}, \widehat{\beta}$). In order to improve finite sample properties of the estimators, we impose a truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_T\right)$ on $x_{t-1}$ and an identification condition on coefficient vector $\theta$. We then define the modified sum-of-squared errors by:
 
 $$
 Q_{T, M}(\theta, \gamma)=\sum_{t=1}^{T}\left(y_{t}-f\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2} I\left(\left\|x_{t-1}\right\| \leq M_{T}\right)+\lambda\left(\|\theta\|^{2}-1\right),
@@ -252,20 +255,20 @@ where $I\left( .\right) $ denotes the indicator function, $%
 \left\Vert .\right\Vert $ is the Euclidean norm, $M_T$ is a positive and increasing sequence satisfying $ M_{T}\rightarrow \infty $ as $T \rightarrow \infty $ and $\lambda $ is a Lagrange
 multiplier. 
 
-The constrained least squares (denoted CLS) estimator $\widetilde{\theta}$ and $%
-\widetilde{\gamma}$ is given by minimizing $Q_{T,M}\left( \theta ,\gamma \right) 
+Then in step 1, we can estimate the constrained least squares (denoted CLS) estimators $\bar{\theta}$ and $%
+\bar{\gamma}$ by minimizing $Q_{T,M}\left( \theta ,\gamma \right) 
 $ over $\theta \in \Theta $ and $\gamma \in \Gamma $ such that the
 restriction $\left\Vert \theta \right\Vert ^{2}=1$ holds; that is%
 \begin{equation*}
-\left( \widetilde{\theta},\widetilde{\gamma}\right) =\arg \min_{\theta \in \Theta
+\left( \bar{\theta},\bar{\gamma}\right) =\arg \min_{\theta \in \Theta
 	,\gamma \in \Gamma ,\left\Vert \theta \right\Vert ^{2}=1}Q_{T,M}\left(
 \theta ,\gamma \right) .  \label{cls_c3}
 \end{equation*}%
-In step 2, using equation (\ref{beta}), $\beta$ may be re-estimated by:
 
+And the CLS estimator of $\beta$ can be written as:
 $$
-\hat{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t- g\left( x_{t-1}^{\prime }\tilde{\theta}; \tilde{\gamma}\right)\right) z_t.
-$$
+\bar{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t- f\left( x_{t-1}^{\prime }\bar{\theta}; \bar{\gamma}\right)\right) z_t.
+$$.
 
 
 \section{Monte Carlo Simulation}
@@ -315,27 +318,26 @@ $$
 	
 	In the data generation process, we consider true parameter values $\hat{\theta}_0 = (0.8, -0.6)^{\prime}$, $\beta_{1,0} = 0.5$ and $\beta_{2,0} = 1.0$. And $\gamma_0$ will vary depending on the nonlinear form $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ we select. 
 	
-	In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and the following statistics. Take $\theta$ as an example:
+	In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and calculate the following statistics.
 	
 	\[
-	\text{bias}({\hat\theta_i})=\overline{\widehat{\theta}}_{i}-\theta _{i,0}, 
+	\text{bias}({\hat\alpha_i})=\overline{\widehat{\alpha}}_{i}-\theta _{i,0}, 
 	\]%
-	where $\overline{\widehat{\theta}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\theta}_{i}^{(r)} $; and the standard deviation: 
+	where $\overline{\widehat{\alpha}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\alpha}_{i}^{(r)} $; and the standard deviation: 
 	\[
-	\text{std}({\hat\theta_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right) ^{2}}. 
+	\text{std}({\hat\alpha_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right) ^{2}}. 
 	\]%
-	Since $\widehat{\theta}_1$ and $\widehat{\theta}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
+	Since $\widehat{\alpha}_1$ and $\widehat{\alpha}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
 	\begin{equation*}
 		\label{std of theta}
-		\sigma_{\theta}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\theta}_{i}^{(r)}-\overline{\widehat{\theta}}_{i}\right)\left(\widehat{\theta}_{j}^{(r)}-\overline{\widehat{\theta}}_{j}\right), \quad \text { std}_{\theta} = \sqrt{\sum_{i, j} \sigma_{i j}^{2}}.
+		\sigma_{ij}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right)\left(\widehat{\alpha}_{j}^{(r)}-\overline{\widehat{\alpha}}_{j}\right), \quad \text {cov}(\hat{\alpha}) = \sqrt{\sum_{i=1}^{2}\sum_{j=1}^{2}\sigma_{ij}^{2}}.
 	\end{equation*}
 	where 
-	$\widehat{\theta}^{(r)}$ denote the $r$-th replication of the estimate.
+	$\widehat{\alpha}^{(r)}$ denote the $r$-th replication of the estimate.
+	Following the above definitions, we then calculate biases, standard deviations and covariance for $\theta$, $\beta$ and $\gamma$.
 	
-	Following the above definitions, we then calculate biases, standard deviations for $\beta_i$ and $\gamma_i$, and also $\sigma_{\beta}$ and $\sigma_{\gamma}$.
 	
-	
-\subsection{Choice of Nonlinear Form: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
+\subsection{Nonlinear Function: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
 	In the partially nonlinear model \ref{PL model}, we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies type of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
 	\begin{eqnarray*}
 		\text{sin}: f_{1}\left( u_{t-1},\gamma _{1}\right) &=&\sin \left( u_{t-1}+\gamma_{1}\right),  \\
@@ -417,92 +419,121 @@ It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ c
 
 The nonlinear functional forms we consider have included the bounded functions (the exponential functions), bounded periodic functions (trigonometric functions), and the unbounded function (polynomial function). 
 
-\subsection{Choice of Initial Values}
+\subsection{Initial Values (\textcolor{red}{re-write})}
 
-As mentioned in section 2, to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
+As the gradient functions (\ref{gradient}) do not have a closed form solution, we will use an iterative procedure to estimate the model, which requires initial values. Most studies use 0 or true values as the initial values to start the procedure(\textcolor{red}{LR} here). Normally, true values provide the quickest and best convergence, but they are not known in empirical studies. And values that are close to the optimal values will tend to give a better convergence. 
 
-To start the iterative procedure, initial values are necessary and essential. Even though we can apply random values, values that are close to the optimal values will always improve the convergence. To find the better initial values, we can linearize the nonlinear part of our model using Taylor expansion and estimate the linear model to obtain initial values. 
+Even though we do not known the optimal values beforehand, we can linearize our partially nonlinear model using Taylor expansion and estimate the linearized model to obtain better initial values. 
 
-we first calculate initial values for $\theta$ (denoted by $\theta_{0}$) and consider Taylor expansions to approximate the nonlinear part of the model. To calculate $\theta_{0}$, we estimate the following regression:
+%to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
+%To start the iterative procedure, 
+
+Before applying Taylor expansion, we first need to calculate the single-index $u_{t-1} = x^{\prime}_{t-1}\theta$. Since $x_1$ and $x_2$ are cointegrated, we can estimate the following regression to calculate the cointegration vector $(1,-\hat{\eta})$:
 $$
-x_1 = \alpha x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
+x_1 =\eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
 $$
-$\hat{\alpha}$ can be obtained by linear regression. Then $\theta_0$ is given by:
+Then $\theta_0$ is given by:
 $$
-\theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\alpha}^2}}, -\dfrac{\hat{\alpha}}{\sqrt{1+\hat{\alpha}^2}})
+\theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\eta}^2}}, -\dfrac{\hat{\eta}}{\sqrt{1+\hat{\eta}^2}})
 $$
-It satisfies the constrain that $\|\theta\| = 1$. 
-The true values of $\theta$ calculated are around (0.6, -0.8)
+which satisfies the constrain that $\|\theta\| = 1$. We can then calculate the single-index $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$.
 
 
-Then for different functional forms, we first substitute the nonlinear function f by its Taylor expansion and then calculate initial values for $\beta$ and $\gamma$ by estimating a linear model.
-
-For the first case with trigonometric function $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1,0}\right)$, we can use its first order Taylor expansion: 
+As $\hat{u}_{t-1}$ has been calculated, we can Taylor expansion to approximate the nonlinear part $f\left( \hat{u}_{t-1},\gamma _{0}\right)$. For the two sine functions: $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1}\right)$ and $f_{3}\left( \gamma_{3}u_{t-1},\gamma _{4}\right) =\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we can use their first order Taylor expansions and substitute $f_1$ and $f_3$ by: 
 $$
-\tilde{f_1} = \sin \left( u_{t-1}+\gamma_{1,0}\right) \sim \left( u_{t-1}+\gamma_{1,0}\right) 
+\tilde{f_1} = \left( \hat{u}_{t-1}+\gamma_{1}\right) 
 $$ 
-to approximate the nonlinear function. Then, $\beta$ and $\gamma$ are obtained by estimating the following regression:
 $$
-y_t = \left( \gamma_{1} + u_{t-1}\right)  + \beta_{1}y_{t-1} + \beta_2w_{t-1}.
-$$
-
-%Take 1 case in the simulation as an example, the initial values calculated are:
-%\begin{center}
-%	$\gamma_{1,0} = 0.304$, $\beta_{1,0} = 0.998$ and $\beta_{2,0} = 0.999$
-%\end{center}
-
-Similarly, for the second case $f_{1}\left( u_{t-1},\gamma _{0}\right) =\cos \left( u_{t-1}+\gamma_{1,0}\right)$, we can use its first order Taylor expansion: 
-$$
-\tilde{f_2} = \cos \left( u_{t-1}+\gamma_{1,0}\right) \sim 1 - \left( u_{t-1}+\gamma_{1,0}\right)^2
+\tilde{f_3} = \left( \gamma_{3}\hat{u}_{t-1}+\gamma_{4}\right) 
 $$ 
-to approximate the nonlinear function. Then, $\beta$ and $\gamma$ are obtained by estimating the following regression:
-$$
-y_t = 1 - \left( \gamma_{1} + u_{t-1}\right)^2  + \beta_{1}y_{t-1} + \beta_2w_{t-1}.
-$$
 
-Then for the two scaled trigonometric function (functional form 3 - 4), $\beta$ and $\gamma$ are calculated by the following model:
-$$
-y_t = \gamma_{2}  + \gamma_{1}u_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1}
-$$
-and 
-$$
-y_t = 1 - \left( \gamma_{2} + \gamma_{1}u_{t-1}\right)^2  + \beta_{1}y_{t-1} + \beta_2w_{t-1}.
-$$
-%Take 1 case in the simulation as an example, the true values calculated are:
-%\begin{center}
-%	$\gamma_{1,0} = -0.304$, $\beta_{1,0} = 0.998$ and $\beta_{2,0} = 0.999$
-%\end{center}
+Then for the two cosine function $f_{2}\left( u_{t-1},\gamma _{2}\right) =\cos \left(u_{t-1}+\gamma_{2}\right)$ and $f_{4}\left( \gamma _{5}u_{t-1}+\gamma_{6}\right) =\cos \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we approximate them using their second-order Taylor expansions:
 
+$$
+\tilde{f_2} = 1 - \left( \hat{u}_{t-1}+\gamma_{2}\right)^2
+$$ 
+$$
+\tilde{f_4} =  1 - \left(\gamma _{5} \hat{u}_{t-1}+\gamma_{6}\right)^2
+$$ 
 
+Similarly, the two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$ can also be approximated by their first and second order Taylor expansions:
 
-For functional 5, to better approximate the function, we use the second order Taylor expansion and calculate the initial values using linear regression. Therefore, we first approximate the nonlinear function $1 - e^{-\gamma_{1,0}\left(u_{t-1}-\gamma_{2,0}\right)^{2}}$ by:
 $$
-\tilde{f_5} = \gamma_{1,0}(u_{t-1} - \gamma_{2,0})^2 - \dfrac{\gamma_{1,0}^2(u_{t-1} - \gamma_{2,0})^4}{2}
+\tilde{f_5} = \gamma_{7}(\hat{u}_{t-1} - \gamma_{8})^2
 $$
-and $\beta$ and $\gamma$ are obtained by estimating the following regression:
 $$
-y_t = \gamma_{1,0}u_{t-1}^2 - 2\gamma_{1,0}\gamma_{2,0}u_{t-1} + \gamma_{1,0}\gamma_{2,0}^2 - \dfrac{\gamma_{1,0}^2(u_{t-1} - \gamma_{2,0})^4}{2} + \beta_{1}y_{t-1} + \beta_2w_{t-1}
+\tilde{f_6}= \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2})
 $$
-and $\gamma_{2,0}$ can be recovered from the coefficient of $u_{t-1}$ (denoted by $\eta$) by $\gamma_{2,0}$ = $-\eta/2\gamma_{1,0}$.
-
-For functional 6, we use third order Taylor expansion and approximate the nonlinear function $\gamma_{1,0}e^{-\gamma_{2,0}u_{t-1}^2}$ by:
-$$
-\tilde{f_6}= \gamma_{1,0}(1-\gamma_{2,0}u_{t-1}^2 + \dfrac{\gamma_{2,0}^2 u_{t-1}^4}{2} - \dfrac{\gamma_{2,0}^3 u_{t-1}^6}{3})
-$$
-and $\beta$ and $\gamma$ are obtained by estimating the following regression:
-$$
-y_t = \tilde{f_6}= \gamma_{1,0}(1-\gamma_{2,0}u_{t-1}^2 + \dfrac{\gamma_{2,0}^2 u_{t-1}^4}{2} - \dfrac{\gamma_{2,0}^3 u_{t-1}^6}{3}) + \beta_{1}y_{t-1} + \beta_2w_{t-1}
-$$
-where $\gamma_{2,0}$ can be recovered from the coefficient of $u_{t-1}^2$ (denoted by $\eta$) by $-\eta/\gamma_{1,0}$.
+And for functional 7, the polynomial function, it is already a linear function when the single-index is known, therefore, the initial values of $( \beta, \gamma)$ can be calculated by estimating the following linear regressions:
+\begin{align*}
+	y_{t} & =  \gamma_{1}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\
+	y_{t} & =  \gamma_{2}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\
+	y_{t} & =  \gamma_{4}  + \gamma_{3}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\	
+	y_{t} & =  \gamma_{6}  + \gamma_{5}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\
+	y_{t} & =  \gamma_{7}\hat{u}_{t-1}^2 - 2\gamma_{7}\gamma_{8}\hat{u}_{t-1} + \gamma_{7}\gamma_{8}^2 + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\
+	y_{t} & =  \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2}) + \beta_{1}y_{t-1} + \beta_2w_{t-1} \\
+	y_{t} & =  \gamma_{11}+ \gamma_{12}\hat{u}_{t-1}+\gamma_{13}\hat{u}_{t-1}^{2} +\beta_{1}y_{t-1} + \beta_2w_{t-1}
+\end{align*}
+% = \tilde{f_2}  + \beta_{1}y_{t-1} + \beta_2w_{t-1}
 
 
-For functional 7, the polynomial function, we can then get the initial values for $\beta$ and $\gamma$ by doing the following linear regression:
-$$
-y_t = \beta_{1}y_{t-1} + \beta_2w_{t-1} + \gamma_{1}+ \gamma_{2}u_{t-1}+\gamma_{3}u_{t-1}^{2}
-$$
-where $u_{t-1} =  x_{t-1}^{\prime }\theta _{0}$.
+
+
+% Table generated by Excel2LaTeX from sheet 'Sheet1'
+\begin{table}[htbp]
+	\centering
+	\caption{Simulation Results for different initial values}
+	\begin{adjustbox}{max width=0.8\textwidth}
+	\begin{tabular}{ccccccccc}
+		\toprule
+		&       & \multicolumn{1}{l}{$\theta_1$} & \multicolumn{1}{l}{$\theta_2$} & \multicolumn{1}{l}{$\beta_1$} & \multicolumn{1}{l}{$\beta_2$} & \multicolumn{1}{l}{$\gamma_1$} & \multicolumn{1}{l}{$\gamma_2$} & \multicolumn{1}{l}{$\gamma_3$} \\
+		&       & \multicolumn{7}{c}{Initial Values = Taylor Initials} \\
+		\midrule
+		\multirow{3}[1]{*}{T=100} & Bias  & 0.00088 & 0.00026 & -0.00079 & 0.00029 & 0.00326 & -0.00064 & 0.00121 \\
+		& std   & 0.00139 & 0.00105 & 0.00504 & 0.00504 & 0.00914 & 0.00451 & 0.00141 \\
+		&       & \multicolumn{2}{c}{0.00244} & \multicolumn{2}{c}{0.00461} & \multicolumn{3}{c}{0.01029} \\
+		\multirow{3}[0]{*}{T=500} & Bias  & -0.00013 & -0.00008 & -0.00040 & -0.00058 & 0.00063 & -0.00032 & 0.00146 \\
+		& std   & 0.00041 & 0.00031 & 0.00068 & 0.00206 & 0.00436 & 0.00175 & 0.00043 \\
+		&       & \multicolumn{2}{c}{0.00167} & \multicolumn{2}{c}{0.00167} & \multicolumn{3}{c}{0.00472} \\
+		\multirow{3}[1]{*}{T=1000} & Bias  & -0.00005 & -0.00003 & -0.00025 & -0.00012 & 0.00035 & -0.00021 & 0.00087 \\
+		& std   & 0.00026 & 0.00019 & 0.00043 & 0.00136 & 0.00319 & 0.00110 & 0.00026 \\
+		&       & \multicolumn{2}{c}{0.00045} & \multicolumn{2}{c}{0.00110} & \multicolumn{3}{c}{0.00339} \\
+		\midrule
+		&       & \multicolumn{7}{c}{Initial Values = 0} \\
+%		&       & \multicolumn{1}{l}{$\theta_1$} & \multicolumn{1}{l}{$\theta_2$} & \multicolumn{1}{l}{$\beta_1$} & \multicolumn{1}{l}{$\beta_2$} & \multicolumn{1}{l}{$\gamma_1$} & \multicolumn{1}{l}{$\gamma_2$} & \multicolumn{1}{l}{$\gamma_3$} \\
+		\midrule
+		\multirow{3}[1]{*}{T=100} & Bias  & 0.12214 & 0.35638 & 0.09401 & -0.27546 & 2.40099 & 0.19899 & -0.10567 \\
+		& std   & 0.28186 & 0.45009 & 0.31824 & 1.10049 & 2.95226 & 0.67484 & 0.36090 \\
+		&       & \multicolumn{2}{c}{0.51793} & \multicolumn{2}{c}{1.02441} & \multicolumn{3}{c}{0.17287} \\
+		\multirow{3}[0]{*}{T=500} & Bias  & 0.13182 & 0.47163 & 0.19141 & -0.33712 & 2.25798 & 0.19733 & -0.18554 \\
+		& std   & 0.28545 & 0.52487 & 0.38507 & 1.13323 & 2.50154 & 0.78597 & 0.38406 \\
+		&       & \multicolumn{2}{c}{0.59734} & \multicolumn{2}{c}{0.97196} & \multicolumn{3}{c}{0.17287} \\
+		\multirow{3}[1]{*}{T=1000} & Bias  & 0.15770 & 0.47870 & 0.21117 & -0.25275 & 2.34776 & 0.30953 & -0.20737 \\
+		& std   & 0.26417 & 0.50324 & 0.41013 & 1.24009 & 2.51639 & 0.94167 & 0.40618 \\
+		&       & \multicolumn{2}{c}{0.59240} & \multicolumn{2}{c}{1.02269} & \multicolumn{3}{c}{0.17287} \\
+		\midrule
+		&       & \multicolumn{7}{c}{Initial Values = True Values} \\
+%		&       & \multicolumn{1}{l}{$\theta_1$} & \multicolumn{1}{l}{$\theta_2$} & \multicolumn{1}{l}{$\beta_1$} & \multicolumn{1}{l}{$\beta_2$} & \multicolumn{1}{l}{$\gamma_1$} & \multicolumn{1}{l}{$\gamma_2$} & \multicolumn{1}{l}{$\gamma_3$} \\
+		\midrule
+		\multirow{3}[1]{*}{T=100} & Bias  & 0.00008 & 0.00007 & -0.00170 & 0.00082 & 0.00368 & -0.00028 & 0.00080 \\
+		& std   & 0.00127 & 0.00095 & 0.00196 & 0.00572 & 0.00735 & 0.00350 & 0.00174 \\
+		&       & \multicolumn{2}{c}{0.00222} & \multicolumn{2}{c}{0.00261} & \multicolumn{3}{c}{0.00832} \\
+		\multirow{3}[0]{*}{T=500} & Bias  & 0.00003 & 0.00002 & -0.00098 & 0.00085 & 0.00233 & -0.00003 & 0.00068 \\
+		& std   & 0.00029 & 0.00022 & 0.00069 & 0.00192 & 0.00330 & 0.00135 & 0.00060 \\
+		&       & \multicolumn{2}{c}{0.00050} & \multicolumn{2}{c}{0.00098} & \multicolumn{3}{c}{0.00362} \\
+		\multirow{3}[1]{*}{T=1000} & Bias  & 0.00000 & 0.00001 & -0.00091 & 0.00084 & 0.00023 & -0.00003 & 0.00068 \\
+		& std   & 0.00019 & 0.00014 & 0.00046 & 0.00133 & 0.00226 & 0.00090 & 0.00041 \\
+		&       & \multicolumn{2}{c}{0.00033} & \multicolumn{2}{c}{0.00065} & \multicolumn{3}{c}{0.00247} \\
+		\bottomrule
+		\bottomrule
+    \end{tabular}%
+	\end{adjustbox}
+	\label{tab:s_f12}%
+\end{table}%
+
 
 \subsection{Simulation Results for Co-integrated $x_t$}
+
 Table \ref{tab:s_f12} to \ref{s_f7} show the simulation results on co-integrated $x_t$ using partially nonlinear models. From the simulation results, we find that:
 
 \begin{enumerate}

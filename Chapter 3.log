@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  6 DEC 2021 19:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  12 DEC 2021 21:12
 entering extended mode
 **"./Chapter 3.tex"
 (Chapter 3.tex
@@ -747,7 +747,14 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 LaTeX Warning: Unused global option(s):
     [times,numbered,print].
 
-(Chapter 3.aux)
+(Chapter 3.aux
+
+LaTeX Warning: Label `tab:s_f12' multiply defined.
+
+
+LaTeX Warning: Label `tab:s_f12@cref' multiply defined.
+
+)
 \openout1 = `"Chapter 3.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -785,4 +792,450 @@ LaTeX Font Info:    ... okay on input line 128.
 \everyMPtoPDFconversion=\toks47
 )
 Package caption Info: Begin \AtBeginDocument code.
-Package 
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 128.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
+y
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
+titlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count330
+)
+LaTeX Info: Redefining \ref on input line 128.
+LaTeX Info: Redefining \pageref on input line 128.
+LaTeX Info: Redefining \nameref on input line 128.
+ (Chapter 3.out) (Chapter 3.out)
+\@outlinefile=\write3
+\openout3 = `"Chapter 3.out"'.
+
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\t
+ranslations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 128.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 172
+.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 172
+.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17
+2.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+[1
+
+
+{C:/Users/yzho0040/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 311--318
+
+ []
+
+[4]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\prime' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+[5]
+<plots/scale_cos_g6.png, id=114, 433.62pt x 289.08pt>
+File: plots/scale_cos_g6.png Graphic file (type png)
+<use plots/scale_cos_g6.png>
+Package pdftex.def Info: plots/scale_cos_g6.png  used on input line 360.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+<plots/scale_cos_g5.png, id=116, 433.62pt x 289.08pt>
+File: plots/scale_cos_g5.png Graphic file (type png)
+<use plots/scale_cos_g5.png>
+Package pdftex.def Info: plots/scale_cos_g5.png  used on input line 365.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+<plots/scale_expshift_g7.png, id=123, 433.62pt x 289.08pt>
+File: plots/scale_expshift_g7.png Graphic file (type png)
+<use plots/scale_expshift_g7.png>
+Package pdftex.def Info: plots/scale_expshift_g7.png  used on input line 386.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+<plots/scale_expshift_g8.png, id=124, 433.62pt x 289.08pt>
+File: plots/scale_expshift_g8.png Graphic file (type png)
+<use plots/scale_expshift_g8.png>
+Package pdftex.def Info: plots/scale_expshift_g8.png  used on input line 391.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+<plots/scale_exp_g9.png, id=125, 433.62pt x 289.08pt>
+File: plots/scale_exp_g9.png Graphic file (type png)
+<use plots/scale_exp_g9.png>
+Package pdftex.def Info: plots/scale_exp_g9.png  used on input line 402.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+<plots/scale_exp_g10.png, id=126, 433.62pt x 289.08pt>
+File: plots/scale_exp_g10.png Graphic file (type png)
+<use plots/scale_exp_g10.png>
+Package pdftex.def Info: plots/scale_exp_g10.png  used on input line 407.
+(pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
+ [6 <./plots/scale_cos_g6.png> <./plots/scale_cos_g5.png>] [7 <./plots/scale_ex
+pshift_g7.png> <./plots/scale_expshift_g8.png> <./plots/scale_exp_g9.png> <./pl
+ots/scale_exp_g10.png>] [8]
+Overfull \hbox (53.37138pt too wide) in paragraph at lines 459--460
+[]\OT1/cmr/m/n/12 Similarly, the two ex-po-nen-tial func-tions $\OML/cmm/m/it/1
+2 f[] [] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 e[]$ \OT1/cmr/
+m/n/12 and $\OML/cmm/m/it/12 f[] [] \OT1/cmr/m/n/12 =
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 535.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 535.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 535.
+
+[9] [10] [11] [12] [13] [14]
+<plots/co1.png, id=202, 722.7pt x 578.16pt>
+File: plots/co1.png Graphic file (type png)
+<use plots/co1.png>
+Package pdftex.def Info: plots/co1.png  used on input line 733.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 733--734
+[][] 
+ []
+
+<plots/co2.png, id=203, 722.7pt x 578.16pt>
+File: plots/co2.png Graphic file (type png)
+<use plots/co2.png>
+Package pdftex.def Info: plots/co2.png  used on input line 737.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 737--738
+[][] 
+ []
+
+<plots/co3.png, id=204, 722.7pt x 578.16pt>
+File: plots/co3.png Graphic file (type png)
+<use plots/co3.png>
+Package pdftex.def Info: plots/co3.png  used on input line 741.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 741--742
+[][] 
+ []
+
+<plots/co4.png, id=205, 722.7pt x 578.16pt>
+File: plots/co4.png Graphic file (type png)
+<use plots/co4.png>
+Package pdftex.def Info: plots/co4.png  used on input line 745.
+(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+
+Overfull \hbox (43.48386pt too wide) in paragraph at lines 745--746
+[][] 
+ []
+
+[15] [16 <./plots/co1.png> <./plots/co2.png> <./plots/co3.png> <./plots/co4.png
+>] [17] [18]
+Overfull \hbox (35.17255pt too wide) in paragraph at lines 865--869
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 MSE[]$ \OT1/cmr/m/n/12 is the mean squa
+red er-ror of bench-mark model and $[][] = 1\OML/cmm/m/it/12 =n [][] [][]$
+ []
+
+[19]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 9
+14.
+ (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 914.
+[20]
+<OOS_plots/sin_co1_SM.png, id=270, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co1_SM.png Graphic file (type png)
+<use OOS_plots/sin_co1_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co1_SM.png  used on input line 946.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co2_SM.png, id=271, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co2_SM.png Graphic file (type png)
+<use OOS_plots/sin_co2_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co2_SM.png  used on input line 950.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co3_SM.png, id=272, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co3_SM.png Graphic file (type png)
+<use OOS_plots/sin_co3_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co3_SM.png  used on input line 954.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/sin_co4_SM.png, id=273, 867.24pt x 578.16pt>
+File: OOS_plots/sin_co4_SM.png Graphic file (type png)
+<use OOS_plots/sin_co4_SM.png>
+Package pdftex.def Info: OOS_plots/sin_co4_SM.png  used on input line 958.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co1_SM.png, id=274, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co1_SM.png Graphic file (type png)
+<use OOS_plots/cos_co1_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co1_SM.png  used on input line 968.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co2_SM.png, id=275, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co2_SM.png Graphic file (type png)
+<use OOS_plots/cos_co2_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co2_SM.png  used on input line 972.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co3_SM.png, id=276, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co3_SM.png Graphic file (type png)
+<use OOS_plots/cos_co3_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co3_SM.png  used on input line 976.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/cos_co4_SM.png, id=277, 867.24pt x 578.16pt>
+File: OOS_plots/cos_co4_SM.png Graphic file (type png)
+<use OOS_plots/cos_co4_SM.png>
+Package pdftex.def Info: OOS_plots/cos_co4_SM.png  used on input line 980.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co1_SM.png, id=278, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co1_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co1_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co1_SM.png  used on input line 99
+0.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co2_SM.png, id=279, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co2_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co2_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co2_SM.png  used on input line 99
+4.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co3_SM.png, id=280, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co3_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co3_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co3_SM.png  used on input line 99
+8.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_sin_co4_SM.png, id=281, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_sin_co4_SM.png Graphic file (type png)
+<use OOS_plots/scaled_sin_co4_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_sin_co4_SM.png  used on input line 10
+02.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co1_SM.png, id=282, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co1_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co1_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co1_SM.png  used on input line 10
+12.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co2_SM.png, id=283, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co2_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co2_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co2_SM.png  used on input line 10
+16.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co3_SM.png, id=284, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co3_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co3_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co3_SM.png  used on input line 10
+20.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/scaled_cos_co4_SM.png, id=285, 867.24pt x 578.16pt>
+File: OOS_plots/scaled_cos_co4_SM.png Graphic file (type png)
+<use OOS_plots/scaled_cos_co4_SM.png>
+Package pdftex.def Info: OOS_plots/scaled_cos_co4_SM.png  used on input line 10
+24.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co1_SM.png, id=286, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co1_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co1_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co1_SM.png  used on input line 103
+5.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co2_SM.png, id=287, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co2_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co2_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co2_SM.png  used on input line 103
+9.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co3_SM.png, id=288, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co3_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co3_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co3_SM.png  used on input line 104
+3.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_shift_co4_SM.png, id=289, 867.24pt x 578.16pt>
+File: OOS_plots/exp_shift_co4_SM.png Graphic file (type png)
+<use OOS_plots/exp_shift_co4_SM.png>
+Package pdftex.def Info: OOS_plots/exp_shift_co4_SM.png  used on input line 104
+7.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co1_SM.png, id=290, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co1_SM.png Graphic file (type png)
+<use OOS_plots/exp_co1_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co1_SM.png  used on input line 1057.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co2_SM.png, id=291, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co2_SM.png Graphic file (type png)
+<use OOS_plots/exp_co2_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co2_SM.png  used on input line 1061.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co3_SM.png, id=292, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co3_SM.png Graphic file (type png)
+<use OOS_plots/exp_co3_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co3_SM.png  used on input line 1065.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/exp_co4_SM.png, id=293, 867.24pt x 578.16pt>
+File: OOS_plots/exp_co4_SM.png Graphic file (type png)
+<use OOS_plots/exp_co4_SM.png>
+Package pdftex.def Info: OOS_plots/exp_co4_SM.png  used on input line 1069.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co1_SM.png, id=294, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co1_SM.png Graphic file (type png)
+<use OOS_plots/poly_co1_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co1_SM.png  used on input line 1080.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co2_SM.png, id=295, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co2_SM.png Graphic file (type png)
+<use OOS_plots/poly_co2_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co2_SM.png  used on input line 1084.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co3_SM.png, id=296, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co3_SM.png Graphic file (type png)
+<use OOS_plots/poly_co3_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co3_SM.png  used on input line 1088.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/poly_co4_SM.png, id=297, 867.24pt x 578.16pt>
+File: OOS_plots/poly_co4_SM.png Graphic file (type png)
+<use OOS_plots/poly_co4_SM.png>
+Package pdftex.def Info: OOS_plots/poly_co4_SM.png  used on input line 1092.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co1_SM.png, id=298, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co1_SM.png Graphic file (type png)
+<use OOS_plots/linear_co1_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co1_SM.png  used on input line 1102.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co2_SM.png, id=299, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co2_SM.png Graphic file (type png)
+<use OOS_plots/linear_co2_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co2_SM.png  used on input line 1106.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co3_SM.png, id=300, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co3_SM.png Graphic file (type png)
+<use OOS_plots/linear_co3_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co3_SM.png  used on input line 1110.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+<OOS_plots/linear_co4_SM.png, id=301, 867.24pt x 578.16pt>
+File: OOS_plots/linear_co4_SM.png Graphic file (type png)
+<use OOS_plots/linear_co4_SM.png>
+Package pdftex.def Info: OOS_plots/linear_co4_SM.png  used on input line 1114.
+(pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
+ [21] [22 <./OOS_plots/sin_co1_SM.png> <./OOS_plots/sin_co2_SM.png> <./OOS_plot
+s/sin_co3_SM.png> <./OOS_plots/sin_co4_SM.png> <./OOS_plots/cos_co1_SM.png> <./
+OOS_plots/cos_co2_SM.png> <./OOS_plots/cos_co3_SM.png> <./OOS_plots/cos_co4_SM.
+png>] [23 <./OOS_plots/scaled_sin_co1_SM.png> <./OOS_plots/scaled_sin_co2_SM.pn
+g> <./OOS_plots/scaled_sin_co3_SM.png> <./OOS_plots/scaled_sin_co4_SM.png> <./O
+OS_plots/scaled_cos_co1_SM.png> <./OOS_plots/scaled_cos_co2_SM.png> <./OOS_plot
+s/scaled_cos_co3_SM.png> <./OOS_plots/scaled_cos_co4_SM.png>] [24 <./OOS_plots/
+exp_shift_co1_SM.png> <./OOS_plots/exp_shift_co2_SM.png> <./OOS_plots/exp_shift
+_co3_SM.png> <./OOS_plots/exp_shift_co4_SM.png> <./OOS_plots/exp_co1_SM.png> <.
+/OOS_plots/exp_co2_SM.png> <./OOS_plots/exp_co3_SM.png> <./OOS_plots/exp_co4_SM
+.png>] [25 <./OOS_plots/poly_co1_SM.png> <./OOS_plots/poly_co2_SM.png> <./OOS_p
+lots/poly_co3_SM.png> <./OOS_plots/poly_co4_SM.png> <./OOS_plots/linear_co1_SM.
+png> <./OOS_plots/linear_co2_SM.png> <./OOS_plots/linear_co3_SM.png> <./OOS_plo
+ts/linear_co4_SM.png>] [26] [27] (Chapter 3.bbl) [28
+
+] (Chapter 3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `"Chapter 3".out' has not changed.
+(rerunfilecheck)             Checksum: A7A5885436505CA130951EFFDF2A69C7;1941.
+ ) 
+Here is how much of TeX's memory you used:
+ 21596 strings out of 478864
+ 401745 string characters out of 2847239
+ 967428 words of memory out of 3000000
+ 39048 multiletter control sequences out of 15000+600000
+ 415912 words of font info for 77 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,16n,75p,852b,778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\yzho0040\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
+crm1200.pk><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/yzho0040/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/yzho0040/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/yzho0040/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
+/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi6.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/yzho0040/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/yzho0040/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/yzho0040/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/y
+zho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy6.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/yzho0040/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/yzho0040/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/yzh
+o0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
+pfb>
+Output written on "Chapter 3.pdf" (28 pages, 1385081 bytes).
+PDF statistics:
+ 487 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+
