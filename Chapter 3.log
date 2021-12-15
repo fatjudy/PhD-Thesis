@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  14 DEC 2021 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.3)  15 DEC 2021 23:06
 entering extended mode
 **"./Chapter 3.tex"
 (Chapter 3.tex
@@ -749,22 +749,16 @@ LaTeX Warning: Unused global option(s):
 
 (Chapter 3.aux
 
-LaTeX Warning: Label `nonco-f12' multiply defined.
+LaTeX Warning: Label `s_f7' multiply defined.
 
 
-LaTeX Warning: Label `nonco-f12@cref' multiply defined.
+LaTeX Warning: Label `s_f7@cref' multiply defined.
 
 
-LaTeX Warning: Label `nonco-f12' multiply defined.
+LaTeX Warning: Label `vsNL' multiply defined.
 
 
-LaTeX Warning: Label `nonco-f12@cref' multiply defined.
-
-
-LaTeX Warning: Label `nonco-f12' multiply defined.
-
-
-LaTeX Warning: Label `nonco-f12@cref' multiply defined.
+LaTeX Warning: Label `vsNL@cref' multiply defined.
 
 )
 \openout1 = `"Chapter 3.aux"'.
@@ -910,32 +904,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 354.
 
 [6]
-<plots/scale_cos_g6.png, id=119, 433.62pt x 289.08pt>
+<plots/scale_cos_g6.png, id=123, 433.62pt x 289.08pt>
 File: plots/scale_cos_g6.png Graphic file (type png)
 <use plots/scale_cos_g6.png>
 Package pdftex.def Info: plots/scale_cos_g6.png  used on input line 374.
 (pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
-<plots/scale_cos_g5.png, id=121, 433.62pt x 289.08pt>
+<plots/scale_cos_g5.png, id=125, 433.62pt x 289.08pt>
 File: plots/scale_cos_g5.png Graphic file (type png)
 <use plots/scale_cos_g5.png>
 Package pdftex.def Info: plots/scale_cos_g5.png  used on input line 379.
 (pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
-<plots/scale_expshift_g7.png, id=128, 433.62pt x 289.08pt>
+<plots/scale_expshift_g7.png, id=132, 433.62pt x 289.08pt>
 File: plots/scale_expshift_g7.png Graphic file (type png)
 <use plots/scale_expshift_g7.png>
 Package pdftex.def Info: plots/scale_expshift_g7.png  used on input line 400.
 (pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
-<plots/scale_expshift_g8.png, id=129, 433.62pt x 289.08pt>
+<plots/scale_expshift_g8.png, id=133, 433.62pt x 289.08pt>
 File: plots/scale_expshift_g8.png Graphic file (type png)
 <use plots/scale_expshift_g8.png>
 Package pdftex.def Info: plots/scale_expshift_g8.png  used on input line 405.
 (pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
-<plots/scale_exp_g9.png, id=130, 433.62pt x 289.08pt>
+<plots/scale_exp_g9.png, id=134, 433.62pt x 289.08pt>
 File: plots/scale_exp_g9.png Graphic file (type png)
 <use plots/scale_exp_g9.png>
 Package pdftex.def Info: plots/scale_exp_g9.png  used on input line 416.
 (pdftex.def)             Requested size: 199.30698pt x 132.87254pt.
-<plots/scale_exp_g10.png, id=131, 433.62pt x 289.08pt>
+<plots/scale_exp_g10.png, id=135, 433.62pt x 289.08pt>
 File: plots/scale_exp_g10.png Graphic file (type png)
 <use plots/scale_exp_g10.png>
 Package pdftex.def Info: plots/scale_exp_g10.png  used on input line 421.
@@ -950,272 +944,353 @@ m/n/12 and $\OML/cmm/m/it/12 f[] [] \OT1/cmr/m/n/12 =
  []
 
 [10] [11] [12] [13] [14] [15] [16]
-Overfull \hbox (0.11229pt too wide) in paragraph at lines 812--813
+Overfull \hbox (0.11229pt too wide) in paragraph at lines 818--819
 []\OT1/cmr/m/n/12 For the mod-els con-tain-ing two ex-po-nen-tial func-tions $\
 OML/cmm/m/it/12 f[] [] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 
 e[]$
  []
 
-[17] [18] [19]
-<plots/co1.png, id=236, 722.7pt x 578.16pt>
+[17] [18] [19] [20]
+<plots/co1.png, id=253, 722.7pt x 578.16pt>
 File: plots/co1.png Graphic file (type png)
 <use plots/co1.png>
-Package pdftex.def Info: plots/co1.png  used on input line 931.
-(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+Package pdftex.def Info: plots/co1.png  used on input line 967.
+(pdftex.def)             Requested size: 217.4207pt x 173.93454pt.
 
-Overfull \hbox (43.48386pt too wide) in paragraph at lines 931--932
+Overfull \hbox (36.23631pt too wide) in paragraph at lines 967--968
 [][] 
  []
 
-<plots/co2.png, id=237, 722.7pt x 578.16pt>
+<plots/co2.png, id=254, 722.7pt x 578.16pt>
 File: plots/co2.png Graphic file (type png)
 <use plots/co2.png>
-Package pdftex.def Info: plots/co2.png  used on input line 935.
-(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+Package pdftex.def Info: plots/co2.png  used on input line 971.
+(pdftex.def)             Requested size: 217.4207pt x 173.93454pt.
 
-Overfull \hbox (43.48386pt too wide) in paragraph at lines 935--936
+Overfull \hbox (36.23631pt too wide) in paragraph at lines 971--972
 [][] 
  []
 
-<plots/co3.png, id=238, 722.7pt x 578.16pt>
+<plots/co3.png, id=255, 722.7pt x 578.16pt>
 File: plots/co3.png Graphic file (type png)
 <use plots/co3.png>
-Package pdftex.def Info: plots/co3.png  used on input line 939.
-(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+Package pdftex.def Info: plots/co3.png  used on input line 975.
+(pdftex.def)             Requested size: 217.4207pt x 173.93454pt.
 
-Overfull \hbox (43.48386pt too wide) in paragraph at lines 939--940
+Overfull \hbox (36.23631pt too wide) in paragraph at lines 975--976
 [][] 
  []
 
-<plots/co4.png, id=239, 722.7pt x 578.16pt>
+<plots/co4.png, id=256, 722.7pt x 578.16pt>
 File: plots/co4.png Graphic file (type png)
 <use plots/co4.png>
-Package pdftex.def Info: plots/co4.png  used on input line 943.
-(pdftex.def)             Requested size: 260.90651pt x 208.71968pt.
+Package pdftex.def Info: plots/co4.png  used on input line 979.
+(pdftex.def)             Requested size: 217.4207pt x 173.93454pt.
 
-Overfull \hbox (43.48386pt too wide) in paragraph at lines 943--944
+Overfull \hbox (36.23631pt too wide) in paragraph at lines 979--980
 [][] 
  []
 
-[20] [21 <./plots/co1.png> <./plots/co2.png> <./plots/co3.png> <./plots/co4.png
->] [22] [23]
-Overfull \hbox (35.17255pt too wide) in paragraph at lines 1063--1067
+[21 <./plots/co1.png> <./plots/co2.png> <./plots/co3.png> <./plots/co4.png>]
+<plots/cay.png, id=269, 722.7pt x 578.16pt>
+File: plots/cay.png Graphic file (type png)
+<use plots/cay.png>
+Package pdftex.def Info: plots/cay.png  used on input line 990.
+(pdftex.def)             Requested size: 226.48395pt x 181.18623pt.
+<plots/ylag.png, id=273, 722.7pt x 578.16pt>
+File: plots/ylag.png Graphic file (type png)
+<use plots/ylag.png>
+Package pdftex.def Info: plots/ylag.png  used on input line 1000.
+(pdftex.def)             Requested size: 217.42265pt x 173.93454pt.
+<plots/new_cay.png, id=274, 722.7pt x 578.16pt>
+File: plots/new_cay.png Graphic file (type png)
+<use plots/new_cay.png>
+Package pdftex.def Info: plots/new_cay.png  used on input line 1004.
+(pdftex.def)             Requested size: 217.42265pt x 173.93454pt.
+
+[22 <./plots/cay.png> <./plots/ylag.png> <./plots/new_cay.png>] [23] [24]
+Overfull \hbox (35.17255pt too wide) in paragraph at lines 1123--1126
 \OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 MSE[]$ \OT1/cmr/m/n/12 is the mean squa
 red er-ror of bench-mark model and $[][] = 1\OML/cmm/m/it/12 =n [][] [][]$
  []
 
-[24]
+[25] [26]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-112.
- (C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+225.
+
+(C:\Users\yzho0040\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1225.
 
-[25]
-<OOS_plots/sin_co1_SM.png, id=304, 867.24pt x 578.16pt>
+
+[27] [28]
+<OOS_plots/sin_co1_SM.png, id=349, 867.24pt x 578.16pt>
 File: OOS_plots/sin_co1_SM.png Graphic file (type png)
 <use OOS_plots/sin_co1_SM.png>
-Package pdftex.def Info: OOS_plots/sin_co1_SM.png  used on input line 1144.
+Package pdftex.def Info: OOS_plots/sin_co1_SM.png  used on input line 1257.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/sin_co2_SM.png, id=305, 867.24pt x 578.16pt>
+<OOS_plots/sin_co2_SM.png, id=350, 867.24pt x 578.16pt>
 File: OOS_plots/sin_co2_SM.png Graphic file (type png)
 <use OOS_plots/sin_co2_SM.png>
-Package pdftex.def Info: OOS_plots/sin_co2_SM.png  used on input line 1148.
+Package pdftex.def Info: OOS_plots/sin_co2_SM.png  used on input line 1261.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/sin_co3_SM.png, id=306, 867.24pt x 578.16pt>
+<OOS_plots/sin_co3_SM.png, id=351, 867.24pt x 578.16pt>
 File: OOS_plots/sin_co3_SM.png Graphic file (type png)
 <use OOS_plots/sin_co3_SM.png>
-Package pdftex.def Info: OOS_plots/sin_co3_SM.png  used on input line 1152.
+Package pdftex.def Info: OOS_plots/sin_co3_SM.png  used on input line 1265.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/sin_co4_SM.png, id=307, 867.24pt x 578.16pt>
+<OOS_plots/sin_co4_SM.png, id=352, 867.24pt x 578.16pt>
 File: OOS_plots/sin_co4_SM.png Graphic file (type png)
 <use OOS_plots/sin_co4_SM.png>
-Package pdftex.def Info: OOS_plots/sin_co4_SM.png  used on input line 1156.
+Package pdftex.def Info: OOS_plots/sin_co4_SM.png  used on input line 1269.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/cos_co1_SM.png, id=308, 867.24pt x 578.16pt>
+<OOS_plots/cos_co1_SM.png, id=353, 867.24pt x 578.16pt>
 File: OOS_plots/cos_co1_SM.png Graphic file (type png)
 <use OOS_plots/cos_co1_SM.png>
-Package pdftex.def Info: OOS_plots/cos_co1_SM.png  used on input line 1166.
+Package pdftex.def Info: OOS_plots/cos_co1_SM.png  used on input line 1279.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/cos_co2_SM.png, id=309, 867.24pt x 578.16pt>
+<OOS_plots/cos_co2_SM.png, id=354, 867.24pt x 578.16pt>
 File: OOS_plots/cos_co2_SM.png Graphic file (type png)
 <use OOS_plots/cos_co2_SM.png>
-Package pdftex.def Info: OOS_plots/cos_co2_SM.png  used on input line 1170.
+Package pdftex.def Info: OOS_plots/cos_co2_SM.png  used on input line 1283.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/cos_co3_SM.png, id=310, 867.24pt x 578.16pt>
+<OOS_plots/cos_co3_SM.png, id=355, 867.24pt x 578.16pt>
 File: OOS_plots/cos_co3_SM.png Graphic file (type png)
 <use OOS_plots/cos_co3_SM.png>
-Package pdftex.def Info: OOS_plots/cos_co3_SM.png  used on input line 1174.
+Package pdftex.def Info: OOS_plots/cos_co3_SM.png  used on input line 1287.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/cos_co4_SM.png, id=311, 867.24pt x 578.16pt>
+<OOS_plots/cos_co4_SM.png, id=356, 867.24pt x 578.16pt>
 File: OOS_plots/cos_co4_SM.png Graphic file (type png)
 <use OOS_plots/cos_co4_SM.png>
-Package pdftex.def Info: OOS_plots/cos_co4_SM.png  used on input line 1178.
+Package pdftex.def Info: OOS_plots/cos_co4_SM.png  used on input line 1291.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_sin_co1_SM.png, id=312, 867.24pt x 578.16pt>
+<OOS_plots/scaled_sin_co1_SM.png, id=357, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_sin_co1_SM.png Graphic file (type png)
 <use OOS_plots/scaled_sin_co1_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_sin_co1_SM.png  used on input line 11
-88.
+Package pdftex.def Info: OOS_plots/scaled_sin_co1_SM.png  used on input line 13
+01.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_sin_co2_SM.png, id=313, 867.24pt x 578.16pt>
+<OOS_plots/scaled_sin_co2_SM.png, id=358, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_sin_co2_SM.png Graphic file (type png)
 <use OOS_plots/scaled_sin_co2_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_sin_co2_SM.png  used on input line 11
-92.
+Package pdftex.def Info: OOS_plots/scaled_sin_co2_SM.png  used on input line 13
+05.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_sin_co3_SM.png, id=314, 867.24pt x 578.16pt>
+<OOS_plots/scaled_sin_co3_SM.png, id=359, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_sin_co3_SM.png Graphic file (type png)
 <use OOS_plots/scaled_sin_co3_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_sin_co3_SM.png  used on input line 11
-96.
+Package pdftex.def Info: OOS_plots/scaled_sin_co3_SM.png  used on input line 13
+09.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_sin_co4_SM.png, id=315, 867.24pt x 578.16pt>
+<OOS_plots/scaled_sin_co4_SM.png, id=360, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_sin_co4_SM.png Graphic file (type png)
 <use OOS_plots/scaled_sin_co4_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_sin_co4_SM.png  used on input line 12
-00.
+Package pdftex.def Info: OOS_plots/scaled_sin_co4_SM.png  used on input line 13
+13.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_cos_co1_SM.png, id=316, 867.24pt x 578.16pt>
+<OOS_plots/scaled_cos_co1_SM.png, id=361, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_cos_co1_SM.png Graphic file (type png)
 <use OOS_plots/scaled_cos_co1_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_cos_co1_SM.png  used on input line 12
-10.
+Package pdftex.def Info: OOS_plots/scaled_cos_co1_SM.png  used on input line 13
+23.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_cos_co2_SM.png, id=317, 867.24pt x 578.16pt>
+<OOS_plots/scaled_cos_co2_SM.png, id=362, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_cos_co2_SM.png Graphic file (type png)
 <use OOS_plots/scaled_cos_co2_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_cos_co2_SM.png  used on input line 12
-14.
+Package pdftex.def Info: OOS_plots/scaled_cos_co2_SM.png  used on input line 13
+27.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_cos_co3_SM.png, id=318, 867.24pt x 578.16pt>
+<OOS_plots/scaled_cos_co3_SM.png, id=363, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_cos_co3_SM.png Graphic file (type png)
 <use OOS_plots/scaled_cos_co3_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_cos_co3_SM.png  used on input line 12
-18.
+Package pdftex.def Info: OOS_plots/scaled_cos_co3_SM.png  used on input line 13
+31.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/scaled_cos_co4_SM.png, id=319, 867.24pt x 578.16pt>
+<OOS_plots/scaled_cos_co4_SM.png, id=364, 867.24pt x 578.16pt>
 File: OOS_plots/scaled_cos_co4_SM.png Graphic file (type png)
 <use OOS_plots/scaled_cos_co4_SM.png>
-Package pdftex.def Info: OOS_plots/scaled_cos_co4_SM.png  used on input line 12
-22.
+Package pdftex.def Info: OOS_plots/scaled_cos_co4_SM.png  used on input line 13
+35.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_shift_co1_SM.png, id=320, 867.24pt x 578.16pt>
+<OOS_plots/exp_shift_co1_SM.png, id=365, 867.24pt x 578.16pt>
 File: OOS_plots/exp_shift_co1_SM.png Graphic file (type png)
 <use OOS_plots/exp_shift_co1_SM.png>
-Package pdftex.def Info: OOS_plots/exp_shift_co1_SM.png  used on input line 123
-3.
+Package pdftex.def Info: OOS_plots/exp_shift_co1_SM.png  used on input line 134
+6.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_shift_co2_SM.png, id=321, 867.24pt x 578.16pt>
+<OOS_plots/exp_shift_co2_SM.png, id=366, 867.24pt x 578.16pt>
 File: OOS_plots/exp_shift_co2_SM.png Graphic file (type png)
 <use OOS_plots/exp_shift_co2_SM.png>
-Package pdftex.def Info: OOS_plots/exp_shift_co2_SM.png  used on input line 123
-7.
+Package pdftex.def Info: OOS_plots/exp_shift_co2_SM.png  used on input line 135
+0.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_shift_co3_SM.png, id=322, 867.24pt x 578.16pt>
+<OOS_plots/exp_shift_co3_SM.png, id=367, 867.24pt x 578.16pt>
 File: OOS_plots/exp_shift_co3_SM.png Graphic file (type png)
 <use OOS_plots/exp_shift_co3_SM.png>
-Package pdftex.def Info: OOS_plots/exp_shift_co3_SM.png  used on input line 124
-1.
+Package pdftex.def Info: OOS_plots/exp_shift_co3_SM.png  used on input line 135
+4.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_shift_co4_SM.png, id=323, 867.24pt x 578.16pt>
+<OOS_plots/exp_shift_co4_SM.png, id=368, 867.24pt x 578.16pt>
 File: OOS_plots/exp_shift_co4_SM.png Graphic file (type png)
 <use OOS_plots/exp_shift_co4_SM.png>
-Package pdftex.def Info: OOS_plots/exp_shift_co4_SM.png  used on input line 124
-5.
+Package pdftex.def Info: OOS_plots/exp_shift_co4_SM.png  used on input line 135
+8.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_co1_SM.png, id=324, 867.24pt x 578.16pt>
+<OOS_plots/exp_co1_SM.png, id=369, 867.24pt x 578.16pt>
 File: OOS_plots/exp_co1_SM.png Graphic file (type png)
 <use OOS_plots/exp_co1_SM.png>
-Package pdftex.def Info: OOS_plots/exp_co1_SM.png  used on input line 1255.
+Package pdftex.def Info: OOS_plots/exp_co1_SM.png  used on input line 1368.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_co2_SM.png, id=325, 867.24pt x 578.16pt>
+<OOS_plots/exp_co2_SM.png, id=370, 867.24pt x 578.16pt>
 File: OOS_plots/exp_co2_SM.png Graphic file (type png)
 <use OOS_plots/exp_co2_SM.png>
-Package pdftex.def Info: OOS_plots/exp_co2_SM.png  used on input line 1259.
+Package pdftex.def Info: OOS_plots/exp_co2_SM.png  used on input line 1372.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_co3_SM.png, id=326, 867.24pt x 578.16pt>
+<OOS_plots/exp_co3_SM.png, id=371, 867.24pt x 578.16pt>
 File: OOS_plots/exp_co3_SM.png Graphic file (type png)
 <use OOS_plots/exp_co3_SM.png>
-Package pdftex.def Info: OOS_plots/exp_co3_SM.png  used on input line 1263.
+Package pdftex.def Info: OOS_plots/exp_co3_SM.png  used on input line 1376.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/exp_co4_SM.png, id=327, 867.24pt x 578.16pt>
+<OOS_plots/exp_co4_SM.png, id=372, 867.24pt x 578.16pt>
 File: OOS_plots/exp_co4_SM.png Graphic file (type png)
 <use OOS_plots/exp_co4_SM.png>
-Package pdftex.def Info: OOS_plots/exp_co4_SM.png  used on input line 1267.
+Package pdftex.def Info: OOS_plots/exp_co4_SM.png  used on input line 1380.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/poly_co1_SM.png, id=328, 867.24pt x 578.16pt>
+<OOS_plots/poly_co1_SM.png, id=373, 867.24pt x 578.16pt>
 File: OOS_plots/poly_co1_SM.png Graphic file (type png)
 <use OOS_plots/poly_co1_SM.png>
-Package pdftex.def Info: OOS_plots/poly_co1_SM.png  used on input line 1278.
+Package pdftex.def Info: OOS_plots/poly_co1_SM.png  used on input line 1391.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/poly_co2_SM.png, id=329, 867.24pt x 578.16pt>
+<OOS_plots/poly_co2_SM.png, id=374, 867.24pt x 578.16pt>
 File: OOS_plots/poly_co2_SM.png Graphic file (type png)
 <use OOS_plots/poly_co2_SM.png>
-Package pdftex.def Info: OOS_plots/poly_co2_SM.png  used on input line 1282.
+Package pdftex.def Info: OOS_plots/poly_co2_SM.png  used on input line 1395.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/poly_co3_SM.png, id=330, 867.24pt x 578.16pt>
+<OOS_plots/poly_co3_SM.png, id=375, 867.24pt x 578.16pt>
 File: OOS_plots/poly_co3_SM.png Graphic file (type png)
 <use OOS_plots/poly_co3_SM.png>
-Package pdftex.def Info: OOS_plots/poly_co3_SM.png  used on input line 1286.
+Package pdftex.def Info: OOS_plots/poly_co3_SM.png  used on input line 1399.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/poly_co4_SM.png, id=331, 867.24pt x 578.16pt>
+<OOS_plots/poly_co4_SM.png, id=376, 867.24pt x 578.16pt>
 File: OOS_plots/poly_co4_SM.png Graphic file (type png)
 <use OOS_plots/poly_co4_SM.png>
-Package pdftex.def Info: OOS_plots/poly_co4_SM.png  used on input line 1290.
+Package pdftex.def Info: OOS_plots/poly_co4_SM.png  used on input line 1403.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/linear_co1_SM.png, id=332, 867.24pt x 578.16pt>
+<OOS_plots/linear_co1_SM.png, id=377, 867.24pt x 578.16pt>
 File: OOS_plots/linear_co1_SM.png Graphic file (type png)
 <use OOS_plots/linear_co1_SM.png>
-Package pdftex.def Info: OOS_plots/linear_co1_SM.png  used on input line 1300.
+Package pdftex.def Info: OOS_plots/linear_co1_SM.png  used on input line 1413.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/linear_co2_SM.png, id=333, 867.24pt x 578.16pt>
+<OOS_plots/linear_co2_SM.png, id=378, 867.24pt x 578.16pt>
 File: OOS_plots/linear_co2_SM.png Graphic file (type png)
 <use OOS_plots/linear_co2_SM.png>
-Package pdftex.def Info: OOS_plots/linear_co2_SM.png  used on input line 1304.
+Package pdftex.def Info: OOS_plots/linear_co2_SM.png  used on input line 1417.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/linear_co3_SM.png, id=334, 867.24pt x 578.16pt>
+<OOS_plots/linear_co3_SM.png, id=379, 867.24pt x 578.16pt>
 File: OOS_plots/linear_co3_SM.png Graphic file (type png)
 <use OOS_plots/linear_co3_SM.png>
-Package pdftex.def Info: OOS_plots/linear_co3_SM.png  used on input line 1308.
+Package pdftex.def Info: OOS_plots/linear_co3_SM.png  used on input line 1421.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
-<OOS_plots/linear_co4_SM.png, id=335, 867.24pt x 578.16pt>
+<OOS_plots/linear_co4_SM.png, id=380, 867.24pt x 578.16pt>
 File: OOS_plots/linear_co4_SM.png Graphic file (type png)
 <use OOS_plots/linear_co4_SM.png>
-Package pdftex.def Info: OOS_plots/linear_co4_SM.png  used on input line 1312.
+Package pdftex.def Info: OOS_plots/linear_co4_SM.png  used on input line 1425.
 (pdftex.def)             Requested size: 171.21994pt x 114.13902pt.
- [26] [27 <./OOS_plots/sin_co1_SM.png> <./OOS_plots/sin_co2_SM.png> <./OOS_plot
-s/sin_co3_SM.png> <./OOS_plots/sin_co4_SM.png> <./OOS_plots/cos_co1_SM.png> <./
+ [29 <./OOS_plots/sin_co1_SM.png> <./OOS_plots/sin_co2_SM.png> <./OOS_plots/sin
+_co3_SM.png> <./OOS_plots/sin_co4_SM.png>] [30 <./OOS_plots/cos_co1_SM.png> <./
 OOS_plots/cos_co2_SM.png> <./OOS_plots/cos_co3_SM.png> <./OOS_plots/cos_co4_SM.
-png>] [28 <./OOS_plots/scaled_sin_co1_SM.png> <./OOS_plots/scaled_sin_co2_SM.pn
-g> <./OOS_plots/scaled_sin_co3_SM.png> <./OOS_plots/scaled_sin_co4_SM.png> <./O
+png> <./OOS_plots/scaled_sin_co1_SM.png> <./OOS_plots/scaled_sin_co2_SM.png> <.
+/OOS_plots/scaled_sin_co3_SM.png> <./OOS_plots/scaled_sin_co4_SM.png>] [31 <./O
 OS_plots/scaled_cos_co1_SM.png> <./OOS_plots/scaled_cos_co2_SM.png> <./OOS_plot
-s/scaled_cos_co3_SM.png> <./OOS_plots/scaled_cos_co4_SM.png>] [29 <./OOS_plots/
-exp_shift_co1_SM.png> <./OOS_plots/exp_shift_co2_SM.png> <./OOS_plots/exp_shift
-_co3_SM.png> <./OOS_plots/exp_shift_co4_SM.png> <./OOS_plots/exp_co1_SM.png> <.
+s/scaled_cos_co3_SM.png> <./OOS_plots/scaled_cos_co4_SM.png> <./OOS_plots/exp_s
+hift_co1_SM.png> <./OOS_plots/exp_shift_co2_SM.png> <./OOS_plots/exp_shift_co3_
+SM.png> <./OOS_plots/exp_shift_co4_SM.png>] [32 <./OOS_plots/exp_co1_SM.png> <.
 /OOS_plots/exp_co2_SM.png> <./OOS_plots/exp_co3_SM.png> <./OOS_plots/exp_co4_SM
-.png>] [30 <./OOS_plots/poly_co1_SM.png> <./OOS_plots/poly_co2_SM.png> <./OOS_p
-lots/poly_co3_SM.png> <./OOS_plots/poly_co4_SM.png> <./OOS_plots/linear_co1_SM.
+.png> <./OOS_plots/poly_co1_SM.png> <./OOS_plots/poly_co2_SM.png> <./OOS_plots/
+poly_co3_SM.png> <./OOS_plots/poly_co4_SM.png>] [33 <./OOS_plots/linear_co1_SM.
 png> <./OOS_plots/linear_co2_SM.png> <./OOS_plots/linear_co3_SM.png> <./OOS_plo
-ts/linear_co4_SM.png>] [31] [32] (Chapter 3.bbl) [33
+ts/linear_co4_SM.png>]
+<plots/co2_AR1_g1.png, id=438, 433.62pt x 289.08pt>
+File: plots/co2_AR1_g1.png Graphic file (type png)
+<use plots/co2_AR1_g1.png>
+Package pdftex.def Info: plots/co2_AR1_g1.png  used on input line 1462.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
 
-] (Chapter 3.aux)
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1462--1463
+[][] 
+ []
+
+<plots/co2_AR1_g5.png, id=439, 433.62pt x 289.08pt>
+File: plots/co2_AR1_g5.png Graphic file (type png)
+<use plots/co2_AR1_g5.png>
+Package pdftex.def Info: plots/co2_AR1_g5.png  used on input line 1466.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
+
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1466--1467
+[][] 
+ []
+
+<plots/co1_NLS_g1.png, id=441, 433.62pt x 289.08pt>
+File: plots/co1_NLS_g1.png Graphic file (type png)
+<use plots/co1_NLS_g1.png>
+Package pdftex.def Info: plots/co1_NLS_g1.png  used on input line 1480.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
+
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1480--1481
+[][] 
+ []
+
+<plots/co4_NLS_g7.png, id=442, 433.62pt x 289.08pt>
+File: plots/co4_NLS_g7.png Graphic file (type png)
+<use plots/co4_NLS_g7.png>
+Package pdftex.def Info: plots/co4_NLS_g7.png  used on input line 1484.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
+
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1484--1485
+[][] 
+ []
+
+[34 <./plots/co2_AR1_g1.png> <./plots/co2_AR1_g5.png>]
+<plots/co4_AR2_g3.png, id=452, 433.62pt x 289.08pt>
+File: plots/co4_AR2_g3.png Graphic file (type png)
+<use plots/co4_AR2_g3.png>
+Package pdftex.def Info: plots/co4_AR2_g3.png  used on input line 1498.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
+
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1498--1499
+[][] 
+ []
+
+<plots/co2_AR2_g5.png, id=453, 433.62pt x 289.08pt>
+File: plots/co2_AR2_g5.png Graphic file (type png)
+<use plots/co2_AR2_g5.png>
+Package pdftex.def Info: plots/co2_AR2_g5.png  used on input line 1502.
+(pdftex.def)             Requested size: 228.29424pt x 152.19713pt.
+
+Overfull \hbox (38.04855pt too wide) in paragraph at lines 1502--1503
+[][] 
+ []
+
+[35 <./plots/co1_NLS_g1.png> <./plots/co4_NLS_g7.png> <./plots/co4_AR2_g3.png> 
+<./plots/co2_AR2_g5.png>] [36] (Chapter 3.bbl) [37
+
+] [38] (Chapter 3.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `"Chapter 3".out' has not changed.
-(rerunfilecheck)             Checksum: 38D494CC695CD4BF13622A85C800E09D;1827.
+(rerunfilecheck)             Checksum: 6ADD4F6BB9219C945DD3DB0FB21417FA;2023.
  ) 
 Here is how much of TeX's memory you used:
- 21611 strings out of 478864
- 401929 string characters out of 2847239
- 973426 words of memory out of 3000000
- 39052 multiletter control sequences out of 15000+600000
+ 21709 strings out of 478864
+ 403729 string characters out of 2847239
+ 952426 words of memory out of 3000000
+ 39125 multiletter control sequences out of 15000+600000
  415912 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,75p,894b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,75p,894b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\yzho0040\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\t
 crm1200.pk><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb><C:/Users/yzho0040/AppData/Local/Programs/MiKTeX/fonts/t
@@ -1241,9 +1316,9 @@ grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/yzho0040/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/yzh
 o0040/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.
 pfb>
-Output written on "Chapter 3.pdf" (33 pages, 1404904 bytes).
+Output written on "Chapter 3.pdf" (38 pages, 1621479 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 500000)
+ 360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
