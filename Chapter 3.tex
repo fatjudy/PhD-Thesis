@@ -166,23 +166,41 @@
 \chapter*{Chapter 3: Partially Nonlinear Single-Index Predictive Model}
 
 \section{Introduction}
-%Partial-linear model is an important tool for multivariate regression due to its flexibility. It combines linear model with a nonparametric model, which can capture both linear and nonlinear relationship between dependent variable and predictors (see for example \cite{stute2005nonparametric}). Such works include Such works include \cite{chen1988convergence}, \cite{carroll1997generalized} and \cite{ruppert2003semiparametric}. Due to the "curse of dimensionality", the nonlinear relationship in the nonparametric part can be difficult to explore (see for example, \cite{ma2013doubly}). Therefore, we follow \cite{dong2016estimation} and consider a partial linear single-index model of the form:
 
-Conventional partially linear models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years, see for example \cite{dong2016estimation}. We are now interested in a new class of nonlinear time series models - partially nonlinear single-index models of the form:
+\subsubsection{Background}
+
+Forecasting of stock return is central to making investment decisions. Development of models and methodologies for selecting a good predictive model and constructing reliable forecast have been an active area of research. As most of the predictors used to predict stock return (for example, some macroeconomic variables) are nonstationary, while the dependent variable stock return is stationary, linear models will suffer from the problem of spurious regression. Therefore, in the past two decades, nonlinear and nonstationary time series have attracted much attention and have been studied intensively
+
+In this chapter, we propose a new class of nonlinear time series models - partially nonlinear single-index models of the form:
 \begin{equation}
-y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
-t=2,...,T,  \label{PL model}
+	y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
+	t=2,...,T,  \label{PL model}
 \end{equation}%
 where $z_t = (y_{t-1}, \cdots, y_{t-p}, w_{t-1}^{\prime})^{\prime}$, in which $w_{t-1}$ is a vector of stationary predictors, 
 %such as the 3 components (consumption, labour income and asset holdings) of "cay" variable constructed by \textcolor[rgb]{ 0,  .439,  .753}{Lettau and Ludvigson (2001)}.
 $g\left( .,.\right) $ is a known univariate nonlinear function, $x_{t-1}$ is a $d$-dimensional integrated process of order one, $\theta _{0}$ is a $d$-dimensional unknown true parameter vector that lies in the parameter set $\Theta $, $\gamma _{0}$ is a $m$-dimensional unknown true parameter vector that lies in the parameter set $\Gamma $ and $e_{t}$ is a martingale
-difference process. The parameter sets $\Theta $ and $\Gamma $ are assumed to be compact and convex subsets of $\mathbb{R}^{d}$ and $\mathbb{R}^{m}$ respectively. In order to ensure that $\theta_0$ is uniquely identifiable, we will need to impose $\theta_{0}^{\prime}\theta_{0} = 1$.
+difference process. The parameter sets $\Theta $ and $\Gamma $ are assumed to be compact and convex subsets of $\mathbb{R}^{d}$ and $\mathbb{R}^{m}$ respectively. In order to ensure that $\theta_0$ is uniquely identifiable, we will need to impose $\theta_{0}^{\prime}\theta_{0} = 1$. 
+
+
+%Partial-linear model is an important tool for multivariate regression due to its flexibility. It combines linear model with a nonparametric model, which can capture both linear and nonlinear relationship between dependent variable and predictors (see for example \cite{stute2005nonparametric}). Such works include Such works include \cite{chen1988convergence}, \cite{carroll1997generalized} and \cite{ruppert2003semiparametric}. Due to the "curse of dimensionality", the nonlinear relationship in the nonparametric part can be difficult to explore (see for example, \cite{ma2013doubly}). Therefore, we follow \cite{dong2016estimation} and consider a partial linear single-index model of the form:
+
+\subsubsection{Literature Riview}
+There is a considerable practical and theoretical effort being channelled into nonlinear and nonstationary time series in recent decades(see for example, \cite{park2001nonlinear}, \cite{park2002nonstationary} and \cite{gao2009nonparametric}). 
+
+Conventional partially linear models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years, see for example \cite{dong2016estimation}. 
 
 Our model allows for lagged dependent variables because key macroeconomic/financial variables, such as the growth rate of GDP, the rate of unemployment and interest rates are typically autocorrelated. Failing to account for this autocorrelation will lead to serially correlated residuals. We are thus interested in using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only the nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$, containing either the cointegrated predictors or non-cointegrated predictors. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
 
 There is a considerable theoretical effort being put into developing new estimation method of the partial linear model (see for example, \cite{dong2016estimation}) and nonlinear models with single-index (see for example \cite{chang2003index}). In our study, we propose a novel 2-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares.
 
 This study aims to use the Monte Carlo simulation method to investigate the finite sample properties of the estimators. There will also be an empirical analysis to study the predictability of stock returns. We will use the dataset from \cite{welch2008comprehensive} and investigate the out-of-sample forecast ability of model (\ref{PL model}). Compared with chapter 2, we will include lagged dependent variables in the model. We will investigate whether the partially nonlinear single-index model will help further improve the stock return predictability in my future research.  
+
+\subsubsection{Motivation}
+
+\textcolor{red}{to be filled}
+
+The findings of this chapter are summarized as follows:
+\textcolor{red}{to be filled}
 
 This chapter is organized as follows. Section 2 introduces the partially nonlinear single-index predictive model and proposes a 3-step estimation method. To improve the performance of the model, this section also introduces constraint and truncation conditions in addition to the normal nonlinear least square. Section 3 examines the finite-sample properties of the normal nonlinear least square estimators (NLS estimators hereafter) and the constrained nonlinear least square estimators (CLS estimators hereafter) using Monte Carlo evaluation. The discussion includes models with different nonlinear functional part and considers both co-integrated and non-cointegrated cases. Section 4 applies the partially nonlinear models to stock return predictability and investigate both in-sample and out-of-sample performances of the models. Section 5 concludes. 
 
@@ -241,12 +259,14 @@ The $(\hat{\theta}, \hat{\gamma})$ is given by:
 \left( \widehat{\theta},\widehat{\gamma}\right) =\arg \min_{\theta \in \Theta
 	,\gamma \in \Gamma }Q_{T}\left( \theta ,\gamma \right),  \label{nls_c3}
 \end{equation*}%
-which can be solved using an iterative procedure since there is no closed form solution. As $\hat{\theta}$ and $\hat{\gamma}$ have been estimated, we can substitute them back to (\ref{beta}) and get the estimate of $\beta$:
+which can be solved using an iterative procedure since there is no closed form solution. 
+
+\textbf{Step 3: } As $\hat{\theta}$ and $\hat{\gamma}$ have been estimated, we can substitute them back to (\ref{beta}) and get the estimate of $\beta$:
 $$
  \hat{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t- f\left( x_{t-1}^{\prime }\hat{\theta}; \hat{\gamma}\right)\right) z_t.
 $$.
 
-In the 2-step procedure above, we have obtained the NLS estimators ($\widehat{\theta}, \widehat{\gamma}, \widehat{\beta}$). In order to improve finite sample properties of the estimators, we impose a truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_T\right)$ on $x_{t-1}$ and an identification condition on coefficient vector $\theta$. We then define the modified sum-of-squared errors by:
+In the 3-step procedure above, we have obtained the NLS estimators ($\widehat{\theta}, \widehat{\gamma}, \widehat{\beta}$). In order to improve finite sample properties of the estimators, we impose a truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_T\right)$ on $x_{t-1}$ and an identification condition on coefficient vector $\theta$. We then define the modified sum-of-squared errors by:
 
 $$
 Q_{T, M}(\theta, \gamma)=\sum_{t=1}^{T}\left(y_{t}-f\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2} I\left(\left\|x_{t-1}\right\| \leq M_{T}\right)+\lambda\left(\|\theta\|^{2}-1\right),
@@ -270,6 +290,146 @@ $$
 \bar{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t- f\left( x_{t-1}^{\prime }\bar{\theta}; \bar{\gamma}\right)\right) z_t.
 $$.
 
+\subsection{Nonlinear Function: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
+In the partially nonlinear model \ref{PL model}, we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies type of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
+\begin{eqnarray*}
+	\text{sin}: f_{1}\left( u_{t-1},\gamma _{1}\right) &=&\sin \left( u_{t-1}+\gamma_{1}\right),  \\
+	\text{cos}: f_{2}\left( u_{t-1},\gamma _{2}\right) &=&\cos \left( u_{t-1}+\gamma_{2}\right), \\
+	\text{sin\_scaled}: f_{3}\left( u_{t-1},\gamma_{3}, \gamma_{4}\right) &=&\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right),  \\
+	\text{cos\_scaled}: f_{4}\left( u_{t-1},\gamma_{5}, \gamma_{6}\right) &=&\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right),
+	%		\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
+	%		\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}  \\
+	%		\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) &=&\gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
+\end{eqnarray*} 
+where $u_{t-1} =  x_{t-1}^{\prime }\theta _{0}$.
+Among the above 4 trigonometric functions, $f_{1} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{2} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ can be regarded as special cases of $f_{3}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{4} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ with $\gamma_{3}$ and $\gamma_{5}$ equals to 1. 
+
+Parameters $\gamma_{1}$, $\gamma_{2}$, $\gamma_{4}$ and $\gamma_{6}$ decide the position of the functions (the location parameter). As shown in picture (\ref{param_g6}), the two curves have the same shape but the right curve is to the right of the blue one. Parameters $\gamma_{3}$ and $\gamma_{5}$ decide the shape of the functions, a bigger value will make the shape compressed while a smaller value will make it stretched (the shape parameter). The effect of the shape parameters can be seen in picture (\ref{param_g5}). The blue curve shows almost one period of a cosine function but the red curve shows less than a quarter.
+
+\begin{figure}[!htbp]
+	\centering
+	\caption{Plots for Trigonometric Functions}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_cos_g6.png}
+		\caption{$f_{4}$ with different location parameter}
+		\label{param_g6}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_cos_g5.png}
+		\caption{$f_{4}$ with different shape parameter}
+		\label{param_g5}
+	\end{subfigure}
+	\label{trigo}
+\end{figure}
+
+In addition, we also consider two exponential functions:
+\begin{eqnarray*}
+	\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
+	\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2},
+\end{eqnarray*} 
+where $\gamma_{7}, \gamma_{10}$ $\in(0, \infty)$. 
+The two exponential functions are bounded: $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ lies in (0,1) and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ lies in (0, $\gamma_{9}$). 
+
+Figure \ref{exp1} and \ref{exp2} present the plots of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$. Even though both $f_5$ and $f_6$ are exponential functions, they have very different shapes. $f_5$ is an increasing function while $f_6$ is a decreasing function. We can see that $\gamma_{7}$ changes the steepness of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ (figure \ref{param_g7}) and $\gamma_{8}$ changes its position (figure \ref{param_g8}). And for $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$, $\gamma_{9}$ acts as the upper bound for the function and changes its position (figure \ref{param_g9}), while $\gamma_{10}$ changes its steepness (figure \ref{param_g10}).
+
+\begin{figure}[!htbp]
+	\centering
+	\caption{$f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_expshift_g7.png}
+		\caption{$f_{5}$ with different $\gamma_{7}$}
+		\label{param_g7}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_expshift_g8.png}
+		\caption{$f_{5}$ with different $\gamma_{8}$}
+		\label{param_g8}
+	\end{subfigure}
+	\label{exp1}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\caption{$f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_exp_g9.png}
+		\caption{$f_{6}$ with different $\gamma_{7}$}
+		\label{param_g9}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.44\linewidth}
+		\includegraphics[width=\linewidth]{plots/scale_exp_g10.png}
+		\caption{$f_{6}$ with different $\gamma_{8}$}
+		\label{param_g10}
+	\end{subfigure}
+	\label{exp2}
+\end{figure}
+
+In addition, we also consider a quadratic polynomial function:
+$$
+\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) = \gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
+$$
+It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ changes the parabola's wideness.
+
+The nonlinear functional forms we consider have included the bounded functions (the exponential functions), bounded periodic functions (trigonometric functions), and the unbounded function (polynomial function). 
+
+\subsection{Initial Values}
+
+As the gradient functions (\ref{gradient}) do not have a closed form solution, we will use an iterative procedure to estimate the model, which requires initial values. Most studies use 0 or true values as the initial values to start the procedure(\textcolor{red}{LR} here). Normally, true values provide the quickest and best convergence, but they are not known in empirical studies. And values that are close to the optimal values will tend to give a better convergence. 
+
+Even though we do not known the optimal values beforehand, we can linearize our partially nonlinear model using Taylor expansion and estimate the linearized model to obtain better initial values. 
+
+%to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
+%To start the iterative procedure, 
+
+Before applying Taylor expansion, we need to calculate the single-index $u_{t-1} = x^{\prime}_{t-1}\theta$. Since $x_1$ and $x_2$ are cointegrated, we can first estimate the following regression to get the cointegration vector $(1,-\hat{\eta})$:
+$$
+x_1 =\eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
+$$
+Then $\theta_0$ is given by normalizing the cointegration vector $(1,-\hat{\eta})$:
+$$
+\theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\eta}^2}}, -\dfrac{\hat{\eta}}{\sqrt{1+\hat{\eta}^2}})
+$$
+which satisfies the constrain that $\|\theta_0\| = 1$. Then the single-index can be calculated as $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$.
+
+
+As $\hat{u}_{t-1}$ has been estimated, we can apply Taylor expansion to approximate the nonlinear part $f\left( \hat{u}_{t-1},\gamma _{0}\right)$. For the two sine functions: $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1}\right)$ and $f_{3}\left( \gamma_{3}u_{t-1},\gamma _{4}\right) =\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we can use their first order Taylor expansions and substitute $f_1$ and $f_3$ by: 
+$$
+\tilde{f_1} = \left( \hat{u}_{t-1}+\gamma_{1}\right) 
+$$ 
+$$
+\tilde{f_3} = \left( \gamma_{3}\hat{u}_{t-1}+\gamma_{4}\right) 
+$$ 
+
+Then for the two cosine functions $f_{2}\left( u_{t-1},\gamma _{2}\right) =\cos \left(u_{t-1}+\gamma_{2}\right)$ and $f_{4}\left( \gamma _{5}u_{t-1}+\gamma_{6}\right) =\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right)$, we approximate them using their second-order Taylor expansions:
+$$
+\tilde{f_2} = 1 - \left( \hat{u}_{t-1}+\gamma_{2}\right)^2
+$$ 
+$$
+\tilde{f_4} =  1 - \left(\gamma _{5} \hat{u}_{t-1}+\gamma_{6}\right)^2
+$$ 
+
+Similarly, the two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$ can also be approximated by their first and second order Taylor expansions:
+
+$$
+\tilde{f_5} = \gamma_{7}(\hat{u}_{t-1} - \gamma_{8})^2
+$$
+$$
+\tilde{f_6}= \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2})
+$$
+And for functional 7, the polynomial function, it is already a linear function when the single-index is known. Then we can substitute the nonlinear part $f_1$ to $f_6$ in model (\ref{PL model}) by $\tilde{f}_1$ to $\tilde{f}_6$ above. Therefore, the initial values of $( \beta, \gamma)$ for different functional forms can be calculated by estimating the following linear regressions:
+\begin{align*}
+	y_{t} & =  \gamma_{1}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
+	y_{t} & =  \gamma_{2}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
+	y_{t} & =  \gamma_{4}  + \gamma_{3}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t\\	
+	y_{t} & =  \gamma_{6}  + \gamma_{5}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
+	y_{t} & =  \gamma_{7}\hat{u}_{t-1}^2 - 2\gamma_{7}\gamma_{8}\hat{u}_{t-1} + \gamma_{7}\gamma_{8}^2 + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
+	y_{t} & =  \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2}) + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
+	y_{t} & =  \gamma_{11}+ \gamma_{12}\hat{u}_{t-1}+\gamma_{13}\hat{u}_{t-1}^{2} +\beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t
+\end{align*}
+where $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$ and $e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T$.
+% = \tilde{f_2}  + \beta_{1}y_{t-1} + \beta_2w_{t-1}
+
+Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0}, \beta_{0}, \gamma_{0} \right) $ for the iterative procedure. In the section below part, we can see that these initial values are better than random ones (for example, 0).
 
 \section{Monte Carlo Simulation}
 
@@ -350,147 +510,6 @@ $$.
 	$\widehat{\alpha}^{(r)}$ denote the $r$-th replication of the estimate.
 	Following the above definitions, we then calculate biases, standard deviations and covariance for $\theta$, $\beta$ and $\gamma$.
 	
-	
-\subsection{Nonlinear Function: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
-	In the partially nonlinear model \ref{PL model}, we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies type of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
-	\begin{eqnarray*}
-		\text{sin}: f_{1}\left( u_{t-1},\gamma _{1}\right) &=&\sin \left( u_{t-1}+\gamma_{1}\right),  \\
-		\text{cos}: f_{2}\left( u_{t-1},\gamma _{2}\right) &=&\cos \left( u_{t-1}+\gamma_{2}\right), \\
-		\text{sin\_scaled}: f_{3}\left( u_{t-1},\gamma_{3}, \gamma_{4}\right) &=&\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right),  \\
-		\text{cos\_scaled}: f_{4}\left( u_{t-1},\gamma_{5}, \gamma_{6}\right) &=&\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right),
-%		\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
-%		\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}  \\
-%		\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) &=&\gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
-	\end{eqnarray*} 
-	where $u_{t-1} =  x_{t-1}^{\prime }\theta _{0}$.
-	Among the above 4 trigonometric functions, $f_{1} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{2} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ can be regarded as special cases of $f_{3}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{4} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ with $\gamma_{3}$ and $\gamma_{5}$ equals to 1. 
-	
-	Parameters $\gamma_{1}$, $\gamma_{2}$, $\gamma_{4}$ and $\gamma_{6}$ decide the position of the functions (the location parameter). As shown in picture (\ref{param_g6}), the two curves have the same shape but the right curve is to the right of the blue one. Parameters $\gamma_{3}$ and $\gamma_{5}$ decide the shape of the functions, a bigger value will make the shape compressed while a smaller value will make it stretched (the shape parameter). The effect of the shape parameters can be seen in picture (\ref{param_g5}). The blue curve shows almost one period of a cosine function but the red curve shows less than a quarter.
-	
-	\begin{figure}[!htbp]
-		\centering
-		\caption{Plots for Trigonometric Functions}
-		\begin{subfigure}[b]{0.44\linewidth}
-			\includegraphics[width=\linewidth]{plots/scale_cos_g6.png}
-			\caption{$f_{4}$ with different location parameter}
-			\label{param_g6}
-		\end{subfigure}
-		\begin{subfigure}[b]{0.44\linewidth}
-			\includegraphics[width=\linewidth]{plots/scale_cos_g5.png}
-			\caption{$f_{4}$ with different shape parameter}
-			\label{param_g5}
-		\end{subfigure}
-		\label{trigo}
-	\end{figure}
-	
-	In addition, we also consider two exponential functions:
-	\begin{eqnarray*}
-		\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
-		\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2},
-	\end{eqnarray*} 
-	where $\gamma_{7}, \gamma_{10}$ $\in(0, \infty)$. 
-	The two exponential functions are bounded: $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ lies in (0,1) and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ lies in (0, $\gamma_{9}$). 
-	
-	Figure \ref{exp1} and \ref{exp2} present the plots of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ and $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$. Even though both $f_5$ and $f_6$ are exponential functions, they have very different shapes. $f_5$ is an increasing function while $f_6$ is a decreasing function. We can see that $\gamma_{7}$ changes the steepness of $f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ (figure \ref{param_g7}) and $\gamma_{8}$ changes its position (figure \ref{param_g8}). And for $f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$, $\gamma_{9}$ acts as the upper bound for the function and changes its position (figure \ref{param_g9}), while $\gamma_{10}$ changes its steepness (figure \ref{param_g10}).
-	
-	\begin{figure}[!htbp]
-	\centering
-	\caption{$f_{5}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
-	\begin{subfigure}[b]{0.44\linewidth}
-		\includegraphics[width=\linewidth]{plots/scale_expshift_g7.png}
-		\caption{$f_{5}$ with different $\gamma_{7}$}
-		\label{param_g7}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.44\linewidth}
-		\includegraphics[width=\linewidth]{plots/scale_expshift_g8.png}
-		\caption{$f_{5}$ with different $\gamma_{8}$}
-		\label{param_g8}
-	\end{subfigure}
-	\label{exp1}
-	\end{figure}
-
-	\begin{figure}[!htbp]
-	\centering
-	\caption{$f_{6}\left(x_{t-1}^{\prime }\theta _{0},\gamma_{0}\right)$ with different $\gamma$}
-	\begin{subfigure}[b]{0.44\linewidth}
-		\includegraphics[width=\linewidth]{plots/scale_exp_g9.png}
-		\caption{$f_{6}$ with different $\gamma_{7}$}
-		\label{param_g9}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.44\linewidth}
-		\includegraphics[width=\linewidth]{plots/scale_exp_g10.png}
-		\caption{$f_{6}$ with different $\gamma_{8}$}
-		\label{param_g10}
-	\end{subfigure}
-	\label{exp2}
-	\end{figure}
-
-In addition, we also consider a quadratic polynomial function:
-$$
-	\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) = \gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
-$$
-It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ changes the parabola's wideness.
-
-The nonlinear functional forms we consider have included the bounded functions (the exponential functions), bounded periodic functions (trigonometric functions), and the unbounded function (polynomial function). 
-
-\subsection{Initial Values (\textcolor{red}{re-write})}
-
-As the gradient functions (\ref{gradient}) do not have a closed form solution, we will use an iterative procedure to estimate the model, which requires initial values. Most studies use 0 or true values as the initial values to start the procedure(\textcolor{red}{LR} here). Normally, true values provide the quickest and best convergence, but they are not known in empirical studies. And values that are close to the optimal values will tend to give a better convergence. 
-
-Even though we do not known the optimal values beforehand, we can linearize our partially nonlinear model using Taylor expansion and estimate the linearized model to obtain better initial values. 
-
-%to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
-%To start the iterative procedure, 
-
-Before applying Taylor expansion, we need to calculate the single-index $u_{t-1} = x^{\prime}_{t-1}\theta$. Since $x_1$ and $x_2$ are cointegrated, we can first estimate the following regression to get the cointegration vector $(1,-\hat{\eta})$:
-$$
-x_1 =\eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
-$$
-Then $\theta_0$ is given by normalizing the cointegration vector $(1,-\hat{\eta})$:
-$$
-\theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\eta}^2}}, -\dfrac{\hat{\eta}}{\sqrt{1+\hat{\eta}^2}})
-$$
-which satisfies the constrain that $\|\theta_0\| = 1$. Then the single-index can be calculated as $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$.
-
-
-As $\hat{u}_{t-1}$ has been estimated, we can apply Taylor expansion to approximate the nonlinear part $f\left( \hat{u}_{t-1},\gamma _{0}\right)$. For the two sine functions: $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1}\right)$ and $f_{3}\left( \gamma_{3}u_{t-1},\gamma _{4}\right) =\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we can use their first order Taylor expansions and substitute $f_1$ and $f_3$ by: 
-$$
-\tilde{f_1} = \left( \hat{u}_{t-1}+\gamma_{1}\right) 
-$$ 
-$$
-\tilde{f_3} = \left( \gamma_{3}\hat{u}_{t-1}+\gamma_{4}\right) 
-$$ 
-
-Then for the two cosine functions $f_{2}\left( u_{t-1},\gamma _{2}\right) =\cos \left(u_{t-1}+\gamma_{2}\right)$ and $f_{4}\left( \gamma _{5}u_{t-1}+\gamma_{6}\right) =\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right)$, we approximate them using their second-order Taylor expansions:
-$$
-\tilde{f_2} = 1 - \left( \hat{u}_{t-1}+\gamma_{2}\right)^2
-$$ 
-$$
-\tilde{f_4} =  1 - \left(\gamma _{5} \hat{u}_{t-1}+\gamma_{6}\right)^2
-$$ 
-
-Similarly, the two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$ can also be approximated by their first and second order Taylor expansions:
-
-$$
-\tilde{f_5} = \gamma_{7}(\hat{u}_{t-1} - \gamma_{8})^2
-$$
-$$
-\tilde{f_6}= \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2})
-$$
-And for functional 7, the polynomial function, it is already a linear function when the single-index is known. Then we can substitute the nonlinear part $f_1$ to $f_6$ in model (\ref{PL model}) by $\tilde{f}_1$ to $\tilde{f}_6$ above. Therefore, the initial values of $( \beta, \gamma)$ for different functional forms can be calculated by estimating the following linear regressions:
-\begin{align*}
-	y_{t} & =  \gamma_{1}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
-	y_{t} & =  \gamma_{2}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
-	y_{t} & =  \gamma_{4}  + \gamma_{3}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t\\	
-	y_{t} & =  \gamma_{6}  + \gamma_{5}\hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
-	y_{t} & =  \gamma_{7}\hat{u}_{t-1}^2 - 2\gamma_{7}\gamma_{8}\hat{u}_{t-1} + \gamma_{7}\gamma_{8}^2 + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
-	y_{t} & =  \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2}) + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
-	y_{t} & =  \gamma_{11}+ \gamma_{12}\hat{u}_{t-1}+\gamma_{13}\hat{u}_{t-1}^{2} +\beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t
-\end{align*}
-where $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$ and $e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T$.
-% = \tilde{f_2}  + \beta_{1}y_{t-1} + \beta_2w_{t-1}
-
-Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0}, \beta_{0}, \gamma_{0} \right) $ for the iterative procedure. In the section below part, we can see that these initial values are better than random ones (for example, 0).
 
 \subsection{Simulation Results}
 
