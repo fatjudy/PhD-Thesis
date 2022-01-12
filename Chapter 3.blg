@@ -5,44 +5,61 @@ Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: reference.bib
-You've used 11 entries,
+Repeated entry---line 292 of file reference.bib
+ : @article{yu2002penalized
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 997 of file reference.bib
+ : @article{wooldridge1994estimation
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1007 of file reference.bib
+ : @article{andrews1995nonlinear
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1180 of file reference.bib
+ : @article{lettau2008reconciling
+ :                               ,
+I'm skipping whatever remains of this entry
+You've used 36 entries,
             2909 wiz_defined-function locations,
-            711 strings with 6514 characters,
-and the built_in function-call counts, 39961 in all, are:
-= -- 6373
-> -- 626
+            859 strings with 10182 characters,
+and the built_in function-call counts, 125949 in all, are:
+= -- 20176
+> -- 1753
 < -- 0
-+ -- 2998
-- -- 189
-* -- 3459
-:= -- 8139
-add.period$ -- 11
-call.type$ -- 11
-change.case$ -- 153
-chr.to.int$ -- 11
-cite$ -- 11
-duplicate$ -- 174
-empty$ -- 375
-format.name$ -- 235
-if$ -- 7152
++ -- 9348
+- -- 525
+* -- 10859
+:= -- 25626
+add.period$ -- 36
+call.type$ -- 36
+change.case$ -- 502
+chr.to.int$ -- 36
+cite$ -- 36
+duplicate$ -- 579
+empty$ -- 1284
+format.name$ -- 681
+if$ -- 22569
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 36
-num.names$ -- 114
-pop$ -- 41
+missing$ -- 38
+newline$ -- 111
+num.names$ -- 368
+pop$ -- 123
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 540
 quote$ -- 0
-skip$ -- 144
+skip$ -- 473
 stack$ -- 0
-substring$ -- 8914
-swap$ -- 28
-text.length$ -- 154
+substring$ -- 28226
+swap$ -- 103
+text.length$ -- 504
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 140
 warning$ -- 0
-while$ -- 247
+while$ -- 821
 width$ -- 0
-write$ -- 141
+write$ -- 450
+(There were 4 error messages)

@@ -169,38 +169,80 @@
 
 \subsubsection{Background}
 
-Forecasting of stock return is central to making investment decisions. Development of models and methodologies for selecting a good predictive model and constructing reliable forecast have been an active area of research. As most of the predictors used to predict stock return (for example, some macroeconomic variables) are nonstationary, while the dependent variable stock return is stationary, linear models will suffer from the problem of spurious regression. Therefore, in the past two decades, nonlinear and nonstationary time series have attracted much attention and have been studied intensively
+Forecasting of stock return is central to making investment decisions. Development of models and methodologies for selecting a good predictive model and constructing reliable forecast have been an active area of research. Linear models were widely used in early studies (\cite{campbell1988stock}, \cite{fama1990stock}, and \cite{pesaran1995predictability}), but as most of the predictors used to predict stock return (for example, some macroeconomic variables) are non-stationary, linear models will suffer from the problem of spurious regression. Therefore, in the past two decades, nonlinear and non-stationary time series have attracted much attention and have been studied intensively
+
+% Economic and financial predictors used to predict stock return are a mixture of stationary and non-stationary variables. while the dependent variable stock return is stationary,
 
 In this chapter, we propose a new class of nonlinear time series models - partially nonlinear single-index models of the form:
 \begin{equation}
 	y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
-	t=2,...,T,  \label{PL model}
+	t=2,...,T,  
+	\label{PL model}
 \end{equation}%
 where $z_t = (y_{t-1}, \cdots, y_{t-p}, w_{t-1}^{\prime})^{\prime}$, in which $w_{t-1}$ is a vector of stationary predictors, 
 %such as the 3 components (consumption, labour income and asset holdings) of "cay" variable constructed by \textcolor[rgb]{ 0,  .439,  .753}{Lettau and Ludvigson (2001)}.
 $g\left( .,.\right) $ is a known univariate nonlinear function, $x_{t-1}$ is a $d$-dimensional integrated process of order one, $\theta _{0}$ is a $d$-dimensional unknown true parameter vector that lies in the parameter set $\Theta $, $\gamma _{0}$ is a $m$-dimensional unknown true parameter vector that lies in the parameter set $\Gamma $ and $e_{t}$ is a martingale
 difference process. The parameter sets $\Theta $ and $\Gamma $ are assumed to be compact and convex subsets of $\mathbb{R}^{d}$ and $\mathbb{R}^{m}$ respectively. In order to ensure that $\theta_0$ is uniquely identifiable, we will need to impose $\theta_{0}^{\prime}\theta_{0} = 1$. 
 
+This model combines a linear component with a nonlinear single-index component, which can capture both linear and nonlinear relationship between dependent variable and predictors. This study aims to use the Monte Carlo simulation method to investigate the finite sample properties of the estimators. There will also be an empirical analysis using \cite{welch2008comprehensive} dataset, to compare the out-of-sample predictability of stock returns with commonly used benchmark models. 
 
 %Partial-linear model is an important tool for multivariate regression due to its flexibility. It combines linear model with a nonparametric model, which can capture both linear and nonlinear relationship between dependent variable and predictors (see for example \cite{stute2005nonparametric}). Such works include Such works include \cite{chen1988convergence}, \cite{carroll1997generalized} and \cite{ruppert2003semiparametric}. Due to the "curse of dimensionality", the nonlinear relationship in the nonparametric part can be difficult to explore (see for example, \cite{ma2013doubly}). Therefore, we follow \cite{dong2016estimation} and consider a partial linear single-index model of the form:
 
-\subsubsection{Literature Riview}
-There is a considerable practical and theoretical effort being channelled into nonlinear and nonstationary time series in recent decades(see for example, \cite{park2001nonlinear}, \cite{park2002nonstationary} and \cite{gao2009nonparametric}). 
+\subsubsection{Literature Review}
+Since real world data always display different characteristics, simple linear models are not adequate in doing modelling and prediction. In recent decades, there is a considerable practical and theoretical effort being channelled into nonlinear and nonstationary time series in recent decades (see for example, \cite{park2001nonlinear}, \cite{park2002nonstationary} and \cite{gao2009nonparametric}). 
 
-Conventional partially linear models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years, see for example \cite{dong2016estimation}. 
+In the early studies, \cite{jennrich1969asymptotic} and \cite{wu1981asymptotic} establish the asymptotic theories for non-linear least square estimators, and \cite{wooldridge1994estimation} and \cite{andrews1995nonlinear} develop the theory for trending processes. \cite{park2001nonlinear} and \cite{chang2001nonlinear} then extend the theories to include integrated time series. They consider a parametric addictive model and estimate the parameters using nonlinear least square method. However, the nonlinear regressions they consider can only include singular predictor. 
 
-Our model allows for lagged dependent variables because key macroeconomic/financial variables, such as the growth rate of GDP, the rate of unemployment and interest rates are typically autocorrelated. Failing to account for this autocorrelation will lead to serially correlated residuals. We are thus interested in using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only the nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$, containing either the cointegrated predictors or non-cointegrated predictors. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
+In the case of multiple predictors, \cite{chang2003index} proposes index models driven by integrated time series of the form:
+$$
+    y_t = q(x,\alpha)G(v+x^{\prime}\beta) + p(x,\alpha) + u_t
+$$
+where $x_t$ is an m-dimensional integrated process of order one, $p(x,\alpha)$ and $q(x,\alpha)$ are linear functionals defined on $\mathbb{R}^{m}$ and $u_t$ is a stationary error. This model is a mixture of linear function and nonlinear function, where variables appears as a single-index structure. It is a parametric model since $G(v+x^{\prime}\beta)$ is known, and  all the estimator s are estimated by nonlinear least method.
 
-There is a considerable theoretical effort being put into developing new estimation method of the partial linear model (see for example, \cite{dong2016estimation}) and nonlinear models with single-index (see for example \cite{chang2003index}). In our study, we propose a novel 2-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares.
+But as parametric models may suffer from the misspecification problem, some non-parametric models have been studied intensively and different estimation method has been proposed, such as kernel estimation (\cite{xia2006semi}, \cite{ma2015varying}, \cite{birke2017semi}), series-based method (\cite{chen2007large} for review), spline method (\cite{yu2002penalized}) and Hermite polynomials (see for example, \cite{dong2015semiparametric}). 
 
-This study aims to use the Monte Carlo simulation method to investigate the finite sample properties of the estimators. There will also be an empirical analysis to study the predictability of stock returns. We will use the dataset from \cite{welch2008comprehensive} and investigate the out-of-sample forecast ability of model (\ref{PL model}). Compared with chapter 2, we will include lagged dependent variables in the model. We will investigate whether the partially nonlinear single-index model will help further improve the stock return predictability in my future research.  
+Meanwhile, to make the nonparametric models more flexible, semiparametric models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years. For example, \cite{dong2016estimation} propose a partially linear single-index model of the form:
+\begin{equation}
+    y_t = \beta_0^{\prime}x_t+g(\theta_0^{\prime} x_t) + e_t
+    \label{Dong_model}
+\end{equation}
+where $y_t$ is a scalar process, g($\cdot$) is an unknown nonlinear integrable function (the link function), $x_t$ is a d-dimensional integrated process. This model is an extension of parametric linear models and at the same time, a compromise between fully parametric and fully nonparametric models. 
 
-\subsubsection{Motivation}
+But model (\ref{Dong_model}) only include integrated processes, while in economic and financial studies, the regressors are a mixture of stationary and non-stationary variables. For example, some popular predictors used in stock return prediction are non-stationary, such as dividend-price ratio (\cite{fama1989business}, \cite{cochrane2008dog}, and \cite{lettau2008reconciling}), earnings-price-ratio (\cite{campbell1988stock}) and book-to-market ratio (\cite{kothari1997book} and \cite{pontiff1998book}). While some stationary predictors are also proved to be important, such as the regression residuals in the study of \cite{lettau2001consumption}. 
 
-\textcolor{red}{to be filled}
+In addition, models like (\ref{Dong_model}) did not include lag variable $y_{t-1}, y_{t-2}, \cdots, y_{t-p}$. It may limit their applications to time series modelling because key macroeconomic/financial variables, such as the growth rate of GDP and the rate of unemployment are typically auto-correlated. Failing to account for this auto-correlation will lead to serially correlated residuals. 
 
-The findings of this chapter are summarized as follows:
-\textcolor{red}{to be filled}
+Therefore, model (\ref{PL model}) we propose include time series with different characteristics. In the model:
+$$
+y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
+	t=2,...,T,
+$$
+$z_t$ contains all the stationary variables. In stock return predictability case, $y_{t-1}$ is included in $z_t$ since stock return is stationary. $x_t$ in the single-index component includes non-stationary variables and in our study, we consider non-stationary predictors with cointegrated structure (see for example, \cite{zhou2018semiparametric}). 
+
+In terms of function , we consider commonly used nonlinear functions to capture the nonlinear relationship between dependent variable and the independent variables. Nonlinear relationship has been considered in forecasting financial and macroeconomic series in previous studies. \cite{qi1999nonlinear} adopts a neural network model with 9 financial and economic variables. \cite{lettau2008reconciling} provide strong in-sample evidence for regime shifts in the long-term mean of the dividend-price ratio. There are also theoretical studies about nonlinear models.  There is a considerable theoretical effort being put into the theoretical study of nonlinear models too. \cite{park1999asymptotics}, \cite{park2000nonstationary}, \cite{park2001nonlinear} develop asymptotic theory for nonlinear models with single predictor. \cite{chang2001nonlinear} and \cite{chang2003index} extend the theory to include multiple predictors.  
+
+Building on this growing literature, our study focus on using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only linear or nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$. Also, we can investigate that by combining linearity with nonlinearities, whether our model can outperform pure linear or nonlinear models. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
+
+To estimate model (\ref{PL model}), we propose a novel 3-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares. As we need to use an iterative procedure to apply the nonlinear least square estimation, we choose initial values calculated from Taylor expansion to start the procedure.
+
+% , containing either the cointegrated predictors or non-cointegrated predictors.
+% \cite{chang2003index} derives the limiting distributions of the nonlinear least square estimators and presents them as functions of Brownian motions and Brownian local time. 
+% \begin{equation}
+%     y_t = G(x^{\prime}\beta) + p(x,\alpha) + u_t
+% \label{jp_model}
+% \end{equation}
+% where $x_t$ is an m-dimensional integrated process of order one, $p(x,\alpha)$ is a linear function defined on $\mathbb{R}^{m}$ and $u_t$ is a stationary error. In this model, $x^{\prime}\beta$ is called single-index and $G(x^{\prime}\beta)$ is the so called link function. \cite{chang2003index} derives the limiting distributions of the nonlinear least square estimators and presents them as functions of Brownian motions and Brownian local time. 
+
+% Conventional partially linear models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years, see for example \cite{dong2016estimation}. 
+
+% In addition, we consider both stationary and non-stationary variables in our partially nonlinear model.
+
+% Our model allows for lagged dependent variables because key macroeconomic/financial variables, such as the growth rate of GDP, the rate of unemployment and interest rates are typically autocorrelated. Failing to account for this autocorrelation will lead to serially correlated residuals. 
+
+% Failing to account for this auto-correlation will lead to serially correlated residuals. To improve, we include the lagged dependent variable $y_{t-1}$ in the linear part of our model (\ref{PL model}) (\textcolor{red}{literatures}). 
+
+
+The findings of this chapter are summarized as follows. From the Monte Carlo simulation, we find that the constrained nonlinear least square estimators have good finite sample performances, and the Taylor initial values help further improve the performance. Model (\ref{PL model}) outperforms pure linear or nonlinear models . We find both in-sample and out-of-sample evidence that the partially nonlinear model we proposed provide a better out-of-sample performance than historical average and  auto-regressive models. 
 
 This chapter is organized as follows. Section 2 introduces the partially nonlinear single-index predictive model and proposes a 3-step estimation method. To improve the performance of the model, this section also introduces constraint and truncation conditions in addition to the normal nonlinear least square. Section 3 examines the finite-sample properties of the normal nonlinear least square estimators (NLS estimators hereafter) and the constrained nonlinear least square estimators (CLS estimators hereafter) using Monte Carlo evaluation. The discussion includes models with different nonlinear functional part and considers both co-integrated and non-cointegrated cases. Section 4 applies the partially nonlinear models to stock return predictability and investigate both in-sample and out-of-sample performances of the models. Section 5 concludes. 
 
@@ -1230,7 +1272,7 @@ The in-sample $R^2_{IS}$ results against other benchmark models can be found in 
 
 \subsection{OOS Results}
 
-\subsubsection{OOS Performance v.s. Sample Mean Model}
+\subsubsection{OOS Performance Compared with Historial Average}
 Since the existing literatures show that the evidence for stock return predictability only hold for in-sample, in this section, we investigate how our models perform out-of-sample. Following \cite{campbell2008predicting}, we use the OOS $R^2$ to measure the forecasting performance. The $R^2_{OOS}$ is defined as:
 
 \begin{equation}
@@ -1470,23 +1512,69 @@ To compare the performances of the 8 functional forms with the 4 different varia
 
 To conclude, no matter which function we use, combinations co2 and co4 tend to have better results than other variable pairs. And among the 8 functions, $g_6$ is the best for all the 4 combinations in terms of the percentage of positive $R^2_{OOS}$. The two trigonometric functions also provide good OOS results, especially for $g_1$ and co4. But considering the scale parameter in $g_3$ and $g_4$ does not improve the forecast. For polynomial function, it can outperform sample mean except for combination co3, although it is not as good as other functional forms.
 
-\subsubsection{OOS Performance v.s. Other Benchmark Models}
-For another commonly used time series model, the AR(1) model, we can also see from the figur \ref{vsAR1} that the partially nonlinear models can perform better. When using model containing the nonlinear functional form $f_1$ and variable combination $co2$, our partially nonlinear model can outperform AR(1) model for most of the period before 2006. Similar for the model with functional form $f_5$, our model performs better when using co2 before 2012.
+\subsubsection{OOS Performance Compared with Linear Models}
+Although sample mean is widely used in comparing OOS performance of stock return predictability, there are also other models being studied in previous research. In this section, we will use AR(1) model, AR(2) model and also a linear model with the "cay" variable (see \cite{lettau2001consumption}) as benchmarks. 
 
+AR model is a widely used time series model (see for example, \cite{box2015time}, \cite{mobarek2000weak} and \cite{areal2002realized}) and is a representation of a type of random processes. It specifies that the dependent variable depends linearly on its own lagged values. In the model we proposed in this chapter, we also include the previous value of dependent variable as a predictor. In figure \ref{vsar1}, we plot the $R^2_{OOS}$ value when using AR(1) model as the benchmark.
+
+We can see from the two figures that the partially nonlinear models consistently perform better before 2005. When using model containing the Sine function ($f_1$) and variable combination $co2$ (tbl and lty), our partially nonlinear model can outperform AR(1) model for most of the period before 2006, and the two models have a similar performance between 2006 and 2009. Similar for the model with functional form $f_5$, our model also performs better when using co2 before 2012. 
 
 \begin{figure}[!htbp]
 	\centering
 	\caption{OOS Performance (Benchmark: AR(1) Model)}
 	\begin{subfigure}[b]{0.42\linewidth}
 		\includegraphics[width=1.2\linewidth]{plots/co2_AR1_g1.png}
-		\caption{co2 model containing $f_1$}
+		\caption{co2 using model containing $f_1$}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.42\linewidth}
 		\includegraphics[width=1.2\linewidth]{plots/co2_AR1_g5.png}
-		\caption{co2 model containing $f_5$}
+		\caption{co2 using model containing $f_5$}
 	\end{subfigure}
-	\label{vsAR1}
+	\label{vsar1}
 \end{figure}
+
+Figure \ref{vsar2} presents the $R^2_{OOS}$ value when using AR(2) as the benchmark.
+When compared with the AR(2) model, the partially nonlinear models also provide a good out-of-sample performance. The model with nonlinear part $f_3$ outperforms the AR(2) model before 2009 when using variable combination co4 (baa and aaa rated bonds). And for the model with nonlinear component $f_5$, it outperforms the AR(2) model during the whole out-of-sample period (for variable combination co2). 
+
+\begin{figure}[!htbp]
+	\centering
+	\caption{OOS Performance (Benchmark: AR(2) Models)}
+	\begin{subfigure}[b]{0.42\linewidth}
+	\includegraphics[width=1.2\linewidth]{plots/co4_AR2_g3.png}
+	\caption{co4 using model containing $f_3$}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.42\linewidth}
+	\includegraphics[width=1.2\linewidth]{plots/co2_AR2_g5.png}
+	\caption{co2 using model containing $f_5$}
+	\end{subfigure}
+	\label{vsar2}
+\end{figure}
+
+We also consider the AR(1) model with an additional "cay" variable, which has been considered in the study of \cite{lettau2001consumption}. It is the special case of our partially nonlinear model (\ref{PL model}). When the nonlinear part $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is not significant, model (\ref{PL model}) become a linear model with only stationary variables. 
+
+From figure \ref{vsarcay}, we can see that when using model containing nonlinear function $f_4$ with variable combinations co2 and co4, the nonlinear model can outperform the linear model before 2000. 
+
+\begin{figure}[!htbp]
+	\centering
+	\caption{OOS Performance (Benchmark: AR(1) Models with "cay" Variable)}
+	\begin{subfigure}[b]{0.42\linewidth}
+	\includegraphics[width=1.2\linewidth]{OOS_plots/exp_co2_AR_cay.png}
+	\caption{co2 using model containing $f_4$}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.42\linewidth}
+	\includegraphics[width=1.2\linewidth]{OOS_plots/exp_co4_AR_cay.png}
+	\caption{co4 using model containing $f_4$}
+	\end{subfigure}
+	\label{vsarcay}
+\end{figure}
+
+\subsubsection{OOS Performance Compared with Nonlinear Models}
+
+In our previous chapter, we proposed a nonlinear single-index model of the form:
+$$
+y_t = f\left( x_{t-1}^{\prime}\theta,\gamma \right)
+$$
+where $f$ take the same 7 forms in this chapter.
 
 Figure \ref{vsNL} presents the $R^2_{OOS}$ when using the nonlinear models in chapter 2 as the benchmark model. In the nonlinear model, we did not include the stationary variables but we considered the same nonlinear functional forms. 
 
@@ -1496,35 +1584,17 @@ From the figure, we can see that when using variable combination co2 and functio
 	\centering
 	\caption{OOS Performance (Benchmark: Nonlinear Model)}
 	\begin{subfigure}[b]{0.42\linewidth}
-		\includegraphics[width=1.2\linewidth]{plots/co1_NLS_g1.png}
-		\caption{co1 using model containing $f_1$}
+	\includegraphics[width=1.2\linewidth]{plots/co1_NLS_g1.png}
+	\caption{co1 using model containing $f_1$}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.42\linewidth}
-		\includegraphics[width=1.2\linewidth]{plots/co4_NLS_g7.png}
-		\caption{co4 using model containing $f_7$}
+	\includegraphics[width=1.2\linewidth]{plots/co4_NLS_g7.png}
+	\caption{co4 using model containing $f_7$}
 	\end{subfigure}
 	\label{vsNL}
 \end{figure}
 
-When compared with the AR(2) models, the partially nonlinear models also provide a good out-of-sample performance. The model with nonlinear part $f_3$ outperforms the AR(2) model before 2009 when using variable combination co4.
-
-And for the model with nonlinear component $f_5$, it outperforms the AR(2) model during the whole out-of-sample period (for variable combination co2). 
-
-\begin{figure}[!htbp]
-	\centering
-	\caption{OOS Performance (Benchmark: AR(2) Models)}
-	\begin{subfigure}[b]{0.42\linewidth}
-		\includegraphics[width=1.2\linewidth]{plots/co4_AR2_g3.png}
-		\caption{co4 using model containing $f_3$}
-	\end{subfigure}
-	\begin{subfigure}[b]{0.42\linewidth}
-		\includegraphics[width=1.2\linewidth]{plots/co2_AR2_g5.png}
-		\caption{co2 using model containing $f_5$}
-	\end{subfigure}
-	\label{vsNL}
-\end{figure}
-
-Therefore, we can conclude that the partially nonlinear models can outperform most of the commonly used time series models. And by including the stationary vairiables $y_{t-1}$ and the "cay" variable, our partially nonlinear models tend to show a much better out-of-sample performance.
+Therefore, we can conclude that the partially nonlinear models can outperform some commonly used linear models and the nonlinear model we proposed in chapter 2. 
 
 \section{conclusion}
 In this chapter, we consider a partially nonlinear single-index model, which allows for lagged dependent variables, stationary variables, cointegrated and non-cointegrated variables. We propose a three-step estimation method to estimate the model and includes a constraint on $\theta$ (the coefficient for the non-stationary variables) and a truncation condition on $x_t$. 

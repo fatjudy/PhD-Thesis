@@ -1,5 +1,35 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{Andrews \harvardand\ McDermott}{1995}{andrews1995nonlinear}
+Andrews, D.~W. \harvardand\ McDermott, C.~J.  \harvardyearleft
+  1995\harvardyearright , `Nonlinear econometric models with deterministically
+  trending variables', {\em The Review of Economic Studies} {\bf
+  62}(3),~343--360.
+
+\harvarditem{Areal \harvardand\ Taylor}{2002}{areal2002realized}
+Areal, N.~M. \harvardand\ Taylor, S.~J.  \harvardyearleft 2002\harvardyearright
+  , `The realized volatility of ftse-100 futures prices', {\em Journal of
+  Futures Markets: Futures, Options, and Other Derivative Products} {\bf
+  22}(7),~627--648.
+
+\harvarditem[Birke et~al.]{Birke, Van~Bellegem \harvardand\
+  Van~Keilegom}{2017}{birke2017semi}
+Birke, M., Van~Bellegem, S. \harvardand\ Van~Keilegom, I.  \harvardyearleft
+  2017\harvardyearright , `Semi-parametric estimation in a single-index model
+  with endogenous variables', {\em Scandinavian Journal of Statistics} {\bf
+  44}(1),~168--191.
+
+\harvarditem[Box et~al.]{Box, Jenkins, Reinsel \harvardand\
+  Ljung}{2015}{box2015time}
+Box, G.~E., Jenkins, G.~M., Reinsel, G.~C. \harvardand\ Ljung, G.~M.
+  \harvardyearleft 2015\harvardyearright , {\em Time series analysis:
+  forecasting and control}, John Wiley \& Sons.
+
+\harvarditem{Campbell \harvardand\ Shiller}{1988}{campbell1988stock}
+Campbell, J.~Y. \harvardand\ Shiller, R.~J.  \harvardyearleft
+  1988\harvardyearright , `Stock prices, earnings, and expected dividends',
+  {\em The Journal of Finance} {\bf 43}(3),~661--676.
+
 \harvarditem{Campbell \harvardand\ Thompson}{2008}{campbell2008predicting}
 Campbell, J.~Y. \harvardand\ Thompson, S.~B.  \harvardyearleft
   2008\harvardyearright , `Predicting excess stock returns out of sample: Can
@@ -11,11 +41,34 @@ Chang, Y. \harvardand\ Park, J.~Y.  \harvardyearleft 2003\harvardyearright ,
   `Index models with integrated time series', {\em Journal of Econometrics}
   {\bf 114}(1),~73--106.
 
+\harvarditem[Chang et~al.]{Chang, Park \harvardand\
+  Phillips}{2001}{chang2001nonlinear}
+Chang, Y., Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
+  2001\harvardyearright , `Nonlinear econometric models with cointegrated and
+  deterministically trending regressors', {\em The Econometrics Journal} {\bf
+  4}(1),~1--36.
+
+\harvarditem{Chen}{2007}{chen2007large}
+Chen, X.  \harvardyearleft 2007\harvardyearright , `Large sample sieve
+  estimation of semi-nonparametric models', {\em Handbook of econometrics} {\bf
+  6},~5549--5632.
+
 \harvarditem[Cheng et~al.]{Cheng, Gao \harvardand\
   Linton}{2019}{cheng2019nonparametric}
 Cheng, T., Gao, J. \harvardand\ Linton, O.  \harvardyearleft
   2019\harvardyearright , `Nonparametric predictive regressions for stock
   return prediction'.
+
+\harvarditem{Cochrane}{2008}{cochrane2008dog}
+Cochrane, J.~H.  \harvardyearleft 2008\harvardyearright , `The dog that did not
+  bark: A defense of return predictability', {\em The Review of Financial
+  Studies} {\bf 21}(4),~1533--1575.
+
+\harvarditem[Dong et~al.]{Dong, Gao \harvardand\
+  Peng}{2015}{dong2015semiparametric}
+Dong, C., Gao, J. \harvardand\ Peng, B.  \harvardyearleft 2015\harvardyearright
+  , `Semiparametric single-index panel data models with cross-sectional
+  dependence', {\em Journal of Econometrics} {\bf 188}(1),~301--312.
 
 \harvarditem[Dong et~al.]{Dong, Gao, Tj{\o}stheim
   et~al.}{2016}{dong2016estimation}
@@ -23,6 +76,16 @@ Dong, C., Gao, J., Tj{\o}stheim, D. et~al.  \harvardyearleft
   2016\harvardyearright , `Estimation for single-index and partially linear
   single-index integrated models', {\em The Annals of Statistics} {\bf
   44}(1),~425--453.
+
+\harvarditem{Fama}{1990}{fama1990stock}
+Fama, E.~F.  \harvardyearleft 1990\harvardyearright , `Stock returns, expected
+  returns, and real activity', {\em The journal of finance} {\bf
+  45}(4),~1089--1108.
+
+\harvarditem{Fama \harvardand\ French}{1989}{fama1989business}
+Fama, E.~F. \harvardand\ French, K.~R.  \harvardyearleft 1989\harvardyearright
+  , `Business conditions and expected returns on stocks and bonds', {\em
+  Journal of financial economics} {\bf 25}(1),~23--49.
 
 \harvarditem{Gao}{2007}{gao2007nonlinear}
 Gao, J.  \harvardyearleft 2007\harvardyearright , {\em Nonlinear time series:
@@ -35,24 +98,95 @@ Gao, J., King, M., Lu, Z. \harvardand\ Tj{\o}stheim, D.  \harvardyearleft
   time series with nonstationarity', {\em Econometric Theory} {\bf
   25}(6),~1869--1892.
 
+\harvarditem{Jennrich}{1969}{jennrich1969asymptotic}
+Jennrich, R.~I.  \harvardyearleft 1969\harvardyearright , `Asymptotic
+  properties of non-linear least squares estimators', {\em The Annals of
+  Mathematical Statistics} {\bf 40}(2),~633--643.
+
+\harvarditem{Kothari \harvardand\ Shanken}{1997}{kothari1997book}
+Kothari, S.~P. \harvardand\ Shanken, J.  \harvardyearleft 1997\harvardyearright
+  , `Book-to-market, dividend yield, and expected market returns: A time-series
+  analysis', {\em Journal of Financial economics} {\bf 44}(2),~169--203.
+
 \harvarditem{Lettau \harvardand\ Ludvigson}{2001}{lettau2001consumption}
 Lettau, M. \harvardand\ Ludvigson, S.  \harvardyearleft 2001\harvardyearright ,
   `Consumption, aggregate wealth, and expected stock returns', {\em the Journal
   of Finance} {\bf 56}(3),~815--849.
 
+\harvarditem{Lettau \harvardand\ Van~Nieuwerburgh}{2008}{lettau2008reconciling}
+Lettau, M. \harvardand\ Van~Nieuwerburgh, S.  \harvardyearleft
+  2008\harvardyearright , `Reconciling the return predictability evidence: The
+  review of financial studies: Reconciling the return predictability evidence',
+  {\em The Review of Financial Studies} {\bf 21}(4),~1607--1652.
+
+\harvarditem{Ma \harvardand\ Song}{2015}{ma2015varying}
+Ma, S. \harvardand\ Song, P. X.-K.  \harvardyearleft 2015\harvardyearright ,
+  `Varying index coefficient models', {\em Journal of the American Statistical
+  Association} {\bf 110}(509),~341--356.
+
+\harvarditem{Mobarek \harvardand\ Keasey}{2000}{mobarek2000weak}
+Mobarek, A. \harvardand\ Keasey, K.  \harvardyearleft 2000\harvardyearright ,
+  Weak-form market efficiency of an emerging market: Evidence from dhaka stock
+  market of bangladesh, {\em in} `ENBS Conference held on Oslo', pp.~1--30.
+
 \harvarditem{Park}{2002}{park2002nonstationary}
 Park, J.~Y.  \harvardyearleft 2002\harvardyearright , `Nonstationary nonlinear
   heteroskedasticity', {\em Journal of econometrics} {\bf 110}(2),~383--415.
+
+\harvarditem{Park \harvardand\ Phillips}{1999}{park1999asymptotics}
+Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
+  1999\harvardyearright , `Asymptotics for nonlinear transformations of
+  integrated time series', {\em Econometric Theory} {\bf 15}(3),~269--298.
+
+\harvarditem{Park \harvardand\ Phillips}{2000}{park2000nonstationary}
+Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
+  2000\harvardyearright , `Nonstationary binary choice', {\em Econometrica}
+  {\bf 68}(5),~1249--1280.
 
 \harvarditem{Park \harvardand\ Phillips}{2001}{park2001nonlinear}
 Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
   2001\harvardyearright , `Nonlinear regressions with integrated time series',
   {\em Econometrica} {\bf 69}(1),~117--161.
 
+\harvarditem{Pesaran \harvardand\ Timmermann}{1995}{pesaran1995predictability}
+Pesaran, M.~H. \harvardand\ Timmermann, A.  \harvardyearleft
+  1995\harvardyearright , `Predictability of stock returns: Robustness and
+  economic significance', {\em The Journal of Finance} {\bf 50}(4),~1201--1228.
+
+\harvarditem{Pontiff \harvardand\ Schall}{1998}{pontiff1998book}
+Pontiff, J. \harvardand\ Schall, L.~D.  \harvardyearleft 1998\harvardyearright
+  , `Book-to-market ratios as predictors of market returns', {\em Journal of
+  financial economics} {\bf 49}(2),~141--160.
+
+\harvarditem{Qi}{1999}{qi1999nonlinear}
+Qi, M.  \harvardyearleft 1999\harvardyearright , `Nonlinear predictability of
+  stock returns using financial and economic variables', {\em Journal of
+  Business \& Economic Statistics} {\bf 17}(4),~419--429.
+
 \harvarditem{Welch \harvardand\ Goyal}{2008}{welch2008comprehensive}
 Welch, I. \harvardand\ Goyal, A.  \harvardyearleft 2008\harvardyearright , `A
   comprehensive look at the empirical performance of equity premium
   prediction', {\em The Review of Financial Studies} {\bf 21}(4),~1455--1508.
+
+\harvarditem{Wooldridge}{1994}{wooldridge1994estimation}
+Wooldridge, J.~M.  \harvardyearleft 1994\harvardyearright , `Estimation and
+  inference for dependent processes', {\em Handbook of econometrics} {\bf
+  4},~2639--2738.
+
+\harvarditem{Wu}{1981}{wu1981asymptotic}
+Wu, C.-F.  \harvardyearleft 1981\harvardyearright , `Asymptotic theory of
+  nonlinear least squares estimation', {\em The Annals of Statistics} {\bf
+  9}(3),~501--513.
+
+\harvarditem{Xia \harvardand\ H{\"a}rdle}{2006}{xia2006semi}
+Xia, Y. \harvardand\ H{\"a}rdle, W.  \harvardyearleft 2006\harvardyearright ,
+  `Semi-parametric estimation of partially linear single-index models', {\em
+  Journal of Multivariate Analysis} {\bf 97}(5),~1162--1184.
+
+\harvarditem{Yu \harvardand\ Ruppert}{2002}{yu2002penalized}
+Yu, Y. \harvardand\ Ruppert, D.  \harvardyearleft 2002\harvardyearright ,
+  `Penalized spline estimation for partially linear single-index models', {\em
+  Journal of the American Statistical Association} {\bf 97}(460),~1042--1054.
 
 \harvarditem[Zhou et~al.]{Zhou, Gao, Kew \harvardand\
   Harris}{2018}{zhou2018semiparametric}
