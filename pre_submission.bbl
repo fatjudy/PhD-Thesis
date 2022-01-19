@@ -1,21 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{Andrews \harvardand\ McDermott}{1995}{andrews1995nonlinear}
-Andrews, D.~W. \harvardand\ McDermott, C.~J.  \harvardyearleft
-  1995\harvardyearright , `Nonlinear econometric models with deterministically
-  trending variables', {\em The Review of Economic Studies} {\bf
-  62}(3),~343--360.
-
-\harvarditem{Ang \harvardand\ Bekaert}{2007}{ang2007stock}
-Ang, A. \harvardand\ Bekaert, G.  \harvardyearleft 2007\harvardyearright ,
-  `Stock return predictability: Is it there?', {\em The Review of Financial
-  Studies} {\bf 20}(3),~651--707.
-
-\harvarditem{Campbell}{1987}{campbell1987stock}
-Campbell, J.~Y.  \harvardyearleft 1987\harvardyearright , `Stock returns and
-  the term structure', {\em Journal of financial economics} {\bf
-  18}(2),~373--399.
-
 \harvarditem{Campbell \harvardand\ Shiller}{1988}{campbell1988dividend}
 Campbell, J.~Y. \harvardand\ Shiller, R.~J.  \harvardyearleft
   1988\harvardyearright , `The dividend-price ratio and expectations of future
@@ -28,67 +12,16 @@ Campbell, J.~Y. \harvardand\ Thompson, S.~B.  \harvardyearleft
   anything beat the historical average?', {\em The Review of Financial Studies}
   {\bf 21}(4),~1509--1531.
 
-\harvarditem[Campbell et~al.]{Campbell, Vuolteenaho \harvardand\
-  Ramadorai}{2004}{campbell2004caught}
-Campbell, J.~Y., Vuolteenaho, T. \harvardand\ Ramadorai, T.  \harvardyearleft
-  2004\harvardyearright , `Caught on tape: Predicting institutional ownership
-  with order flow', {\em Harvard Institute of Economic Research Discussion
-  Paper} (2046).
-
-\harvarditem{Campbell \harvardand\ Yogo}{2006}{campbell2006efficient}
-Campbell, J.~Y. \harvardand\ Yogo, M.  \harvardyearleft 2006\harvardyearright ,
-  `Efficient tests of stock return predictability', {\em Journal of financial
-  economics} {\bf 81}(1),~27--60.
-
-\harvarditem{Chang \harvardand\ Park}{2003}{chang2003index}
-Chang, Y. \harvardand\ Park, J.~Y.  \harvardyearleft 2003\harvardyearright ,
-  `Index models with integrated time series', {\em Journal of Econometrics}
-  {\bf 114}(1),~73--106.
-
-\harvarditem[Chang et~al.]{Chang, Park \harvardand\
-  Phillips}{2001}{chang2001nonlinear}
-Chang, Y., Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
-  2001\harvardyearright , `Nonlinear econometric models with cointegrated and
-  deterministically trending regressors', {\em The Econometrics Journal} {\bf
-  4}(1),~1--36.
-
-\harvarditem{Chen \harvardand\ Hong}{2016}{chen2016predictability}
-Chen, Q. \harvardand\ Hong, Y.  \harvardyearleft 2016\harvardyearright ,
-  `Predictability of equity returns over different time horizons: a
-  nonparametric approach', {\em Available at SSRN 3390982} .
-
-\harvarditem[Cheng et~al.]{Cheng, Gao \harvardand\
-  Linton}{2019}{cheng2019nonparametric}
-Cheng, T., Gao, J. \harvardand\ Linton, O.  \harvardyearleft
-  2019\harvardyearright , `Nonparametric predictive regressions for stock
-  return prediction'.
-
-\harvarditem[Choi et~al.]{Choi, Jacewitz \harvardand\
-  Park}{2016}{choi2016reexamination}
-Choi, Y., Jacewitz, S. \harvardand\ Park, J.~Y.  \harvardyearleft
-  2016\harvardyearright , `A reexamination of stock return predictability',
-  {\em Journal of Econometrics} {\bf 192}(1),~168--189.
-
-\harvarditem{Chung \harvardand\ Park}{2007}{chung2007nonstationary}
-Chung, H. \harvardand\ Park, J.~Y.  \harvardyearleft 2007\harvardyearright ,
-  `Nonstationary nonlinear heteroskedasticity in regression', {\em Journal of
-  Econometrics} {\bf 137}(1),~230--259.
-
-\harvarditem{Cochrane}{2011}{cochrane2011presidential}
-Cochrane, J.~H.  \harvardyearleft 2011\harvardyearright , `Presidential
-  address: Discount rates', {\em The Journal of finance} {\bf
-  66}(4),~1047--1108.
+\harvarditem{Clark \harvardand\ West}{2007}{clark2007approximately}
+Clark, T.~E. \harvardand\ West, K.~D.  \harvardyearleft 2007\harvardyearright ,
+  `Approximately normal tests for equal predictive accuracy in nested models',
+  {\em Journal of econometrics} {\bf 138}(1),~291--311.
 
 \harvarditem[Crump et~al.]{Crump, Goda \harvardand\
   Mumford}{2011}{crump2011fertility}
 Crump, R., Goda, G.~S. \harvardand\ Mumford, K.~J.  \harvardyearleft
   2011\harvardyearright , `Fertility and the personal exemption: comment', {\em
   American Economic Review} {\bf 101}(4),~1616--28.
-
-\harvarditem{Dangl \harvardand\ Halling}{2012}{dangl2012predictive}
-Dangl, T. \harvardand\ Halling, M.  \harvardyearleft 2012\harvardyearright ,
-  `Predictive regressions with time-varying coefficients', {\em Journal of
-  Financial Economics} {\bf 106}(1),~157--181.
 
 \harvarditem[Dong et~al.]{Dong, Gao, Tj{\o}stheim
   et~al.}{2016}{dong2016estimation}
@@ -102,69 +35,10 @@ Fama, E.~F.  \harvardyearleft 1990\harvardyearright , `Stock returns, expected
   returns, and real activity', {\em The journal of finance} {\bf
   45}(4),~1089--1108.
 
-\harvarditem{Fama \harvardand\ French}{1989}{fama1989business}
-Fama, E.~F. \harvardand\ French, K.~R.  \harvardyearleft 1989\harvardyearright
-  , `Business conditions and expected returns on stocks and bonds', {\em
-  Journal of financial economics} {\bf 25}(1),~23--49.
-
-\harvarditem{Ferson \harvardand\ Schadt}{1996}{ferson1996measuring}
-Ferson, W.~E. \harvardand\ Schadt, R.~W.  \harvardyearleft
-  1996\harvardyearright , `Measuring fund strategy and performance in changing
-  economic conditions', {\em The Journal of finance} {\bf 51}(2),~425--461.
-
-\harvarditem{Gao}{2007}{gao2007nonlinear}
-Gao, J.  \harvardyearleft 2007\harvardyearright , {\em Nonlinear time series:
-  semiparametric and nonparametric methods}, CRC Press.
-
-\harvarditem[Johannes et~al.]{Johannes, Korteweg \harvardand\
-  Polson}{2014}{johannes2014sequential}
-Johannes, M., Korteweg, A. \harvardand\ Polson, N.  \harvardyearleft
-  2014\harvardyearright , `Sequential learning, predictability, and optimal
-  portfolio returns', {\em The Journal of Finance} {\bf 69}(2),~611--644.
-
-\harvarditem[Koo et~al.]{Koo, Anderson, Seo \harvardand\
-  Yao}{2020}{koo2020high}
-Koo, B., Anderson, H.~M., Seo, M.~H. \harvardand\ Yao, W.  \harvardyearleft
-  2020\harvardyearright , `High-dimensional predictive regression in the
-  presence of cointegration', {\em Journal of Econometrics} .
-
-\harvarditem[Kostakis et~al.]{Kostakis, Magdalinos \harvardand\
-  Stamatogiannis}{2015}{kostakis2015robust}
-Kostakis, A., Magdalinos, T. \harvardand\ Stamatogiannis, M.~P.
-  \harvardyearleft 2015\harvardyearright , `Robust econometric inference for
-  stock return predictability', {\em The Review of Financial Studies} {\bf
-  28}(5),~1506--1553.
-
-\harvarditem{Kothari \harvardand\ Shanken}{1997}{kothari1997book}
-Kothari, S.~P. \harvardand\ Shanken, J.  \harvardyearleft 1997\harvardyearright
-  , `Book-to-market, dividend yield, and expected market returns: A time-series
-  analysis', {\em Journal of Financial economics} {\bf 44}(2),~169--203.
-
-\harvarditem{Lamont}{1998}{lamont1998earnings}
-Lamont, O.  \harvardyearleft 1998\harvardyearright , `Earnings and expected
-  returns', {\em The journal of Finance} {\bf 53}(5),~1563--1587.
-
-\harvarditem[Lee et~al.]{Lee, Shi \harvardand\ Gao}{2018}{lee2018lasso}
-Lee, J.~H., Shi, Z. \harvardand\ Gao, Z.  \harvardyearleft
-  2018\harvardyearright , `On lasso for predictive regression', {\em arXiv
-  preprint arXiv:1810.03140} .
-
-\harvarditem[Lee et~al.]{Lee, Tu \harvardand\ Ullah}{2015}{lee2015forecasting}
-Lee, T.-H., Tu, Y. \harvardand\ Ullah, A.  \harvardyearleft
-  2015\harvardyearright , `Forecasting equity premium: Global historical
-  average versus local historical average and constraints', {\em Journal of
-  Business \& Economic Statistics} {\bf 33}(3),~393--402.
-
 \harvarditem{Lettau \harvardand\ Ludvigson}{2001}{lettau2001consumption}
 Lettau, M. \harvardand\ Ludvigson, S.  \harvardyearleft 2001\harvardyearright ,
   `Consumption, aggregate wealth, and expected stock returns', {\em the Journal
   of Finance} {\bf 56}(3),~815--849.
-
-\harvarditem{Lettau \harvardand\ Van~Nieuwerburgh}{2008}{lettau2008reconciling}
-Lettau, M. \harvardand\ Van~Nieuwerburgh, S.  \harvardyearleft
-  2008\harvardyearright , `Reconciling the return predictability evidence: The
-  review of financial studies: Reconciling the return predictability evidence',
-  {\em The Review of Financial Studies} {\bf 21}(4),~1607--1652.
 
 \harvarditem[Li et~al.]{Li, Tj{\o}stheim, Gao et~al.}{2016}{li2016estimation}
 Li, D., Tj{\o}stheim, D., Gao, J. et~al.  \harvardyearleft
@@ -172,29 +46,20 @@ Li, D., Tj{\o}stheim, D., Gao, J. et~al.  \harvardyearleft
   recurrent markov chains', {\em The Annals of Statistics} {\bf
   44}(5),~1957--1987.
 
+\harvarditem{Ling}{2007}{ling2007self}
+Ling, S.  \harvardyearleft 2007\harvardyearright , `Self-weighted and local
+  quasi-maximum likelihood estimators for arma-garch/igarch models', {\em
+  Journal of Econometrics} {\bf 140}(2),~849--873.
+
+\harvarditem[Neely et~al.]{Neely, Rapach, Tu \harvardand\
+  Zhou}{2014}{neely2014forecasting}
+Neely, C.~J., Rapach, D.~E., Tu, J. \harvardand\ Zhou, G.  \harvardyearleft
+  2014\harvardyearright , `Forecasting the equity risk premium: the role of
+  technical indicators', {\em Management science} {\bf 60}(7),~1772--1791.
+
 \harvarditem{Park}{2002}{park2002nonstationary}
 Park, J.~Y.  \harvardyearleft 2002\harvardyearright , `Nonstationary nonlinear
   heteroskedasticity', {\em Journal of econometrics} {\bf 110}(2),~383--415.
-
-\harvarditem{Park \harvardand\ Phillips}{1988}{park1988statistical}
-Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
-  1988\harvardyearright , `Statistical inference in regressions with integrated
-  processes: Part 1', {\em Econometric Theory} {\bf 4}(3),~468--497.
-
-\harvarditem{Park \harvardand\ Phillips}{1989}{park1989statistical}
-Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
-  1989\harvardyearright , `Statistical inference in regressions with integrated
-  processes: Part 2', {\em Econometric Theory} pp.~95--131.
-
-\harvarditem{Park \harvardand\ Phillips}{1999}{park1999asymptotics}
-Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
-  1999\harvardyearright , `Asymptotics for nonlinear transformations of
-  integrated time series', {\em Econometric Theory} {\bf 15}(3),~269--298.
-
-\harvarditem{Park \harvardand\ Phillips}{2000}{park2000nonstationary}
-Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
-  2000\harvardyearright , `Nonstationary binary choice', {\em Econometrica}
-  {\bf 68}(5),~1249--1280.
 
 \harvarditem{Park \harvardand\ Phillips}{2001}{park2001nonlinear}
 Park, J.~Y. \harvardand\ Phillips, P.~C.  \harvardyearleft
@@ -206,26 +71,16 @@ Pesaran, M.~H. \harvardand\ Timmermann, A.  \harvardyearleft
   1995\harvardyearright , `Predictability of stock returns: Robustness and
   economic significance', {\em The Journal of Finance} {\bf 50}(4),~1201--1228.
 
+\harvarditem{Phillips}{2015}{phillips2015halbert}
+Phillips, P.~C.  \harvardyearleft 2015\harvardyearright , `Halbert white jr.
+  memorial jfec lecture: Pitfalls and possibilities in predictive regression',
+  {\em Journal of Financial Econometrics} {\bf 13}(3),~521--555.
+
 \harvarditem[Phillips et~al.]{Phillips, Li \harvardand\
   Gao}{2017}{phillips2017estimating}
 Phillips, P.~C., Li, D. \harvardand\ Gao, J.  \harvardyearleft
   2017\harvardyearright , `Estimating smooth structural change in cointegration
   models', {\em Journal of Econometrics} {\bf 196}(1),~180--195.
-
-\harvarditem{Qi}{1999}{qi1999nonlinear}
-Qi, M.  \harvardyearleft 1999\harvardyearright , `Nonlinear predictability of
-  stock returns using financial and economic variables', {\em Journal of
-  Business \& Economic Statistics} {\bf 17}(4),~419--429.
-
-\harvarditem{Revuz \harvardand\ Yor}{2013}{revuz2013continuous}
-Revuz, D. \harvardand\ Yor, M.  \harvardyearleft 2013\harvardyearright , {\em
-  Continuous martingales and Brownian motion}, Vol. 293, Springer Science \&
-  Business Media.
-
-\harvarditem{Stock \harvardand\ Watson}{2007}{stock2007has}
-Stock, J.~H. \harvardand\ Watson, M.~W.  \harvardyearleft 2007\harvardyearright
-  , `Why has us inflation become harder to forecast?', {\em Journal of Money,
-  Credit and banking} {\bf 39},~3--33.
 
 \harvarditem{Welch \harvardand\ Goyal}{2008}{welch2008comprehensive}
 Welch, I. \harvardand\ Goyal, A.  \harvardyearleft 2008\harvardyearright , `A
@@ -243,16 +98,5 @@ Whittington, L.~A., Alm, J. \harvardand\ Peters, H.~E.  \harvardyearleft
 Wooldridge, J.~M.  \harvardyearleft 1994\harvardyearright , `Estimation and
   inference for dependent processes', {\em Handbook of econometrics} {\bf
   4},~2639--2738.
-
-\harvarditem{Xu}{2016}{xu2016testing}
-Xu, K.-L.  \harvardyearleft 2016\harvardyearright , `Testing for return
-  predictability with co-moving predictors of unknown form', {\em Available at
-  SSRN 3177313} .
-
-\harvarditem[Zhou et~al.]{Zhou, Gao, Kew \harvardand\
-  Harris}{2018}{zhou2018semiparametric}
-Zhou, W., Gao, J., Kew, H. \harvardand\ Harris, D.  \harvardyearleft
-  2018\harvardyearright , `Semiparametric single-index predictive regression',
-  {\em Available at SSRN 3214042} .
 
 \end{thebibliography}

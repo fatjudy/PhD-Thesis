@@ -184,46 +184,53 @@ where $z_t = (y_{t-1}, \cdots, y_{t-p}, w_{t-1}^{\prime})^{\prime}$, in which $w
 $g\left( .,.\right) $ is a known univariate nonlinear function, $x_{t-1}$ is a $d$-dimensional integrated process of order one, $\theta _{0}$ is a $d$-dimensional unknown true parameter vector that lies in the parameter set $\Theta $, $\gamma _{0}$ is a $m$-dimensional unknown true parameter vector that lies in the parameter set $\Gamma $ and $e_{t}$ is a martingale
 difference process. The parameter sets $\Theta $ and $\Gamma $ are assumed to be compact and convex subsets of $\mathbb{R}^{d}$ and $\mathbb{R}^{m}$ respectively. In order to ensure that $\theta_0$ is uniquely identifiable, we will need to impose $\theta_{0}^{\prime}\theta_{0} = 1$. 
 
-This model combines a linear component with a nonlinear single-index component, which can capture both linear and nonlinear relationship between dependent variable and predictors. This study aims to use the Monte Carlo simulation method to investigate the finite sample properties of the estimators. There will also be an empirical analysis using \cite{welch2008comprehensive} dataset, to compare the out-of-sample predictability of stock returns with commonly used benchmark models. 
+This model combines linear components with a nonlinear single-index component, which can capture both linear and nonlinear relationship between dependent variable and predictors. This study aims to use the Monte Carlo simulation method to investigate the finite sample properties of the estimators. There will also be an empirical analysis using \cite{welch2008comprehensive} dataset, to compare the out-of-sample predictability of stock returns with commonly used benchmark models. 
 
 %Partial-linear model is an important tool for multivariate regression due to its flexibility. It combines linear model with a nonparametric model, which can capture both linear and nonlinear relationship between dependent variable and predictors (see for example \cite{stute2005nonparametric}). Such works include Such works include \cite{chen1988convergence}, \cite{carroll1997generalized} and \cite{ruppert2003semiparametric}. Due to the "curse of dimensionality", the nonlinear relationship in the nonparametric part can be difficult to explore (see for example, \cite{ma2013doubly}). Therefore, we follow \cite{dong2016estimation} and consider a partial linear single-index model of the form:
 
 \subsubsection{Literature Review}
-Since real world data always display different characteristics, simple linear models are not adequate in doing modelling and prediction. In recent decades, there is a considerable practical and theoretical effort being channelled into nonlinear and nonstationary time series in recent decades (see for example, \cite{park2001nonlinear}, \cite{park2002nonstationary} and \cite{gao2009nonparametric}). 
+Since real world data always display different characteristics, simple linear models are not adequate in doing modelling and prediction. In recent decades, there is a considerable practical and theoretical effort being channelled into nonlinear and nonstationary time series (see for example, \cite{park2001nonlinear}, \cite{park2002nonstationary} and \cite{gao2009nonparametric}). 
 
-In the early studies, \cite{jennrich1969asymptotic} and \cite{wu1981asymptotic} establish the asymptotic theories for non-linear least square estimators, and \cite{wooldridge1994estimation} and \cite{andrews1995nonlinear} develop the theory for trending processes. \cite{park2001nonlinear} and \cite{chang2001nonlinear} then extend the theories to include integrated time series. They consider a parametric addictive model and estimate the parameters using nonlinear least square method. However, the nonlinear regressions they consider can only include singular predictor. 
+In the early years, \cite{jennrich1969asymptotic} and \cite{wu1981asymptotic} establish the asymptotic theories for non-linear least square estimators. \cite{wooldridge1994estimation} and \cite{andrews1995nonlinear} then develop the theory for trending processes. \cite{park2001nonlinear} and \cite{chang2001nonlinear} then extend the theories to include integrated time series. They propose a parametric addictive model and estimate the parameters using nonlinear least square method. However, the nonlinear regressions they consider can only include singular predictor. 
 
 In the case of multiple predictors, \cite{chang2003index} proposes index models driven by integrated time series of the form:
+%$$
+%    y_t = q(x,\alpha)G(v+x^{\prime}\beta) + p(x,\alpha) + u_t
+%$$
 $$
-    y_t = q(x,\alpha)G(v+x^{\prime}\beta) + p(x,\alpha) + u_t
+y_t = G(v+x^{\prime}\beta) + u_t
 $$
-where $x_t$ is an m-dimensional integrated process of order one, $p(x,\alpha)$ and $q(x,\alpha)$ are linear functionals defined on $\mathbb{R}^{m}$ and $u_t$ is a stationary error. This model is a mixture of linear function and nonlinear function, where variables appears as a single-index structure. It is a parametric model since $G(v+x^{\prime}\beta)$ is known, and  all the estimator s are estimated by nonlinear least method.
+%where $x_t$ is an m-dimensional integrated process of order one, $p(x,\alpha)$ and $q(x,\alpha)$ are linear functionals defined on $\mathbb{R}^{m}$ and $u_t$ is a stationary error. 
+where $x_t$ is an m-dimensional integrated process of order one, $u_t$ is a stationary error. 
+This model combines the multiple predictors in to a single-index structure $x^{\prime}\beta$. It is a parametric model since $G(v+x^{\prime}\beta)$ is known, and  all the estimators are estimated by nonlinear least square method.
 
 But as parametric models may suffer from the misspecification problem, some non-parametric models have been studied intensively and different estimation method has been proposed, such as kernel estimation (\cite{xia2006semi}, \cite{ma2015varying}, \cite{birke2017semi}), series-based method (\cite{chen2007large} for review), spline method (\cite{yu2002penalized}) and Hermite polynomials (see for example, \cite{dong2015semiparametric}). 
 
-Meanwhile, to make the nonparametric models more flexible, semiparametric models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. In the time series literature, partially linear single-index models have also attracted attention in recent years. For example, \cite{dong2016estimation} propose a partially linear single-index model of the form:
+Meanwhile, to make the nonparametric models more flexible, semiparametric models involving both parametric and nonparametric components have been widely studied in the literature, such as by \cite{gao2007nonlinear}. As the non-parametric part can describe the nonlinear relationship among variables, studies normally use linear component as the parametric part (the so called partially linear model). In the time series literature, partially linear model with single-index structure have also attracted attention in recent years. For example, \cite{dong2016estimation} propose a partially linear single-index model of the form:
 \begin{equation}
     y_t = \beta_0^{\prime}x_t+g(\theta_0^{\prime} x_t) + e_t
     \label{Dong_model}
 \end{equation}
 where $y_t$ is a scalar process, g($\cdot$) is an unknown nonlinear integrable function (the link function), $x_t$ is a d-dimensional integrated process. This model is an extension of parametric linear models and at the same time, a compromise between fully parametric and fully nonparametric models. 
 
-But model (\ref{Dong_model}) only include integrated processes, while in economic and financial studies, the regressors are a mixture of stationary and non-stationary variables. For example, some popular predictors used in stock return prediction are non-stationary, such as dividend-price ratio (\cite{fama1989business}, \cite{cochrane2008dog}, and \cite{lettau2008reconciling}), earnings-price-ratio (\cite{campbell1988stock}) and book-to-market ratio (\cite{kothari1997book} and \cite{pontiff1998book}). While some stationary predictors are also proved to be important, such as the regression residuals in the study of \cite{lettau2001consumption}. 
+But model (\ref{Dong_model}) only includes integrated processes, while in economic and financial studies, the regressors are a mixture of stationary and non-stationary variables. For example, some popular predictors used in stock return prediction are non-stationary, such as dividend-price ratio (\cite{fama1989business}, \cite{cochrane2008dog}, and \cite{lettau2008reconciling}), earnings-price-ratio (\cite{campbell1988stock}) and book-to-market ratio (\cite{kothari1997book} and \cite{pontiff1998book}). While some stationary predictors are also proved to be important, such as the regression residuals in the study of \cite{lettau2001consumption}. 
 
 In addition, models like (\ref{Dong_model}) did not include lag variable $y_{t-1}, y_{t-2}, \cdots, y_{t-p}$. It may limit their applications to time series modelling because key macroeconomic/financial variables, such as the growth rate of GDP and the rate of unemployment are typically auto-correlated. Failing to account for this auto-correlation will lead to serially correlated residuals. 
 
-Therefore, model (\ref{PL model}) we propose include time series with different characteristics. In the model:
+Therefore, we propose model (\ref{PL model}) to include time series with different characteristics. In our model:
 $$
 y_{t} = \beta_0^{\prime} z_t + f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right) +e_{t},\ \ \
 	t=2,...,T,
 $$
-$z_t$ contains all the stationary variables. In stock return predictability case, $y_{t-1}$ is included in $z_t$ since stock return is stationary. $x_t$ in the single-index component includes non-stationary variables and in our study, we consider non-stationary predictors with cointegrated structure (see for example, \cite{zhou2018semiparametric}). 
+$z_t$ contains all the stationary variables. In stock return predictability case, $y_{t-1}$ is included in $z_t$ since stock return is stationary. $x_t$ in the single-index component includes non-stationary variables and in our study, we consider non-stationary predictors with co-integrated structure (see for example, \cite{zhou2018semiparametric}). 
 
-In terms of function , we consider commonly used nonlinear functions to capture the nonlinear relationship between dependent variable and the independent variables. Nonlinear relationship has been considered in forecasting financial and macroeconomic series in previous studies. \cite{qi1999nonlinear} adopts a neural network model with 9 financial and economic variables. \cite{lettau2008reconciling} provide strong in-sample evidence for regime shifts in the long-term mean of the dividend-price ratio. There are also theoretical studies about nonlinear models.  There is a considerable theoretical effort being put into the theoretical study of nonlinear models too. \cite{park1999asymptotics}, \cite{park2000nonstationary}, \cite{park2001nonlinear} develop asymptotic theory for nonlinear models with single predictor. \cite{chang2001nonlinear} and \cite{chang2003index} extend the theory to include multiple predictors.  
+For the parametric function $f\left(\cdot\right)$, we adopt some commonly used nonlinear functional forms. There is a considerable theoretical effort being put into the theoretical study of nonlinear models. \cite{park1999asymptotics}, \cite{park2000nonstationary}, \cite{park2001nonlinear} develop asymptotic theory for nonlinear models with single predictor. \cite{chang2001nonlinear} and \cite{chang2003index} extend the theory to include multiple predictors. Nonlinear relationship has also been considered in forecasting financial and macroeconomic series in empirical studies. \cite{qi1999nonlinear} adopts a neural network model with 9 financial and economic variables. \cite{lettau2008reconciling} provide strong in-sample evidence for regime shifts in the long-term mean of the dividend-price ratio.
 
-Building on this growing literature, our study focus on using this model to assess whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only linear or nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$. Also, we can investigate that by combining linearity with nonlinearities, whether our model can outperform pure linear or nonlinear models. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
+Building on this growing literature, this chapter focuses on assessing the stock return predictability using the partially nonlinear models. The motivations of this study are as follows. Stock return has been proved to be predictable (see for example, \cite{fama1981stock}, \cite{fama1990stock}, \cite{campbell2004caught} and \cite{campbell2006efficient}), but \cite{welch2008comprehensive} find that the predictability only holds in in-sample prediction, not out-of-sample. Therefore, the first motivation of this study is to investigate whether our partially nonlinear models can perform better both in-sample and out-of-sample. Moreover, we have considered a pure nonlinear model in our previous study. in this chapter, we are motivated to check whether including lagged dependent variables would, in fact, improve forecasts of $y_{t}$ relative to using only nonlinear single-index component, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$. 
 
-To estimate model (\ref{PL model}), we propose a novel 3-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares. As we need to use an iterative procedure to apply the nonlinear least square estimation, we choose initial values calculated from Taylor expansion to start the procedure.
+Furthermore, in the study of \cite{welch2008comprehensive}, they only use historical average as the benchmark model. In our study, we will compare our models against different benchmark models, including auto-regressive models, linear models and nonlinear models. By doing so, we can investigate that after combining linearity with nonlinearities, whether our model can outperform pure linear or nonlinear models. Our model may also be useful in cases where there are additional stationary predictors, $w_{t-1}$, for which the linear specification fits the data better than the nonlinear specification.
+
+To estimate model (\ref{PL model}), we propose a novel 3-step estimation method in which $\beta$ will have a closed form solution while $\theta$ and $\gamma$ can be estimated by the method of nonlinear least squares or constrained nonlinear least squares. As we need to use an iterative procedure to apply the nonlinear least square estimation, we design a 2-step technique using Taylor series expansions to help us choose initial values. 
 
 % , containing either the cointegrated predictors or non-cointegrated predictors.
 % \cite{chang2003index} derives the limiting distributions of the nonlinear least square estimators and presents them as functions of Brownian motions and Brownian local time. 
@@ -241,8 +248,7 @@ To estimate model (\ref{PL model}), we propose a novel 3-step estimation method 
 
 % Failing to account for this auto-correlation will lead to serially correlated residuals. To improve, we include the lagged dependent variable $y_{t-1}$ in the linear part of our model (\ref{PL model}) (\textcolor{red}{literatures}). 
 
-
-The findings of this chapter are summarized as follows. From the Monte Carlo simulation, we find that the constrained nonlinear least square estimators have good finite sample performances, and the Taylor initial values help further improve the performance. Model (\ref{PL model}) outperforms pure linear or nonlinear models . We find both in-sample and out-of-sample evidence that the partially nonlinear model we proposed provide a better out-of-sample performance than historical average and  auto-regressive models. 
+The findings of this chapter are summarized as follows. First, from the Monte Carlo simulation, we find that the constrained nonlinear least square estimators have good finite sample performances and they perform better than the estimator without constraint.  Second, we find that the Taylor initial values help further improve the performance. Third, in the empirical study, we find both in-sample and out-of-sample evidence that the partially nonlinear model we propose have a better performance than the historical average model. Finally, we also find that model (\ref{PL model}) provides a better out-of-sample performance than other benchmark models. 
 
 This chapter is organized as follows. Section 2 introduces the partially nonlinear single-index predictive model and proposes a 3-step estimation method. To improve the performance of the model, this section also introduces constraint and truncation conditions in addition to the normal nonlinear least square. Section 3 examines the finite-sample properties of the normal nonlinear least square estimators (NLS estimators hereafter) and the constrained nonlinear least square estimators (CLS estimators hereafter) using Monte Carlo evaluation. The discussion includes models with different nonlinear functional part and considers both co-integrated and non-cointegrated cases. Section 4 applies the partially nonlinear models to stock return predictability and investigate both in-sample and out-of-sample performances of the models. Section 5 concludes. 
 
@@ -264,9 +270,9 @@ Since in our case, $f\left( x_{t-1}^{\prime }\theta_0; \gamma_0\right)$ is known
 \end{align}
 
 
-The minimum value of $L(\beta, \theta, \gamma)$ occurs when the above gradient functions equals to 0. Notice that these score functions $\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta}$ and $\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma}$ are nonlinear functions of both the variables and the parameters, and so they do not have closed form solutions. To estimate the parameters, we need to include an iterative procedure and obtain optimal values by using gradient descent algorithms. However, recognising that this score function $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta}$ is linear in the parameter $\beta$, we introduce a novel two-step approach for estimation in order to reduce the computational burden. 
+The minimum value of $L(\beta, \theta, \gamma)$ occurs when the above gradient functions equals to 0. Notice that these score functions $\frac{\partial L(\beta, \theta, \gamma)}{\partial \theta}$ and $\frac{\partial L(\beta, \theta, \gamma)}{\partial \gamma}$ are nonlinear functions of both the variables and the parameters, and so they do not have closed form solutions. To estimate the parameters, we need to include an iterative procedure and obtain optimal values by using gradient descent algorithms. However, recognizing that this score function $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta}$ is linear in the parameter $\beta$, we introduce a novel 3-step approach for estimation in order to reduce the computational burden. 
 
-\textbf{Step 1:} set $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = 0$ and solve the first equation in \ref{gradient} to obtain $\tilde{\beta}$:
+\textbf{Step 1:} set $\frac{\partial L(\beta, \theta, \gamma)}{\partial \beta} = 0$ and solve the first equation in (\ref{gradient}) to obtain $\tilde{\beta}$:
 \begin{equation}
 \tilde{\beta} = \left( \sum_{t=1}^{T}z_t z_t^{\prime}\right)^{-1}\sum_{t=1}^{T}\left( y_t - f\left( x_{t-1}^{\prime }\theta; \gamma\right)\right) z_t
 \label{beta}
@@ -291,17 +297,17 @@ Then we have an approximate model of the form:
 \label{trans_model}
 \end{equation}
 
-\textbf{Step 2: } estimate $(\theta, \gamma)$ using nonlinear least square(NLS) method:
+\textbf{Step 2: } estimate $(\hat{\theta}, \hat{\gamma})$ using nonlinear least square(NLS) method. Define the sum of least squares $Q_{T}(\theta, \gamma)$ as:
 $$
 Q_{T}(\theta, \gamma)=\sum_{t=1}^{T}\left(\tilde{y_{t}}-\tilde{g}\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2}
 $$
 over $(\theta, \gamma) \in (\Theta, \Gamma)$.
-The $(\hat{\theta}, \hat{\gamma})$ is given by:
+The estimated $(\hat{\theta}, \hat{\gamma})$ is given by:
 \begin{equation*}
 \left( \widehat{\theta},\widehat{\gamma}\right) =\arg \min_{\theta \in \Theta
 	,\gamma \in \Gamma }Q_{T}\left( \theta ,\gamma \right),  \label{nls_c3}
 \end{equation*}%
-which can be solved using an iterative procedure since there is no closed form solution. 
+which can be solved using an iterative procedure since there is no closed form solutions. 
 
 \textbf{Step 3: } As $\hat{\theta}$ and $\hat{\gamma}$ have been estimated, we can substitute them back to (\ref{beta}) and get the estimate of $\beta$:
 $$
@@ -310,17 +316,17 @@ $$.
 
 In the 3-step procedure above, we have obtained the NLS estimators ($\widehat{\theta}, \widehat{\gamma}, \widehat{\beta}$). In order to improve finite sample properties of the estimators, we impose a truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_T\right)$ on $x_{t-1}$ and an identification condition on coefficient vector $\theta$. We then define the modified sum-of-squared errors by:
 
-$$
-Q_{T, M}(\theta, \gamma)=\sum_{t=1}^{T}\left(y_{t}-f\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2} I\left(\left\|x_{t-1}\right\| \leq M_{T}\right)+\lambda\left(\|\theta\|^{2}-1\right),
-$$
-where $I\left( .\right) $ denotes the indicator function, $%
-\left\Vert .\right\Vert $ is the Euclidean norm, $M_T$ is a positive and increasing sequence satisfying $ M_{T}\rightarrow \infty $ as $T \rightarrow \infty $ and $\lambda $ is a Lagrange
-multiplier. 
+\begin{equation}
+	Q_{T, M}(\theta, \gamma)=\sum_{t=1}^{T}\left(y_{t}-f\left(x_{t-1}^{\prime} \theta, \gamma\right)\right)^{2} I\left(\left\|x_{t-1}\right\| \leq M_{T}\right)+\lambda\left(\|\theta\|^{2}-1\right),
+	\label{CLS}
+\end{equation}
+where $I\left( .\right) $ denotes the indicator function, $\lambda $ is a Lagrange
+multiplier and $\left\Vert .\right\Vert $ is the Euclidean norm. In equation (\ref{CLS}), the truncation condition $I\left(\left\|x_{t-1}\right\| \leq M_{T}\right)$ discards observations whose Euclidean norm is bigger than $M_T$. Similar condition has been considered by \cite{li2016estimation} and \cite{ling2007self}. $M_T$ is a positive and increasing sequence satisfying $ M_{T}\rightarrow \infty $ as $T \rightarrow \infty $. Following \cite{li2016estimation}, we choose $M_T$ = $C_{\alpha}n^{1-\beta}$ with $\beta = 1/2$ and $C_{\alpha} = 1$. Therefore, $M_T = \sqrt{T}$ in our study.    
 
-Then in step 1, we can estimate the constrained least squares (denoted CLS) estimators $\bar{\theta}$ and $%
-\bar{\gamma}$ by minimizing $Q_{T,M}\left( \theta ,\gamma \right) 
+Then we can start with step 1 above to rearrange the equations and the constrained least squares (denoted CLS) estimators $\bar{\theta}$ and $%
+\bar{\gamma}$ can be obtained by minimizing $Q_{T,M}\left( \theta ,\gamma \right) 
 $ over $\theta \in \Theta $ and $\gamma \in \Gamma $ such that the
-restriction $\left\Vert \theta \right\Vert ^{2}=1$ holds; that is%
+two restrictions hold; that is:%
 \begin{equation*}
 \left( \bar{\theta},\bar{\gamma}\right) =\arg \min_{\theta \in \Theta
 	,\gamma \in \Gamma ,\left\Vert \theta \right\Vert ^{2}=1}Q_{T,M}\left(
@@ -333,20 +339,17 @@ $$
 $$.
 
 \subsection{Nonlinear Function: $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$}
-In the partially nonlinear model \ref{PL model}, we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies type of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
+In the partially nonlinear model (\ref{PL model}), we consider different forms of $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ to include varies types of nonlinearities. The first group of nonlinear functions we consider is the trigonometric functions: 
 \begin{eqnarray*}
 	\text{sin}: f_{1}\left( u_{t-1},\gamma _{1}\right) &=&\sin \left( u_{t-1}+\gamma_{1}\right),  \\
 	\text{cos}: f_{2}\left( u_{t-1},\gamma _{2}\right) &=&\cos \left( u_{t-1}+\gamma_{2}\right), \\
 	\text{sin\_scaled}: f_{3}\left( u_{t-1},\gamma_{3}, \gamma_{4}\right) &=&\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right),  \\
 	\text{cos\_scaled}: f_{4}\left( u_{t-1},\gamma_{5}, \gamma_{6}\right) &=&\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right),
-	%		\text{exp\_shift}: f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) &=& 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}} \\
-	%		\text{exp}: f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) &=& \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}  \\
-	%		\text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) &=&\gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
 \end{eqnarray*} 
 where $u_{t-1} =  x_{t-1}^{\prime }\theta _{0}$.
-Among the above 4 trigonometric functions, $f_{1} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{2} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ can be regarded as special cases of $f_{3}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{4} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ with $\gamma_{3}$ and $\gamma_{5}$ equals to 1. 
+Among the above 4 trigonometric functions, $f_{1} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{2} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ can be regarded as special cases of $f_{3}\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ and $f_{4} \left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ with $\gamma_{3}$ and $\gamma_{5}$ equal to 1. 
 
-Parameters $\gamma_{1}$, $\gamma_{2}$, $\gamma_{4}$ and $\gamma_{6}$ decide the position of the functions (the location parameter). As shown in picture (\ref{param_g6}), the two curves have the same shape but the right curve is to the right of the blue one. Parameters $\gamma_{3}$ and $\gamma_{5}$ decide the shape of the functions, a bigger value will make the shape compressed while a smaller value will make it stretched (the shape parameter). The effect of the shape parameters can be seen in picture (\ref{param_g5}). The blue curve shows almost one period of a cosine function but the red curve shows less than a quarter.
+Parameters $\gamma_{1}$, $\gamma_{2}$, $\gamma_{4}$ and $\gamma_{6}$ decide the position of the functions (the location parameter). As shown in picture (\ref{param_g6}), the two curves have the same shape but the red curve is to the right of the blue one. Parameters $\gamma_{3}$ and $\gamma_{5}$ decide the shape of the functions, a bigger value will make the shape more compressed while a smaller value will make it more stretched (the shape parameter). The effect of the shape parameters can be seen in picture (\ref{param_g5}). The blue curve shows almost one period of a cosine function but the red curve shows less than a quarter.
 
 \begin{figure}[!htbp]
 	\centering
@@ -410,20 +413,15 @@ In addition, we also consider a quadratic polynomial function:
 $$
 \text{Polynomial}: f_{7}\left( u_{t-1},\gamma_{11}, \gamma_{12}, \gamma_{13}\right) = \gamma_{11}+ \gamma_{12}u_{t-1}+\gamma_{13}u_{t-1}^{2}
 $$
-It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ changes the parabola's wideness.
+It is a parabola where $\gamma_{11}$ decides the y-intercept and $\gamma_{13}$ reflects the parabola's wideness.
 
 The nonlinear functional forms we consider have included the bounded functions (the exponential functions), bounded periodic functions (trigonometric functions), and the unbounded function (polynomial function). 
 
 \subsection{Initial Values}
 
-As the gradient functions (\ref{gradient}) do not have a closed form solution, we will use an iterative procedure to estimate the model, which requires initial values. Most studies use 0 or true values as the initial values to start the procedure(\textcolor{red}{LR} here). Normally, true values provide the quickest and best convergence, but they are not known in empirical studies. And values that are close to the optimal values will tend to give a better convergence. 
+As the gradient functions (\ref{gradient}) do not have a closed form solution, we will use an iterative procedure, which requires initial values, to estimate the model. Most studies use 0 or true values as the initial values to start the procedure. Normally, true values provide the quickest and best convergence, but they are not known in empirical studies. Therefore, we want to find values that are close to the optimal values to get a better convergence. 
 
-Even though we do not known the optimal values beforehand, we can linearize our partially nonlinear model using Taylor expansion and estimate the linearized model to obtain better initial values. 
-
-%to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
-%To start the iterative procedure, 
-
-Before applying Taylor expansion, we need to calculate the single-index $u_{t-1} = x^{\prime}_{t-1}\theta$. Since $x_1$ and $x_2$ are cointegrated, we can first estimate the following regression to get the cointegration vector $(1,-\hat{\eta})$:
+To do so, we can approximate the nonlinear component in model (\ref{NL_model}) by a linear model using Taylor series expansion. Since both $\gamma$ and $\theta$ are unknown parameters, we need to calculate $\theta$ (denoted by $\theta_0$) first to obtain $\hat{u_{t-1}}$. As we only consider cointegrated $x_1$ and $x_2$ in this chapter, we can first estimate the following regression to get the cointegration vector $(1,-\hat{\eta})$:
 $$
 x_1 =\eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
 $$
@@ -431,10 +429,18 @@ Then $\theta_0$ is given by normalizing the cointegration vector $(1,-\hat{\eta}
 $$
 \theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\eta}^2}}, -\dfrac{\hat{\eta}}{\sqrt{1+\hat{\eta}^2}})
 $$
-which satisfies the constrain that $\|\theta_0\| = 1$. Then the single-index can be calculated as $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$.
+which satisfies the constrain that $\|\theta_0\| = 1$. Then the single-index can be calculated as $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$.   
 
+% Since the nonlinear function $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ could not be  
 
-As $\hat{u}_{t-1}$ has been estimated, we can apply Taylor expansion to approximate the nonlinear part $f\left( \hat{u}_{t-1},\gamma _{0}\right)$. For the two sine functions: $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1}\right)$ and $f_{3}\left( \gamma_{3}u_{t-1},\gamma _{4}\right) =\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we can use their first order Taylor expansions and substitute $f_1$ and $f_3$ by: 
+% Even though we do not known the optimal values beforehand, we can linearize our partially nonlinear model using Taylor series expansion and estimate the linearized model to obtain better initial values. 
+
+%to estimate the partially nonlinear model, we need to calculate the gradient functions (\ref{gradient}) first. But the gradient functions are nonlinear functions of both the variables and the parameters, so they do not have closed form solutions. Therefore, we use an iterative procedure to estimate the model. 
+%To start the iterative procedure, 
+
+% Before applying Taylor series expansion, we need to calculate the single-index $u_{t-1} = x^{\prime}_{t-1}\theta$. Since $x_1$ and $x_2$ are cointegrated,
+
+Since $\hat{u}_{t-1}$ has been estimated, we can apply Taylor series expansion to approximate the nonlinear part $f\left( \hat{u}_{t-1},\gamma _{0}\right)$. For the two sine functions: $f_{1}\left( u_{t-1},\gamma _{0}\right) =\sin \left( u_{t-1}+\gamma_{1}\right)$ and $f_{3}\left( \gamma_{3}u_{t-1},\gamma _{4}\right) =\sin \left( \gamma_{3}u_{t-1}+\gamma_{4}\right)$, we can use their first order Taylor series expansions and substitute $f_1$ and $f_3$ by: 
 $$
 \tilde{f_1} = \left( \hat{u}_{t-1}+\gamma_{1}\right) 
 $$ 
@@ -442,7 +448,7 @@ $$
 \tilde{f_3} = \left( \gamma_{3}\hat{u}_{t-1}+\gamma_{4}\right) 
 $$ 
 
-Then for the two cosine functions $f_{2}\left( u_{t-1},\gamma _{2}\right) =\cos \left(u_{t-1}+\gamma_{2}\right)$ and $f_{4}\left( \gamma _{5}u_{t-1}+\gamma_{6}\right) =\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right)$, we approximate them using their second-order Taylor expansions:
+Then for the two cosine functions $f_{2}\left( u_{t-1},\gamma _{2}\right) =\cos \left(u_{t-1}+\gamma_{2}\right)$ and $f_{4}\left( \gamma _{5}u_{t-1}+\gamma_{6}\right) =\cos \left( \gamma_{5}u_{t-1}+\gamma_{6}\right)$, we approximate them using their second-order Taylor series expansions:
 $$
 \tilde{f_2} = 1 - \left( \hat{u}_{t-1}+\gamma_{2}\right)^2
 $$ 
@@ -450,7 +456,7 @@ $$
 \tilde{f_4} =  1 - \left(\gamma _{5} \hat{u}_{t-1}+\gamma_{6}\right)^2
 $$ 
 
-Similarly, the two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$ can also be approximated by their first and second order Taylor expansions:
+Similarly, the two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$ can also be approximated by their first and second order Taylor series expansions respectively:
 
 $$
 \tilde{f_5} = \gamma_{7}(\hat{u}_{t-1} - \gamma_{8})^2
@@ -458,7 +464,9 @@ $$
 $$
 \tilde{f_6}= \gamma_{9}(1-\gamma_{10}\hat{u}_{t-1}^2 + \dfrac{\gamma_{10}^2 \hat{u}_{t-1}^4}{2})
 $$
-And for functional 7, the polynomial function, it is already a linear function when the single-index is known. Then we can substitute the nonlinear part $f_1$ to $f_6$ in model (\ref{PL model}) by $\tilde{f}_1$ to $\tilde{f}_6$ above. Therefore, the initial values of $( \beta, \gamma)$ for different functional forms can be calculated by estimating the following linear regressions:
+And for functional 7, the polynomial function, it is already a linear function when the single-index is known. 
+
+Therefore, we can substitute the nonlinear part $f_1$ to $f_6$ in model (\ref{PL model}) by $\tilde{f}_1$ to $\tilde{f}_6$ above and the initial values of $( \beta, \gamma)$ for different functional forms can be calculated by estimating the following linear regressions:
 \begin{align*}
 	y_{t} & =  \gamma_{1}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
 	y_{t} & =  \gamma_{2}  + \hat{u}_{t-1} + \beta_{1}y_{t-1} + \beta_2w_{t-1} + e_t \\
@@ -471,29 +479,27 @@ And for functional 7, the polynomial function, it is already a linear function w
 where $\hat{u}_{t-1} = x^{\prime}_{t-1}\theta_0$ and $e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T$.
 % = \tilde{f_2}  + \beta_{1}y_{t-1} + \beta_2w_{t-1}
 
-Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0}, \beta_{0}, \gamma_{0} \right) $ for the iterative procedure. In the section below part, we can see that these initial values are better than random ones (for example, 0).
+Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0}, \beta_{0}, \gamma_{0} \right) $ for the iterative procedure. In the section below, we can see that when compared with other initial values, the Taylor initial values can improve the finite sample performance significantly.
 
 \section{Monte Carlo Simulation}
 
 \subsection{Data Generation Processes}
 	
-	We investigate the finite sample properties of the NLS and the proposed CLS estimators for partially nonlinear model in multivariate co-integrated settings. The predictors $x_{t-1}$ is a $2$-vector integrated time series. Data are generated on the following models:
-	$$
-	y_{t} = \beta_{1,0} y_{t-1} + \beta_{2,0} w_{t-1} + f\left( x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right) +e_{t}, \quad
-	e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T,
-	$$
-	with
-	$$
+We investigate the finite sample properties of the NLS and the proposed CLS estimators for partially nonlinear model in multivariate co-integrated and non-cointegrated settings. The predictors $x_{t-1}$ is a $2$-vector integrated time series. Data are generated on the following models:
+$$
+    y_{t} = \beta_{1,0} y_{t-1} + \beta_{2,0} w_{t-1} + f\left( x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right) +e_{t}, \quad
+    e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T,
+$$
+with
+$$
 	w_{t} = 0.8*w_{t-1} + s_t, \quad
 	s_{t}\sim i.i.d.N\left( 0,1\right),
-	$$
-	\begin{equation}
-		x_t = x_{t-1} + v_t
-		\label{xt}
-	\end{equation}
+$$
+\begin{equation}
+	x_t = x_{t-1} + v_t
+	\label{xt}
+\end{equation}
 
-	
-	
 % 	If $x_t$ is not cointegrated, we have:
 	
 % 	$$
@@ -509,8 +515,8 @@ Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0
 % 	\end{array}\right)\right)
 % 	$$
 	
-	In terms of $x_t$, we consider both cointegrated $x_t$ and non-cointegrated $x_t$. When $x_t$ is not cointegrated, $v_t$ in (\ref{xt}) is given by:
-	$$
+In terms of $x_t$, we consider both cointegrated $x_t$ and non-cointegrated $x_t$ in this simulation study. When $x_t$ is not cointegrated, $v_t$ in (\ref{xt}) is given by:
+$$
 	v_{t} =\left(\begin{array}{c}
 	v_{1, t}, 
 	v_{2, t}
@@ -521,55 +527,58 @@ Together with $\theta_0$, we have calculated the initial values $\left(\theta_{0
 	1 & 0.5 \nonumber \\
 	0.5 & 1
 	\end{array}\right)\right)
-	$$
+$$
 	
-	To generate the co-integrated $x_t$, we follow a vector integrated process driven by an MA(1) innovations and construct $v_t$ in (\ref{xt}) as:
-	$$v_t = \epsilon_t + C\epsilon_{t-1},$$
-	where $\epsilon_{t} \sim i.i.d. N\left(\left(\begin{array}{c}
-	0 \\
-	0
-	\end{array}\right)
-	,\left(\begin{array}{cc}1 & 0.5 \\ 0.5 & 1\end{array}\right)\right)$ and $C=\left(\begin{array}{cc} -1  & 4/ 3 \\ 0 & 0\end{array}\right)$. 
-	\\
+To generate the co-integrated $x_t$, we follow a vector integrated process driven by an MA(1) innovations and construct $v_t$ in (\ref{xt}) as:
+$$v_t = \epsilon_t + C\epsilon_{t-1},$$
+where $\epsilon_{t} \sim i.i.d. N\left(\left(\begin{array}{c}
+0 \\
+0
+\end{array}\right)
+,\left(\begin{array}{cc}1 & 0.5 \\ 0.5 & 1\end{array}\right)\right)$ and $C=\left(\begin{array}{cc} -1  & 4/ 3 \\ 0 & 0\end{array}\right)$. 
+\\
 	
-	In the data generation process, we consider true parameter values $\hat{\theta}_0 = (0.8, -0.6)^{\prime}$, $\beta_{1,0} = 0.5$, $\beta_{2,0} = 1.0$, and $\gamma_0 = (0.2, 0.3, 0.5)$. The vector length of $\gamma_{0}$ varies depending on the nonlinear form $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ we select. 
+In the data generation process, we consider true parameter values $\hat{\theta}_0 = (0.8, -0.6)^{\prime}$, $\beta_{1,0} = 0.5$, $\beta_{2,0} = 1.0$, and $\gamma_0 = (0.2, 0.3, 0.5)$. The vector length of $\gamma_{0}$ varies depending on the nonlinear form $f\left(x_{t-1}^{\prime }\theta _{0},\gamma _{0}\right)$ we select. 
 	
-	In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and calculate the following statistics.
+In our simulation study, we consider sample sizes $T = 100, 500,  1000$, replication time M = 5000 and calculate the following statistics:
 	
-	\[
-	\text{bias}({\hat\alpha_i})=\overline{\widehat{\alpha}}_{i}-\theta _{i,0}, 
-	\]%
-	where $\overline{\widehat{\alpha}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\alpha}_{i}^{(r)} $; and the standard deviation: 
-	\[
-	\text{std}({\hat\alpha_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right) ^{2}}. 
-	\]%
-	Since $\widehat{\alpha}_1$ and $\widehat{\alpha}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
-	\begin{equation*}
-		\label{std of theta}
-		\sigma_{ij}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right)\left(\widehat{\alpha}_{j}^{(r)}-\overline{\widehat{\alpha}}_{j}\right), \quad \text {cov}(\hat{\alpha}) = \sqrt{\sum_{i=1}^{2}\sum_{j=1}^{2}\sigma_{ij}^{2}}.
-	\end{equation*}
-	where 
-	$\widehat{\alpha}^{(r)}$ denote the $r$-th replication of the estimate.
-	Following the above definitions, we then calculate biases, standard deviations and covariance for $\theta$, $\beta$ and $\gamma$.
+\[
+\text{bias}({\hat\alpha_i})=\overline{\widehat{\alpha}}_{i}-\alpha_{i,0}, 
+\]%
+where $\overline{\widehat{\alpha}}_{i}=M^{-1}\sum_{r=1}^{M}\widehat{\alpha}_{i}^{(r)} $; and the standard deviation: 
+\[
+\text{std}({\hat\alpha_i}) =\sqrt{M^{-1}\sum_{r=1}^{M}\left( \widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right) ^{2}}. 
+\]%
+Since $\widehat{\alpha}_1$ and $\widehat{\alpha}_{2}$ are correlated, we also calculate a type of estimated covariance of the form:
+\begin{equation*}
+	\label{std of theta}
+	\sigma_{ij}=\frac{1}{M} \sum_{r=1}^{M}\left(\widehat{\alpha}_{i}^{(r)}-\overline{\widehat{\alpha}}_{i}\right)\left(\widehat{\alpha}_{j}^{(r)}-\overline{\widehat{\alpha}}_{j}\right), \quad \text {cov}(\hat{\alpha}) \sqrt{\sum_{i=1}^{2}\sum_{j=1}^{2}\sigma_{ij}^{2}}.
+\end{equation*}
+where $\widehat{\alpha}^{(r)}$ denote the $r$-th replication of the estimate.
+Following the above definitions, we then calculate biases, standard deviations and covariance for $\theta$, $\beta$ and $\gamma$.
 	
 
 \subsection{Simulation Results}
 
-\subsubsection{Compare Different Initial Values}
+In this part, we first present results for different initial values and conclude that the Taylor initial values have better performance. We then show the simulation results for cointegrated and non-cointegrated $x_1$, $x_2$ using the Taylor initial values.
 
-Table \ref{init values} shows the simulation results for the partially nonlinear model with polynomial $f\left( u_{t-1},\gamma\right)$:
+
+\subsubsection{Compare Different Initial Values}
+We use the polynomial function as an example to compare different initial values (other functional forms have similar performances).
+Table \ref{init values} shows the simulation results for the partially nonlinear model with polynomial function $f\left( u_{t-1},\gamma\right)$:
 $$
 y_{t}  = \gamma_{11}+ \gamma_{12}{u}_{t-1}+\gamma_{13}{u}_{t-1}^{2} +\beta_{1}y_{t-1} + \beta_2w_{t-1} +e_t
 $$
-where ${u}_{t-1} = x^{\prime}_{t-1}\theta$ and $e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T$.. From the table, we can see that the CLS estimators achieve the best convergence when using true values to start the iterative procedure. As shown in the bottom panel, the biases and standard deviations of the estimators are very low even when sample size T = 100. And it continues to decrease when sample size increases.
+where ${u}_{t-1} = x^{\prime}_{t-1}\theta$ and $e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T$.. From the table, we can see that the CLS estimators achieve the best convergence when using true values to start the iterative procedure. The biases and standard deviations of the estimators are at very low levels even when sample size T = 100. And it continues to decrease when sample size increases.
 
-But when using 0 as initial values, the simulation performance is much worse. Take sample size T=500 and $\theta_1$ as an example, when using true values, the standard deviation of $\theta_1$ is 0.00029, while when initial values equal to 0, standard deviation of $\theta_1$ is 0.2855.  It also shows a worse convergence when sample size increase.
+But when using 0 as initial values, the simulation performance is much worse. Take sample size T = 500 and $\theta_1$ as an example, the standard deviation of $\theta_1$ is 0.2855, while when using true values, the standard deviation of $\theta_1$ is 0.00029. It also shows that the convergence become worse when initial values equal to 0. For example, the bias of $\theta_1$ is 0.12214 when T = 100, and it is 0.15770 when T = 1000.
 
-Even though the true values provide much better results, it is impossible for us to use true values to do the estimation in real world. Therefore, we adopt the Taylor initial values following the procedure in previous section to improve the finite sample performance. As we have approximated the model using Taylor expansions, the Taylor initial values we obtain are relatively close to the true values. Therefore we expect the results to be better than using random initial values. 
+Even though the true values provide much better results, it is not realistic to use them for empirical studies. Therefore, we calculate the Taylor initial values following the procedure in previous section to estimate our partially nonlinear models. As the Taylor initial values we obtain should be relatively close to the true values, we expect the simulation results to be better than using random initial values. 
 
 We can see from the first panel in table \ref{init values} that when using the Taylor initial values, the standard deviation of $\theta_1$ has decreased from 0.2855 (when initial values equals to 0) to 0.0004. It also shows a good convergence, where the biases and standard deviations both decreases when then sample size increases. Take the covariance of $\gamma$: cov($\gamma$) as an example, the covariance drops from 0.01029 when T = 100, to 0.00339 when T = 1000. 
 
-Therefore, compare with previous studies, our Taylor initial values significantly improved the finite sample performance. We will then apply this method to our empirical studies later. 
+Therefore, compare with previous studies, our Taylor initial values significantly improved the finite sample performances. We will then apply this method to simulation and empirical studies. 
+
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
 	\centering
@@ -577,7 +586,7 @@ Therefore, compare with previous studies, our Taylor initial values significantl
 	\begin{adjustbox}{max width=0.8\textwidth}
 	\begin{tabular}{ccccccccc}
 		\toprule
-		&       & \multicolumn{1}{l}{$\theta_1$} & \multicolumn{1}{l}{$\theta_2$} & \multicolumn{1}{l}{$\beta_1$} & \multicolumn{1}{l}{$\beta_2$} & \multicolumn{1}{l}{$\gamma_1$} & \multicolumn{1}{l}{$\gamma_2$} & \multicolumn{1}{l}{$\gamma_3$} \\
+		&       & \multicolumn{1}{l}{$\theta_1$} & \multicolumn{1}{l}{$\theta_2$} & \multicolumn{1}{l}{$\beta_1$} & \multicolumn{1}{l}{$\beta_2$} & \multicolumn{1}{l}{$\gamma_{11}$} & \multicolumn{1}{l}{$\gamma_{12}$} & \multicolumn{1}{l}{$\gamma_{13}$} \\
 		&       & \multicolumn{7}{c}{Initial Values = Taylor Initials} \\
 		\midrule
 		\multirow{3}[1]{*}{T=100} & Bias  & 0.00088 & 0.00026 & -0.00079 & 0.00029 & 0.00326 & -0.00064 & 0.00121 \\
@@ -635,9 +644,8 @@ The covariance of $\theta$, $\beta$ and $\gamma$ are also smaller when the const
 		\begin{tabular}{cccccccccccc}
 		\toprule
 		&       & \multicolumn{5}{c}{NLS}               & \multicolumn{5}{c}{Constrained-NLS} \\
-		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ \\
-		\midrule
 		&       & \multicolumn{10}{c}{$f_1 (u_{t-1}, \gamma_1)$}                \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ \\
 		\midrule
 		\multirow{3}[1]{*}{T = 100} & Bias  & 0.38379 & 0.18386 & 0.08270 & 0.48694 & -0.24803 & -0.00145 & -0.00116 & -0.00038 & 0.00089 & 0.04358 \\
 		& std   & 0.50727 & 0.32935 & 0.13342 & 0.04772 & 0.46857 & 0.01523 & 0.01683 & 0.00122 & 0.01254 & 0.08301 \\
@@ -649,7 +657,8 @@ The covariance of $\theta$, $\beta$ and $\gamma$ are also smaller when the const
 		& std   & 0.04750 & 0.02966 & \textcolor[rgb]{ 0,  .439,  .753}{0.01148} & 0.00124 & 0.02029 & 0.01892 & 0.01693 & \textcolor[rgb]{ 0,  .439,  .753}{0.01574} & 0.02946 & 0.01798 \\
 		&       & \multicolumn{2}{c}{0.05939} &       & \multicolumn{2}{c}{0.02050} & \multicolumn{2}{c}{0.00249} & \multicolumn{2}{c}{0.00279} &  \\
 		\midrule
-		\multicolumn{12}{c}{$f_1 (u_{t-1}, \gamma_2)$} \\
+		&       & \multicolumn{10}{c}{$f_1 (u_{t-1}, \gamma_2)$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_2$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_2$ \\
 		\midrule
 		\multirow{3}[1]{*}{T = 100} & Bias  & 0.44222 & 0.18241 & 0.08787 & 0.05589 & 0.47601 & -0.00424 & -0.00120 & -0.00100 & 0.00334 & 0.04116 \\
 		& std   & 0.57804 & 0.33512 & 0.12559 & 0.02178 & 0.58834 & 0.01781 & 0.01584 & 0.00222 & 0.01433 & 0.08129 \\
@@ -667,7 +676,7 @@ The covariance of $\theta$, $\beta$ and $\gamma$ are also smaller when the const
 	\label{nonco-f12}%
 \end{table}%
 
-Table \ref{nonco-f12} presents the simulation results for non-cointegrated $x_t$ using $f_3 (u_{t-1}, \gamma_3, \gamma_4)$ and $f_4 (u_{t-1}, \gamma_5, \gamma_6)$. When compared with the NLS estimators, CLS estimators have smaller bias and deviations are smaller. The biases of $\theta_1$ in the case of CLS is -0.00177 while the value is 0.01467 in the case of NLS. And the CLS estimators also show a better convergence. As shown in the second panel, when sample size increases, the bias of $\beta_2$ decreases from 0.01092 to 0.00237. 
+Table \ref{nonco-f34} presents the simulation results for non-cointegrated $x_t$ using $f_3 (u_{t-1}, \gamma_3, \gamma_4)$ and $f_4 (u_{t-1}, \gamma_5, \gamma_6)$. When compared with the NLS estimators, CLS estimators have smaller magnitude for both bias and standard deviations. The biases of $\theta_1$ in the case of CLS is -0.00177 while the value is 0.01467 in the case of NLS. And the CLS estimators also show a better convergence. As shown in the second panel, when sample size increases, the bias of $\beta_2$ decreases from 0.01092 to 0.00237. 
 
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
@@ -677,9 +686,8 @@ Table \ref{nonco-f12} presents the simulation results for non-cointegrated $x_t$
 	\begin{tabular}{cccccccccccccc}
 		\toprule
 		& \multicolumn{7}{c}{NLS}                               & \multicolumn{6}{c}{Constrained-NLS} \\
-		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ \\
-		\midrule
 		&       & \multicolumn{12}{c}{$f_3 (u_{t-1}, \gamma_3, \gamma_4)$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_3$ & $\gamma_{4}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_3$ & $\gamma_{4}$ \\
 		\midrule
 		\multirow{3}[1]{*}{T = 100} & Bias  & \textcolor[rgb]{ 0,  .439,  .753}{0.25080} & 0.11643 & 0.09701 & 0.09621 & -0.02764 & 0.04677 & \textcolor[rgb]{ 0,  .439,  .753}{-0.00512} & -0.00957 & 0.00367 & 0.04089 & 0.00023 & 0.00084 \\
 		& std   & 0.42010 & 0.27514 & 0.10589 & 0.14919 & 0.02840 & 0.04952 & 0.12251 & 0.09119 & 0.02431 & 0.11107 & 0.01023 & 0.02126 \\
@@ -692,6 +700,7 @@ Table \ref{nonco-f12} presents the simulation results for non-cointegrated $x_t$
 		&       & \multicolumn{2}{c}{0.41141} & \multicolumn{2}{c}{0.17074} & \multicolumn{2}{c}{0.00825} & \multicolumn{2}{c}{0.02241} & \multicolumn{2}{c}{0.01568} & \multicolumn{2}{c}{0.00268} \\
 		\midrule
 		&       & \multicolumn{12}{c}{$f_4 (u_{t-1}, \gamma_5, \gamma_6)$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_5$ & $\gamma_{6}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_5$ & $\gamma_{6}$ \\
 		\midrule
 		\multirow{3}[1]{*}{T = 100} & Bias  & 0.26070 & 0.13566 & 0.09572 & 0.10944 & -0.00129 & 0.00539 & -0.00839 & -0.00700 & 0.00085 & \textcolor[rgb]{ .329,  .51,  .208}{0.01092} & -0.02653 & 0.04272 \\
 		& std   & 0.41629 & 0.28334 & 0.10132 & 0.14225 & 0.00287 & 0.01948 & 0.05009 & 0.04422 & 0.01350 & 0.05372 & 0.02733 & 0.04743 \\
@@ -709,9 +718,9 @@ Table \ref{nonco-f12} presents the simulation results for non-cointegrated $x_t$
 	\label{nonco-f34}%
 \end{table}%
 
-Models with the two exponential functions (see table \ref{nonco-f56}) also show similar performance as other models. The NLS and CLS estimators converge when sample size increases and the CLS estimators perform better.
+Models with the two exponential functions (see table \ref{nonco-f56}) also show similar performances. The NLS and CLS estimators converge when sample size increases and the CLS estimators perform better.
 
-In table \ref{nonco-f7}, we can also see a good convergence and an improvement in finite sample performance when constraint and truncation have been applied. 
+Table \ref{nonco-f7} present the results for model containing $f_7 (u_{t-1}, \gamma_{11}, \gamma_{12}, \gamma_{13})$, we can also see a good convergence and an improvement in finite sample performance when constraint and truncation have been applied. 
 
 To conclude, for the non-cointegrated $x_t$, the proposed CLS estimators show a good convergence and a better performance than the normal NLS estimators. In the next section, we will investigate the performance of the estimators when $x_t$ is cointegrated.
 
@@ -723,9 +732,11 @@ To conclude, for the non-cointegrated $x_t$, the proposed CLS estimators show a 
 	\begin{tabular}{cccccccccccccc}
 		\toprule
 		& \multicolumn{7}{c}{NLS}                               & \multicolumn{6}{c}{Constrained-NLS} \\
-		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ \\
-		\midrule
+% 		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_{2}$ \\
+% 		\midrule
 		&       & \multicolumn{12}{c}{$f_5 (u_{t-1}, \gamma_7, \gamma_8)$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_7$ & $\gamma_{8}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_7$ & $\gamma_{8}$ \\
+		\midrule
 		T = 100 & Bias  & \textcolor[rgb]{ .184,  .459,  .71}{0.12540} & 0.08285 & 0.03502 & 0.10013 & -0.00125 & 0.00465 & \textcolor[rgb]{ .184,  .459,  .71}{-0.01512} & -0.00850 & 0.00298 & 0.03600 & 0.00035 & 0.00010 \\
 		& std   & 0.32644 & 0.22965 & 0.07947 & 0.14053 & 0.00291 & 0.01768 & 0.08939 & 0.09761 & 0.01671 & 0.10739 & 0.01028 & 0.02041 \\
 		&       & \multicolumn{2}{c}{0.41166} & \multicolumn{2}{c}{0.16238} & \multicolumn{2}{c}{0.01553} & \multicolumn{2}{c}{0.13624} & \multicolumn{2}{c}{0.10882} & \multicolumn{2}{c}{0.02240} \\
@@ -737,6 +748,7 @@ To conclude, for the non-cointegrated $x_t$, the proposed CLS estimators show a 
 		&       & \multicolumn{2}{c}{0.27633} & \multicolumn{2}{c}{0.13912} & \multicolumn{2}{c}{0.00298} & \multicolumn{2}{c}{0.02050} & \multicolumn{2}{c}{0.01566} & \multicolumn{2}{c}{0.00267} \\
 		\midrule
 		&       & \multicolumn{12}{c}{$f_6 (u_{t-1}, \gamma_9, \gamma_{10})$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_9$ & $\gamma_{10}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_9$ & $\gamma_{10}$ \\
 		\midrule
 		T = 100 & Bias  & 0.16972 & 0.09560 & 0.03762 & 0.09567 & -0.00140 & 0.00279 & -0.00253 & -0.00113 & 0.05286 & 0.11522 & -0.00797 & 0.02183 \\
 		& std   & 0.36696 & 0.24840 & 0.08178 & 0.13985 & 0.00590 & 0.02946 & 0.02819 & 0.02091 & 0.17887 & 0.31808 & 0.00821 & 0.05086 \\
@@ -763,7 +775,7 @@ To conclude, for the non-cointegrated $x_t$, the proposed CLS estimators show a 
 	\begin{tabular}{cccccccccccccccc}
 		\toprule
 		& \multicolumn{8}{c}{NLS}                                       & \multicolumn{7}{c}{Constrained-NLS} \\
-		&       & theta & theta & beta  & beta  & gamma & gamma & gamma & theta & theta & beta  & beta  & gamma & gamma & gamma \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$  & $\beta_1$  & $\gamma_{11}$ & $\gamma_{12}$ & $\gamma_{13}$ & $\theta_1$ & $\theta_2$ & $\beta_1$  & $\beta_1$  & $\gamma_{11}$ & $\gamma_{12}$ & $\gamma_{13}$ \\
 		\midrule
 		\multirow{3}[1]{*}{T = 100} & Bias  & \textcolor[rgb]{ 0,  .439,  .753}{0.02111} & -0.01598 & 30.87179 & -0.95731 & -0.01892 & -0.60074 & 0.72155 & \textcolor[rgb]{ 0,  .439,  .753}{0.00286} & 0.00084 & 0.06327 & -0.00989 & 0.00370 & -0.01088 & 0.00725 \\
 		& std   & 0.36946 & 0.31152 & 0.74012 & 0.74312 & 0.29472 & 0.17836 & 0.14145 & 0.03604 & 0.02714 & 0.36089 & 0.05816 & 0.02418 & 0.03986 & 0.11360 \\
@@ -783,7 +795,7 @@ To conclude, for the non-cointegrated $x_t$, the proposed CLS estimators show a 
 
 
 \subsubsection{Simulation Results for Cointegrated $x_t$}
-Table \ref{tab:s_f12} to \ref{s_f7} show the simulation results on co-integrated $x_t$ using Taylor initial values.  Table \ref{tab:s_f12} presents the results for model containing nonlinear component $f_1(u_{t-1}, \gamma_1) = \sin(u_t+\gamma_{1})$ and $f_2(u_{t-1}, \gamma_2) = = \cos(u_t+\gamma_{2})$. From the table we can see that the constrained CLS estimator performs better than the NLS estimator. Bias, standard deviation and covariance of the estimators are lower in the constrained least square case than in the nonlinear least square case. For example, for model containing $f_1$ , the absolute value of bias of $\theta_1$ is 0.00818 when using NLS and 0.00129 when using CLS estimator (sample size T = 1000). 
+Table \ref{s_f12} to \ref{s_f7} present the simulation results on co-integrated $x_t$ using Taylor initial values.  Table \ref{s_f12} shows the results for model containing nonlinear component $f_1(u_{t-1}, \gamma_1) = \sin(u_t+\gamma_{1})$ and $f_2(u_{t-1}, \gamma_2) = \cos(u_t+\gamma_{2})$. From the table we can see that the constrained CLS estimators perform better than the NLS estimators. Bias, standard deviation and covariance of the estimators are lower in the constrained least square case than in the nonlinear least square case. For example, for model containing $f_1$ , the absolute value of bias of $\theta_1$ is 0.00818 when using NLS and 0.00129 when using CLS estimator (sample size T = 1000). 
 
 The estimators also show a good convergence. Take the covariance of $\gamma$ in the second panel as an example, the covariance of $\gamma$ decrease from 0.01916 to 0.00242 when sample size T rises from 100 to 1000. 
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
@@ -793,10 +805,9 @@ The estimators also show a good convergence. Take the covariance of $\gamma$ in 
     \begin{adjustbox}{max width=\textwidth}
     \begin{tabular}{cccccccccccc}
     \toprule
-          &       & \multicolumn{5}{c}{NLS}               & \multicolumn{5}{c}{Constrained-NLS} \\
-          &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ \\
-    \midrule
+    &       & \multicolumn{5}{c}{NLS}               & \multicolumn{5}{c}{Constrained-NLS} \\
     &       & \multicolumn{10}{c}{$f_1 (u_{t-1}, \gamma_1)$}                \\
+    &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & 0.00221 & 0.01180 & -0.01443 & 0.01320 & 0.00447 & 0.01287 & 0.01004 & -0.01604 & -0.00325 & -0.02298 \\
           & std   & 0.09413 & 0.08928 & 0.05052 & 0.06048 & 0.52541 & 0.01474 & 0.01180 & 0.04778 & 0.05835 & 0.46140 \\
@@ -809,6 +820,7 @@ The estimators also show a good convergence. Take the covariance of $\gamma$ in 
           &       & \multicolumn{2}{c}{0.05325} & \multicolumn{2}{c}{0.00590} &       & \multicolumn{2}{c}{0.00262} & \multicolumn{2}{c}{0.00471} &  \\
     \midrule
     &       & \multicolumn{10}{c}{$f_2 (u_{t-1}, \gamma_2)$}                \\
+    &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_2$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & 0.00069 & 0.00276 & -0.00646 & 0.00180 & 0.03309 & -0.00189 & -0.00192 & 0.00104 & -0.00143 & 0.04245 \\
           & std   & 0.04767 & 0.03619 & 0.03458 & 0.04583 & 0.12469 & 0.02647 & 0.02972 & 0.01103 & 0.01648 & 0.08817 \\
@@ -823,13 +835,13 @@ The estimators also show a good convergence. Take the covariance of $\gamma$ in 
     \bottomrule
     \end{tabular}%
     \end{adjustbox}
-  \label{tab:s_f12}%
+  \label{s_f12}%
 \end{table}%
 
 
-Similarly for $f_3(u_{t-1},\gamma_3, \gamma_4) = \sin(\gamma_3 u_t+\gamma_{4})$ and $f_4(\gamma_5 u_{t-1}, \gamma_6) = \cos(\gamma_5 u_t+\gamma_{6})$, both NLS and CLS estimators converge and the CLS estimators perform better. For example, in the first panel of table \ref{s_f34}, the absolute value of bias of $\theta_1$ using $f_3(u_{t-1}, \gamma_3, \gamma_4)$ decreases from 0.00219 to 0.00062 in the case of CLS and drops from 0.01336 to 0.00201 in the case of NLS. 
+Similarly for $f_3(u_{t-1},\gamma_3, \gamma_4) = \sin(\gamma_3 u_t+\gamma_{4})$ and $f_4(\gamma_5 u_{t-1}, \gamma_6) = \cos(\gamma_5 u_t+\gamma_{6})$, both NLS and CLS estimators converge and the CLS estimators perform better. For example, in the first panel of table \ref{s_f34}, the absolute value of bias of $\theta_1$ using $f_3(u_{t-1}, \gamma_3, \gamma_4)$ drops from 0.00219 to 0.00062 in the case of CLS and decreases from 0.01336 to 0.00201 in the case of NLS. 
 
-And in most cases, the CLS estimators have smaller bias, standard deviation and covariance. As shown in the second panel of table \ref{s_f34}, the covariance of CLS estimator $\gamma$ (cov($\hat{\gamma}$) ) when sample size T = 100 is slightly higher than the bias of the NLS estimator (0.19193 for CLS and 0.17287 for NLS), but when T increases to 500 and 1000, cov($\hat{\gamma}$) of the CLS estimator become smaller (0.05015 for CLS when T = 1000, and 0.09848 for NLS).
+And in most cases, the CLS estimators have smaller bias, standard deviation and covariance. As shown in the second panel of table \ref{s_f34}, the covariance of CLS estimator $\gamma$ (cov($\hat{\gamma}$)) is smaller when T = 1000 (0.05015 for CLS, and 0.09848 for NLS), even though when sample size T = 500, it is slightly higher (0.19193 for CLS and 0.17287 for NLS).
 
 
 %Take $\theta$ in table \ref{tab:s_f12} as an example, for $f_1(u_{t-1}, \gamma_0)$, when sample size T=1000, the bias of $\theta_1$ and $\theta_2$ using CLS is 0.00129 and 0.00097 respectively, while the corresponding values using normal NLS is -0.00818 and 0.01622. Similarly for $f_2(u_{t-1}, \gamma_0)$, when T = 1000, the standard deviation for $\theta$ is 0.00476 in the case of CLS and 0.02110 in the case of NLS.  
@@ -843,11 +855,10 @@ And in most cases, the CLS estimators have smaller bias, standard deviation and 
     \begin{adjustbox}{max width=\textwidth}
     \begin{tabular}{cccccccccccccc}
     \toprule
-          &       & \multicolumn{6}{c}{NLS}                       & \multicolumn{6}{c}{Constrained-NLS} \\
-          &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ \\
-    \midrule
-    &       & \multicolumn{10}{c}{$f_3 (u_{t-1}, \gamma_3, \gamma_4)$}                \\
-    \midrule
+    &       & \multicolumn{6}{c}{NLS}                       & \multicolumn{6}{c}{Constrained-NLS} \\
+		&       & \multicolumn{12}{c}{$f_3 (u_{t-1}, \gamma_3, \gamma_4)$} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_3$ & $\gamma_{4}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_3$ & $\gamma_{4}$ \\
+		\midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & \textcolor[rgb]{ 0,  .439,  .753}{-0.01336} & -0.00146 & 0.00040 & 0.00012 & 0.00258 & 0.03875 & \textcolor[rgb]{ 0,  .439,  .753}{-0.00219} & 0.00367 & -0.01027 & 0.00355 & 0.00143 & -0.00586 \\
           & std   & 0.09908 & 0.10823 & 0.01118 & 0.01976 & 0.02365 & 0.11074 & 0.07270 & 0.05655 & 0.03583 & 0.05240 & 0.06347 & 0.12251 \\
           &       & \multicolumn{2}{c}{0.14788} & \multicolumn{2}{c}{0.02250} & \multicolumn{2}{c}{0.11450} & \multicolumn{2}{c}{0.12888} & \multicolumn{2}{c}{0.05136} & \multicolumn{2}{c}{0.13895} \\
@@ -858,7 +869,8 @@ And in most cases, the CLS estimators have smaller bias, standard deviation and 
           & std   & 0.01434 & 0.01451 & 0.00197 & 0.00230 & 0.00392 & 0.01576 & 0.03144 & 0.02371 & 0.01291 & 0.01631 & 0.01754 & 0.03414 \\
           &       & \multicolumn{2}{c}{0.02283} & \multicolumn{2}{c}{0.00277} & \multicolumn{2}{c}{0.01611} & \multicolumn{2}{c}{0.05511} & \multicolumn{2}{c}{0.01493} & \multicolumn{2}{c}{0.04048} \\
     \midrule
-    &       & \multicolumn{10}{c}{$f_4 (u_{t-1}, \gamma_5, \gamma_6$)}                \\
+    &       & \multicolumn{12}{c}{$f_4 (u_{t-1}, \gamma_5, \gamma_6$)}                \\
+	&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_5$ & $\gamma_{6}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_5$ & $\gamma_{6}$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & -0.00462 & 0.00898 & -0.00485 & 0.00572 & 0.00210 & 0.03106 & -0.00283 & 0.00192 & 0.00022 & -0.00015 & -0.01107 & -0.00375 \\
           & std   & 0.10139 & 0.10403 & 0.03259 & 0.05225 & 0.01558 & 0.10063 & 0.06346 & 0.04934 & 0.01071 & 0.02085 & 0.05994 & 0.18408 \\
@@ -876,9 +888,9 @@ And in most cases, the CLS estimators have smaller bias, standard deviation and 
   \label{s_f34}%
 \end{table}%
 
-For the models containing two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$, we can see that the NLS estimators does not have good convergence, but after applying constraint, the CLS perform much better. For example, in the case of NLS, the biases of $\beta_{1}$ is -0.00060 and is -0.00051 when T = 100 and 1000 respectively. But in the case of CLS, the absolute values of bias of $\beta_{1}$ drop from 0.08371 to 0.00105. 
+For the models containing two exponential functions $f_{5}\left( u_{t-1}, \gamma_{7}, \gamma_{8}\right) = 1-e^{-\gamma_{7}\left(u_{t-1}-\gamma_{8}\right)^{2}}$ and $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right) = \gamma_{9} e^{-\gamma_{10}u_{t-1}^2}$, we can see that the NLS estimators does not have good convergence, but after applying constraint, the convergence has significantly improved. For example, in the case of CLS, the biases of $\beta_{1}$ is 0.00060 and 0.00051 when T = 100 and 1000 respectively, and the corresponding values in the case of NLS are 0.08371 and 0.00105. 
 
-The CLS estimators also shows a significant decrease in the covariance. Take $\beta$ in $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right)$ as an example, the covariance of the CLS estimator is 0.00263 and that of the NLS estimator is 0.01184.
+The CLS estimators also have smaller biases, standard deviations and covariances. Take $\beta$ in $f_{6}\left( u_{t-1},\gamma _{9}, \gamma_{10}\right)$ as an example, the covariance of the CLS estimator is 0.00263 and that of the NLS estimator is 0.01184.
  
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
@@ -887,10 +899,9 @@ The CLS estimators also shows a significant decrease in the covariance. Take $\b
     \begin{adjustbox}{max width=\textwidth}
     \begin{tabular}{cccccccccccccc}
     \toprule
-          &       & \multicolumn{6}{c}{NLS}                       & \multicolumn{6}{c}{Constrained-NLS} \\
-          &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ \\
-    \midrule
-    &       & \multicolumn{10}{c}{$f_5 (u_{t-1},\gamma_7, \gamma_8)$}                \\
+    &       & \multicolumn{6}{c}{NLS}                       & \multicolumn{6}{c}{Constrained-NLS} \\
+    &       & \multicolumn{12}{c}{$f_5 (u_{t-1}, \gamma_7, \gamma_8$)}                \\
+	&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_7$ & $\gamma_{8}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_7$ & $\gamma_{8}$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & 0.14852 & 0.07716 & \textcolor[rgb]{ 0,  .439,  .753}{-0.00060} & -0.00069 & 0.03979 & 0.09704 & 0.00049 & 0.00707 & \textcolor[rgb]{ 0,  .439,  .753}{-0.08371} & 0.00270 & 0.05869 & 0.11357 \\
     & std   & 0.36721 & 0.25730 & 0.00983 & 0.01876 & 0.08946 & 0.14248 & 0.08064 & 0.06468 & 0.03280 & 0.04974 & 0.22359 & 0.36681 \\
@@ -902,7 +913,8 @@ The CLS estimators also shows a significant decrease in the covariance. Take $\b
           & std   & 0.21925 & 0.14210 & 0.00204 & 0.00215 & 0.07485 & 0.13657 & 0.02952 & 0.02203 & 0.01198 & 0.01481 & 0.02361 & 0.11419 \\
           &       & \multicolumn{2}{c}{0.28125} & \multicolumn{2}{c}{0.00249} & \multicolumn{2}{c}{0.15389} & \multicolumn{2}{c}{0.05151} & \multicolumn{2}{c}{0.01177} & \multicolumn{2}{c}{0.11498} \\
     \midrule
-    &       & \multicolumn{10}{c}{$f_6 (u_{t-1}, \gamma_9, \gamma_{10})$}                \\
+    &       & \multicolumn{12}{c}{$f_6 (u_{t-1}, \gamma_9, \gamma_{10}$)}                \\
+	&       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_9$ & $\gamma_{10}$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_9$ & $\gamma_{10}$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & 0.29939 & 0.12435 & -0.00836 & 0.00577 & 0.09685 & 0.86918 & 0.00239 & 0.00565 & -0.00015 & 0.00038 & 0.10008 & 0.10486 \\
           & std   & 0.44703 & 0.31855 & 0.03431 & 0.04555 & 0.26677 & 1.16532 & 0.06176 & 0.04835 & 0.01144 & 0.01696 & 0.10519 & 0.14436 \\
@@ -925,7 +937,7 @@ Table \ref{s_f7} presents the simulation results for the model containing polyno
 
 As for the convergence, take $\beta_{1}$ as an example, the absolute value of bias for the NLS estimator $\hat{\beta}$ decreases from 0.00056 to 0.00001 as sample size T increases from 100 to 1000. At the same time, the absolute value of bias for the CLS estimator $\bar{\beta}$ decreases from 0.00079 to 0.00025. 
 
-The constraint and truncation conditions we applied improve the finite sample performance for all the estimators, but the effect is more significant for the estimator $\gamma$. For example, when T = 1000, the covariance of $\beta$ in the case of NLS is 0.00190 and the value is 0.00110 in the case of CLS. And for the covariance of $\gamma$, the value in the case of CLS is 0.00339, which is much lower than 0.01231 in the case of NLS.
+The constraint and truncation conditions we applied improve the finite sample performance for all the estimators, and the effect is more significant for the estimator $\gamma$. For example, when T = 1000, the covariance of $\beta$ in the case of NLS is 0.00190 and the value is 0.00110 in the case of CLS. And for the covariance of $\gamma$, the value in the case of CLS is 0.00339, which is much lower than 0.01231 in the case of NLS.
 
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
@@ -934,8 +946,8 @@ The constraint and truncation conditions we applied improve the finite sample pe
     \begin{adjustbox}{max width=\textwidth}
     \begin{tabular}{cccccccccccccccc}
     \toprule
-          &       & \multicolumn{7}{c}{NLS}                               & \multicolumn{7}{c}{Constrained-NLS} \\
-          &       & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ & $\gamma_3$ & $\theta_1$ & $\theta_2$ & $\beta_1$ & $\beta_2$ & $\gamma_1$ & $\gamma_2$ & $\gamma_3$ \\
+        &       & \multicolumn{7}{c}{NLS}                               & \multicolumn{7}{c}{Constrained-NLS} \\
+		&       & $\theta_1$ & $\theta_2$ & $\beta_1$  & $\beta_1$  & $\gamma_{11}$ & $\gamma_{12}$ & $\gamma_{13}$ & $\theta_1$ & $\theta_2$ & $\beta_1$  & $\beta_1$  & $\gamma_{11}$ & $\gamma_{12}$ & $\gamma_{13}$ \\
     \midrule
     \multirow{3}[1]{*}{T = 100} & Bias  & 0.00018 & -0.00018 & \textcolor[rgb]{ 0,  .439,  .753}{-0.00056} & 0.00037 & 0.02711 & -0.00147 & 0.00020 & 0.00088 & 0.00026 & \textcolor[rgb]{ 0,  .439,  .753}{-0.00079} & 0.00029 & 0.00326 & -0.00064 & 0.00121 \\
           & std   & 0.00407 & 0.00335 & 0.00171 & 0.01482 & 0.07001 & 0.00886 & 0.00308 & 0.00139 & 0.00105 & 0.00161 & 0.00504 & 0.00914 & 0.00451 & 0.00141 \\
@@ -955,17 +967,20 @@ The constraint and truncation conditions we applied improve the finite sample pe
 
 From the simulation results above, we can conclude that:
 \begin{enumerate}
-    \item Both the NLS and CLS estimators converge when sample size increases. But the constrained least square method tend to give better convergence in certain cases.
+    \item The Taylor initial values can help improve the finite sample performances of the estimators.
+    
+    \item Both the NLS and CLS estimators converge when sample size increases. But the constrained least square method tend to give better convergence in most cases.
     
     \item The CLS consistently perform better than the normal NLS for most functional forms. This implies that the constraint and truncation condition we proposed in section 2 do help improve the finite sample performances. 
+    
+    \item Among models with the 7 different functional forms, the one with polynomial functional form tend to provide the best results, but models with the two exponential functions do not perform as well as other ones.
+    
+    As shown in table \ref{s_f7}, the standard deviation of $\theta$ using CLS is 0.00045 when T=1000, which is much lower than this value in other functional cases(for example, the corresponding value is 0.00262 in $f_1(u_{t-1}, \gamma_0)$ and 0.00476 in $f_2(u_{t-1}, \gamma_0)$). 
+    
+    \item Models using cointegrated $x_t$ have a better finite sample performance than using the non-cointegrated $x_t$. As presented in table \ref{co-non}, the bias of $\theta$ using cointegrated $x_t$ is at least one magnitude smaller than using the non-cointegrated $x_t$. 
 \end{enumerate}
 
-If we compare models with the 7 different functional forms,  we find that the polynomial functional form tend to provide the best results but models with the two exponential functions do not perform as well as other ones. 
-
-As shown in table \ref{s_f7}, the standard deviation of $\theta$ using CLS is 0.00045 when T=1000, which is much lower than this value in other functional cases(for example, the corresponding value is 0.00262 in $f_1(u_{t-1}, \gamma_0)$ and 0.00476 in $f_2(u_{t-1}, \gamma_0)$). 
-
-When compare the simulation results for non-cointegrated $x_t$ with the results for cointegrated $x_t$ (see table below), we can also see that the models using cointegrated $x_t$ have a better finite sample performance. Therefore, in next section, we will focus on models with cointegrated predictors. In addition, as the CLS estimators consistently provide better performance, we will focus on the constrained least square method in the empirical study.
-
+Therefore, in the empirical study, we will focus on the constrained least square method as the CLS estimators consistently provide better performances. In terms of predictors and model estimation, we will consider cointegrated predictors and use Taylor initial values to start the iterative estimation procedure.
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
 	\centering
@@ -989,7 +1004,7 @@ When compare the simulation results for non-cointegrated $x_t$ with the results 
 		\bottomrule
     \end{tabular}%
 	\end{adjustbox}
-	\label{s_f7}%
+	\label{co-non}%
 \end{table}%
 
 
@@ -998,7 +1013,7 @@ When compare the simulation results for non-cointegrated $x_t$ with the results 
 We have examined the finite sample properties in the previous section using Monte Carlo simulation study. To illustrate the use of our partially nonlinear model in the real world, we conduct the in-sample and out-of-sample prediction exercises using U.S. stock market returns data.
 The datasets is available from Amit Goyal's website and it is quarterly data ranging from 1956 Q1 to 2018 Q4 . 
 
-The dependent variable, stock returns, are measured as continuously compound returns on the S\&P 500 index. 
+The dependent variable, stock return, is measured as continuously compound returns on the S\&P 500 index. 
 Predictors used in \cite{welch2008comprehensive} include dividend-price ratio (log), dividend yield (log), earnings-price ratio (log), dividend-payout ratio (log), and other 11 predictors. 
 
 In our study, we want to evaluate the performance of the partially nonlinear models when the non-stationary predictors are co-integrated, therefore we choose the following 4 variable pairs from the \cite{welch2008comprehensive} datasets (as in \cite{zhou2018semiparametric}) and another set of variable from \cite{lettau2001consumption}, which have all been found to be co-integrated : 
@@ -1052,7 +1067,7 @@ Figure \ref{cay} shows the three variables used in \cite{lettau2001consumption}.
 	\label{cay}
 \end{figure}
 
-Apart from the non-stationary variables, the partially nonlinear models also include stationary predictors: the lagged stock return ($y_{t-1}$) and the regression residual (the "cay" variable, hereafter) from the study of \cite{lettau2001consumption}. In their study, they show that the three variables are cointegrated and share a common trend. The deviations from this shared trend is stationary and can be used as a predictor for stock return. Figure \ref{station_vs} below presents the two stationary variables (\textcolor{red}{???}). 
+Apart from the non-stationary variables, the partially nonlinear models also include stationary predictors: the lagged stock return ($y_{t-1}$) and the regression residual (the "cay" variable, hereafter) from the study of \cite{lettau2001consumption}. In their study, they show that the three variables are cointegrated and share a common trend. The deviations from this shared trend is stationary and can be used as a predictor for stock return. Figure \ref{station_vs} below presents the two variables. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -1074,9 +1089,9 @@ $$
 y_{t} = \beta_{1} y_{t-1} + \beta_{2} w_{t-1} + f\left( x_{t-1}^{\prime }\theta,\gamma\right) +e_{t}, \quad
 e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T,
 $$
-the dependent variable, $y_t$, is the equity premium defined as the S\&P500 value-weighted log excess returns. $y_{t-1}$ is the lagged equity premium, $x_{t-1}$ are the co-integrated variables from \cite{zhou2018semiparametric}, and $w_{t-1}$ is the regression residual, the "cay" variable, from the \cite{lettau2001consumption}. 
+where the dependent variable, $y_t$, is the equity premium defined as the S\&P500 value-weighted log excess returns. $y_{t-1}$ is the lagged equity premium, $x_{t-1}$ are the co-integrated variables from \cite{zhou2018semiparametric}, and $w_{t-1}$ is the regression residual, the "cay" variable, from the \cite{lettau2001consumption}. 
 
-In terms of the nonlinear part $f\left( x_{t-1}^{\prime }\theta,\gamma\right)$, we consider the following 7 nonlinear functions that have been discussed in the simulation before, which includes trigonometric functions, exponential functions and polynomial functions. And these partially nonlinear models in the empirical study can be written as:
+In terms of the nonlinear part $f\left( x_{t-1}^{\prime }\theta,\gamma\right)$, we consider the following 7 nonlinear functions that have been discussed in the simulation before. It includes trigonometric functions, exponential functions and polynomial functions. And these partially nonlinear models in the empirical study can be written as:
 \begin{eqnarray*}
 	\text{sin}: g_{1}\left( {u}_{t-1},\gamma _{1}\right) &=& \beta z_{t-1}^{\prime} + \sin \left( {u}_{t-1}+\gamma_{1}\right),  \\
 	\text{cos}: g_{2}\left( {u}_{t-1},\gamma _{2}\right) &=& \beta z_{t-1}^{\prime} + \cos \left( {u}_{t-1}+\gamma_{2}\right), \\
@@ -1094,9 +1109,9 @@ In addition, we also include a linear functional form with single-index:
 $$
 \text{constrained\_linear}: g_8\left( u_{t-1},\gamma_{14}, \gamma_{15}\right) = \gamma_{14} +\beta z_{t-1}^{\prime} + \gamma_{15}(x_{1,t-1}\theta _{1} + x_{2,t-1}\theta _{2}).
 $$
-It is a special case of the polynomial function $g_7$ where  $\gamma_{13} = 0$.
+This model is a special case of the polynomial function $g_7$ where $\gamma_{13} = 0$.
 
-For all the 8 functional forms, we set $\theta^2_{1}+\theta_{2}^2 = 1$ and will adopt the constrained nonlinear least square method described in section 2 to estimate. But as mentioned before, when minimizing the nonlinear least squares:
+For all the 8 functional forms, we set $\theta^2_{1}+\theta_{2}^2 = 1$ and will adopt the constrained nonlinear least square method described in section 2 to estimate. And as mentioned before, when minimizing the nonlinear least squares:
 $$
 S_{T}(\beta, \theta, \gamma)=\sum_{t=1}^{T}\left(y_{t}-g\left(u_{t-1}, \gamma\right)\right)^{2}
 $$
@@ -1105,15 +1120,20 @@ The gradient equation:
 $$
 \frac{\partial S_{T}(\alpha)}{\partial \alpha}
 $$
-does not have a closed solution, so we need to use an iterative algorithm. To implement the iterative algorithm, we must choose a vector of initial values to start. As discussed in the simulation study, we could use Taylor expansion to approximate the partially nonlinear models and choose initial values by estimating the approximated linear models. We first nee to estimate the following linear regression to get $\hat{\eta}$:
+does not have a closed solution, so we need to use an iterative algorithm. Following our discussion in the previous section, we adopt the 2-step procedure to calculate the Taylor initial values. We estimate the linear regression to get $\hat{\eta}$:
 $$
 x_1 = \eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
 $$
-where $x_1$ and $x_2$ are the non-stationary co-integrated variables. 
-Then, the initial values for $\theta$ is $\theta_{0} = (\dfrac{1}{\sqrt{1+\eta^2}}, \dfrac{-\eta}{\sqrt{1+\eta^2}})$. 
-As $\theta_{0}$ is known, we can calculate $\hat{u}_{t-1}$.
+and obtain the initial values for $\theta:\theta_{0} = (\dfrac{1}{\sqrt{1+\hat{\eta}^2}}, \dfrac{-\hat{\eta}}{\sqrt{1+\hat{\eta}^2}})$.
+%  To implement the iterative algorithm, we must choose a vector of initial values to start. As discussed in the simulation study, we could use Taylor series expansion to approximate the partially nonlinear models and choose initial values by estimating the approximated linear models. We first nee to estimate the following linear regression to get $\hat{\eta}$:
+% $$
+% x_1 = \eta x_2 + e_t, \quad e_{t}\sim i.i.d.N\left( 0,1\right) ,\ \ t=2,...,T
+% $$
+% where $x_1$ and $x_2$ are the non-stationary co-integrated variables. 
+% Then, the initial values for $\theta$ is $\theta_{0} = (\dfrac{1}{\sqrt{1+\eta^2}}, \dfrac{-\eta}{\sqrt{1+\eta^2}})$. 
+% As $\theta_{0}$ is known, we can calculate $\hat{u}_{t-1}$.
 
-Then following what we have done in section 3, we bring $\hat{u_{t-1}}$ back into $f\left( u_{t-1},\gamma \right)$ and substitute the nonlinear function $f\left( u_{t-1},\gamma \right)$ by its first or second order Taylor expansion and estimate the following linear regression to obtain the initial values for $\beta$ and $\gamma$.
+Then we bring $\hat{u_{t-1}}$ back into $f\left( u_{t-1},\gamma \right)$ and substitute the nonlinear function $f\left( u_{t-1},\gamma \right)$ by its first or second order Taylor series expansion and estimate the following linear regression to obtain the initial values for $\beta$ and $\gamma$.
 \begin{eqnarray*}
 	\text{sin}: \tilde{g_{1}}\left( \hat{u}_{t-1},\gamma _{1}\right) &=& \left( \gamma_{1} +\hat{u}_{t-1}\right) + \beta z_{t-1}^{\prime},  \\
 	\text{cos}: \tilde{g_{2}}\left( \hat{u}_{t-1},\gamma _{2}\right) &=& 1 - \left( \gamma_{2} + \hat{u}_{t-1}\right)^2  + \beta z_{t-1}^{\prime}, \\
@@ -1165,7 +1185,7 @@ In the simulation section, we have shown that by using Taylor-initials, the conv
 % where $\epsilon_{t}\sim i.i.d.N\left( 0,1\right)$ for all the benchmark models.
 
 \subsection{In-sample Results}
-In this section, we use the complete sample from 1956 Q1 to 2018 Q4 to investigate the in-sample performances of our partially nonlinear models. The full sample results can be found in the appendix, table \ref{full}. In this section, we use in-sample $r^2$ to examine the in-sample performance of our models.
+In this section, we use the complete sample from 1956 Q1 to 2018 Q4 to investigate the in-sample performances of our partially nonlinear models. The full sample results can be found in the appendix (table \ref{full}). In this section, we use in-sample $R^2$ (denoted by $R^2_{IS}$) to examine the in-sample performance of our models.
 The in-sample $R^2_{IS}$ is defined as:
 \begin{equation}
 	R_{IS}^{2}=1-\frac{\sum_{t=1}^{n}\left(y_{t}-\widehat{y}_{t}\right)^{2}}{\sum_{t=1}^{n}\left(y_{t}-\bar{y}\right)^{2}}
@@ -1185,7 +1205,7 @@ $R^2_{IS}$ can also be rewritten as:
 where $MSE_{bm}$ is the mean squared error of benchmark model and $\mathrm{MSE}_{CLS}=1 / n \sum_{t=1}^{n}\left(y_{t}-\hat{y_t}\right)^{2}$ is the mean squared error of our partially nonlinear models.
 In equation (\ref{Ris}), if $R^2_{IS}$ for a given model is positive, it indicates that the model outperforms the benchmark model, and the bigger the value is, the better the corresponding model performs.
 
-In the study of \cite{welch2008comprehensive}, they found that sample mean is a competitive model in stock return prediction. Therefore, we use the sample mean model as the benchmark. To compare our models with some commonly used time series models and the nonlinear model we used in chapter 2:
+In the study of \cite{welch2008comprehensive}, they found that sample mean is a competitive model in stock return prediction. Therefore, we use the sample mean model as one of our benchmark. We also consider some commonly used time series models and the nonlinear model we used in chapter 2 as benchmarks. The benchmark models we consider are as follows:
 
 \begin{itemize}
 	\item Sample mean model: 
@@ -1272,8 +1292,8 @@ The in-sample $R^2_{IS}$ results against other benchmark models can be found in 
 
 \subsection{OOS Results}
 
-\subsubsection{OOS Performance Compared with Historial Average}
-Since the existing literatures show that the evidence for stock return predictability only hold for in-sample, in this section, we investigate how our models perform out-of-sample. Following \cite{campbell2008predicting}, we use the OOS $R^2$ to measure the forecasting performance. The $R^2_{OOS}$ is defined as:
+\subsubsection{OOS Performance Compared with Historical Average}
+Since the existing literatures show that the evidence for stock return predictability only hold for in-sample, in this section, we investigate how our models perform out-of-sample. Following \cite{campbell2008predicting}, we use the OOS $R^2$ (denoted by $R^2_{OOS}$) to measure the forecasting performance. The $R^2_{OOS}$ is defined as:
 
 \begin{equation}
     R_{O O S, j, n, R}^{2}=1-\frac{\sum_{r=1}^{R}\left(y_{n+r, j}-\widehat{y}_{n+r, j}\right)^{2}}{\sum_{r=1}^{R}\left(y_{n+r, j}-\bar{y}_{n+r, j}\right)^{2}}
@@ -1293,18 +1313,16 @@ The procedure continues until we obtain $\hat{y}_{n+R}$ and $\bar{y}_{n+R}$. The
 \end{center}
 
 Using these predicted values, we can calculate the $R_{O O S, j, n, R}^{2}$ using the definition (\ref{Rdef}). To show how the out-of-sample forecasting performance when the forecasting window is expanding, we look at the cumulative out-of-sample $R^2$.
+Cumulative $R_{O O S, n, R}^{2}$ can be obtained with R ranging from 1 to 124 (the total number of out-of-sample period). In \cite{cheng2019nonparametric}, they use $R^2_{OOS}$ starting from R = 12 (1 year, 12 months). Therefore in this chapter, I will follow their choice of $R^2_{OOS}$ and start from R = 4 (1 year, 4 quarters). 
 
-Cumulative $R_{O O S, n, R}^{2}$ can be obtained with R ranging from 1 to 124 (in our previous chapter). In \cite{cheng2019nonparametric}, they use $R^2_{OOS}$ starting from R = 12 (1 year, 12 months). Therefore in this chapter, I will follow their choice of $R^2_{OOS}$ and start from R = 4 (1 year, 4 quarters). 
+We report the out-of-sample results against sample mean model in 8 figures (corresponding to 8 functional forms). Each figure contains 4 sub-figures and they show the OOS performances using the 4 co-integrated combinations. We put the $R^2_{OOS}$ statistics on the vertical axis and the beginning of the various out-of-sample evaluation periods are on the horizontal axis. 
 
-The OOS results for different functional forms are shown in the following figures. We report out-of-sample results in
-8 figures, each of which shows the prediction of different functional forms using the 4 co-integrated combinations. We put the $R^2_{OOS}$ statistics on the vertical axis and the beginning of the various out-of-sample evaluation periods on the horizontal axis. 
-
-Figure (\ref{g1}) and (\ref{g2}) show the performances of the two trigonometric functions compared with sample mean. They have similar OOS performance for each of the 4 variable pairs and we can only find positive results for combinations co2 (tbl and lty) and co4 (baa or aaa-rated bonds). But from the sub-figure (d), we can see that function $g_1$ is better than $g_2$ since it provide consecutive positive $R^2_{OOS}$ from 1996 to 2012.
+Figure (\ref{g1}) and (\ref{g2}) present the performances of the two trigonometric functions compared with sample mean. For the 4 variable pairs, $g_1$ and $g_2$ give similar OOS performances and we can only find positive $R^2_{OOS}$ for combinations co2 (tbl and lty) and co4 (baa or aaa-rated bonds). But from the sub-figure (d), we can see that function $g_1$ is better than $g_2$ since it provide consecutive positive $R^2_{OOS}$ from 1996 to 2012.
 
 Figure (\ref{g3}) and (\ref{g4}) display results for the scaled trigonometric functions $g_3$ and $g_4$. These two functions are different from $g_1$ and $g_2$ in that they have a scale parameter in front of the single-index while $g_1$ and $g_2$ do not. 
-Similar to the trigonometric functions, $g_3$ and $g_4$ only show positive $R^2_{OOS}$ for combinations co2 (lty and tbl) and co4 (baa or aaa-rated bonds), and the results are almost identical for the 4 variable combinations except for co4 , where $g_3$ have a better forecast.
+Similar to the trigonometric functions, $g_3$ and $g_4$ only show positive $R^2_{OOS}$ for combinations co2 (lty and tbl) and co4 (baa or aaa-rated bonds), and most of the positive results are in the early periods of the out-of-sample forecasts. We can also see that $g_3$ performs better than $g_4$ as it provides a consecutive $R^2_{OOS}$ for co4 between 1996 to 2010.
 
-The results for the two exponential functions are presented in figure (\ref{g5}) and (\ref{g6}). For functional $g_5$, it cannot outperform sample mean model for most of the out-of-sample forecasting period. We can only find a positive spike around 1992 for co1 (dp and dy),  (lty and tbl) and co4 (baa or aaa-rated bonds). 
+The results for the two exponential functions are presented in figure (\ref{g5}) and (\ref{g6}). For functional $g_5$, it cannot outperform sample mean model for most of the out-of-sample forecasting period. We can only find a positive spike around 1992 for co1 (dp and dy), co2 (lty and tbl) and co4 (baa or aaa-rated bonds). 
 
 For functional $g_6$, the positive $R^2_{OOS}$ can be found in the first half of the forecasting period. We can see from sub-figures (b) and (d) of figure (\ref{g6}) that $g_6$ gives consecutive positive results before 2014 when using combinations co2 and co4. 
 

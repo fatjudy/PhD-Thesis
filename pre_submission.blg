@@ -5,46 +5,49 @@ Reallocating 'name_of_file' (item size: 1) to 5 items.
 The style file: agsm.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: reference.bib
-Warning--there's a number but no volume in campbell2004caught
-You've used 47 entries,
+Repeated entry---line 997 of file reference.bib
+ : @article{wooldridge1994estimation
+ :                                  ,
+I'm skipping whatever remains of this entry
+You've used 18 entries,
             2909 wiz_defined-function locations,
-            911 strings with 11615 characters,
-and the built_in function-call counts, 171068 in all, are:
-= -- 27482
-> -- 2431
-< -- 1
-+ -- 12829
-- -- 728
-* -- 14799
-:= -- 34714
-add.period$ -- 47
-call.type$ -- 47
-change.case$ -- 656
-chr.to.int$ -- 47
-cite$ -- 48
-duplicate$ -- 751
-empty$ -- 1622
-format.name$ -- 929
-if$ -- 30664
+            759 strings with 7681 characters,
+and the built_in function-call counts, 66232 in all, are:
+= -- 10619
+> -- 932
+< -- 0
++ -- 4948
+- -- 280
+* -- 5751
+:= -- 13412
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 252
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 288
+empty$ -- 662
+format.name$ -- 350
+if$ -- 11867
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 49
-newline$ -- 144
-num.names$ -- 485
-pop$ -- 156
+missing$ -- 18
+newline$ -- 57
+num.names$ -- 186
+pop$ -- 48
 preamble$ -- 1
-purify$ -- 705
+purify$ -- 270
 quote$ -- 0
-skip$ -- 628
+skip$ -- 241
 stack$ -- 0
-substring$ -- 38461
-swap$ -- 135
-text.length$ -- 659
+substring$ -- 14951
+swap$ -- 54
+text.length$ -- 252
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 184
-warning$ -- 1
-while$ -- 1064
+type$ -- 72
+warning$ -- 0
+while$ -- 414
 width$ -- 0
-write$ -- 596
-(There was 1 warning)
+write$ -- 230
+(There was 1 error message)

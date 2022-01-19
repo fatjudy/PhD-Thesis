@@ -21,45 +21,46 @@ Repeated entry---line 1180 of file reference.bib
  : @article{lettau2008reconciling
  :                               ,
 I'm skipping whatever remains of this entry
-You've used 36 entries,
+Warning--there's a number but no volume in campbell2004caught
+You've used 41 entries,
             2909 wiz_defined-function locations,
-            859 strings with 10182 characters,
-and the built_in function-call counts, 125949 in all, are:
-= -- 20176
-> -- 1753
+            884 strings with 10876 characters,
+and the built_in function-call counts, 143366 in all, are:
+= -- 22955
+> -- 2009
 < -- 0
-+ -- 9348
-- -- 525
-* -- 10859
-:= -- 25626
-add.period$ -- 36
-call.type$ -- 36
-change.case$ -- 502
-chr.to.int$ -- 36
-cite$ -- 36
-duplicate$ -- 579
-empty$ -- 1284
-format.name$ -- 681
-if$ -- 22569
++ -- 10645
+- -- 602
+* -- 12360
+:= -- 29182
+add.period$ -- 41
+call.type$ -- 41
+change.case$ -- 572
+chr.to.int$ -- 41
+cite$ -- 42
+duplicate$ -- 658
+empty$ -- 1455
+format.name$ -- 774
+if$ -- 25682
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 38
-newline$ -- 111
-num.names$ -- 368
-pop$ -- 123
+missing$ -- 43
+newline$ -- 126
+num.names$ -- 420
+pop$ -- 138
 preamble$ -- 1
-purify$ -- 540
+purify$ -- 615
 quote$ -- 0
-skip$ -- 473
+skip$ -- 539
 stack$ -- 0
-substring$ -- 28226
-swap$ -- 103
-text.length$ -- 504
+substring$ -- 32120
+swap$ -- 117
+text.length$ -- 574
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 140
-warning$ -- 0
-while$ -- 821
+type$ -- 160
+warning$ -- 1
+while$ -- 934
 width$ -- 0
-write$ -- 450
+write$ -- 514
 (There were 4 error messages)

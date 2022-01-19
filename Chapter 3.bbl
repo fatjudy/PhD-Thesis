@@ -36,6 +36,18 @@ Campbell, J.~Y. \harvardand\ Thompson, S.~B.  \harvardyearleft
   anything beat the historical average?', {\em The Review of Financial Studies}
   {\bf 21}(4),~1509--1531.
 
+\harvarditem[Campbell et~al.]{Campbell, Vuolteenaho \harvardand\
+  Ramadorai}{2004}{campbell2004caught}
+Campbell, J.~Y., Vuolteenaho, T. \harvardand\ Ramadorai, T.  \harvardyearleft
+  2004\harvardyearright , `Caught on tape: Predicting institutional ownership
+  with order flow', {\em Harvard Institute of Economic Research Discussion
+  Paper} (2046).
+
+\harvarditem{Campbell \harvardand\ Yogo}{2006}{campbell2006efficient}
+Campbell, J.~Y. \harvardand\ Yogo, M.  \harvardyearleft 2006\harvardyearright ,
+  `Efficient tests of stock return predictability', {\em Journal of financial
+  economics} {\bf 81}(1),~27--60.
+
 \harvarditem{Chang \harvardand\ Park}{2003}{chang2003index}
 Chang, Y. \harvardand\ Park, J.~Y.  \harvardyearleft 2003\harvardyearright ,
   `Index models with integrated time series', {\em Journal of Econometrics}
@@ -76,6 +88,11 @@ Dong, C., Gao, J., Tj{\o}stheim, D. et~al.  \harvardyearleft
   2016\harvardyearright , `Estimation for single-index and partially linear
   single-index integrated models', {\em The Annals of Statistics} {\bf
   44}(1),~425--453.
+
+\harvarditem{Fama}{1981}{fama1981stock}
+Fama, E.~F.  \harvardyearleft 1981\harvardyearright , `Stock returns, real
+  activity, inflation, and money', {\em The American economic review} {\bf
+  71}(4),~545--565.
 
 \harvarditem{Fama}{1990}{fama1990stock}
 Fama, E.~F.  \harvardyearleft 1990\harvardyearright , `Stock returns, expected
@@ -118,6 +135,17 @@ Lettau, M. \harvardand\ Van~Nieuwerburgh, S.  \harvardyearleft
   2008\harvardyearright , `Reconciling the return predictability evidence: The
   review of financial studies: Reconciling the return predictability evidence',
   {\em The Review of Financial Studies} {\bf 21}(4),~1607--1652.
+
+\harvarditem[Li et~al.]{Li, Tj{\o}stheim, Gao et~al.}{2016}{li2016estimation}
+Li, D., Tj{\o}stheim, D., Gao, J. et~al.  \harvardyearleft
+  2016\harvardyearright , `Estimation in nonlinear regression with harris
+  recurrent markov chains', {\em The Annals of Statistics} {\bf
+  44}(5),~1957--1987.
+
+\harvarditem{Ling}{2007}{ling2007self}
+Ling, S.  \harvardyearleft 2007\harvardyearright , `Self-weighted and local
+  quasi-maximum likelihood estimators for arma-garch/igarch models', {\em
+  Journal of Econometrics} {\bf 140}(2),~849--873.
 
 \harvarditem{Ma \harvardand\ Song}{2015}{ma2015varying}
 Ma, S. \harvardand\ Song, P. X.-K.  \harvardyearleft 2015\harvardyearright ,
